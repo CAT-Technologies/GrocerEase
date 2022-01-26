@@ -1,4 +1,8 @@
-# GrocerEase - `Carry your grocery without actually carrying it.`
+<p align="center">
+  <img src="https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/WhatsApp%20Image%202022-01-25%20at%209.23.11%20PM.jpeg"/>
+</p>
+
+## GrocerEase
 
 [![License](https://img.shields.io/badge/license-LGPL_2.1-blue)](LICENSE)
 ![Stars](https://img.shields.io/github/stars/RTEP-Project-Team/GrocerEase.svg?style=flat&label=Star&maxAge=86400)
@@ -22,7 +26,7 @@ Our approach is based on developing an intelligent, fully autonomous trolley bas
 
 ## [Conceptualisation](#GrocerEase)
 
-We, at C.A.T technologies, with the aim to make autonomous machines even more independent, develop cutting-edge technology based on state-of-the-art Machine Learning and Robotics algorithms. It gives us great satisfaction by providing the consumers with best hassle-free shopping experience.
+![Temporary Block Diagram](https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/WhatsApp%20Image%202022-01-26%20at%2011.10.35%20AM.jpeg)
 
 ## [Project Roadmap](#GrocerEase)
 
