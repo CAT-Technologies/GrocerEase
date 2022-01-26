@@ -40,7 +40,7 @@ Thank you for your interest in our project. We strongly encourage reading the co
 
 ## [Credits](#GrocerEase)
 
-`GrocerEase` is maintained by the RTEP-Project-Team. Contributors include:
+`GrocerEase` is maintained by the team at C.A.T technologies. Contributors include:
 
 * Adwait Naik
 * Anmol Kumar
