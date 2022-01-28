@@ -48,5 +48,5 @@ Thank you for your interest in our project. We strongly encourage reading the co
 
 * Adwait Naik
 * Anmol Kumar
-* Jia Wie Tan
+* Jia Wei Tan
 * Sarthak Ahuja
