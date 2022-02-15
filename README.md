@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/WhatsApp%20Image%202022-01-25%20at%209.23.11%20PM.jpeg"/>
+  <img src="https://github.com/addy1997/GrocerEase/blob/logo-and-block-diag-changed/utils/logo.jpeg"/>
 </p>
 
 ## GrocerEase
@@ -26,7 +26,7 @@ Our approach is based on developing an intelligent, fully autonomous trolley bas
 
 ## [Conceptualisation](#GrocerEase)
 
-![Temporary Block Diagram](https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/WhatsApp%20Image%202022-01-26%20at%2011.10.35%20AM.jpeg)
+![Temporary Block Diagram](https://github.com/addy1997/GrocerEase/blob/logo-and-block-diag-changed/utils/block_diagram.jpeg)
 
 ## [Project Roadmap](#GrocerEase)
 
