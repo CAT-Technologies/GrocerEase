@@ -36,7 +36,10 @@ Examples showing the project usage will be illustrated here.
 
 ## [Changelog](#GrocerEase)
 
-Changes made to any portion of the repository will be listed here.
+| Added/Modified | Author(s)  | Related PR  | Date        |
+| :------------: | :-------:  | :---------: | :---------: |     
+| GPIO code      | Jia Wie Tan|    #12      | Feb 16      |
+
 
 ## [Contribution Guidelines](#GrocerEase)
 
