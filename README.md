@@ -36,10 +36,11 @@ Examples showing the project usage will be illustrated here.
 
 ## [Changelog](#GrocerEase)
 
-| Added/Modified | Author(s)  | Related PR  | Date        |
-| :------------: | :-------:  | :---------: | :---------: |     
-| GPIO code      | Jia Wei Tan|    #12      | Feb 16      |
-| GPIO Flowchart | Adwait Naik|             | Feb 20      |
+| Added/Modified      | Author(s)    | Related PR  | Date        |
+| :-----------------: | :----------: | :---------: | :---------: |     
+| GPIO code           | Jia Wei Tan  |    #12      | Feb 16      |
+| GPIO Flowchart      | Adwait Naik  |             | Feb 20      |
+| Flowchart Validation| Sarthak Ahuja|             |   TBD       |
 
 ## [Contribution Guidelines](#GrocerEase)
 
