@@ -1,0 +1,82 @@
+
+start;
+/*Initialise the IR sensors*/
+left_IR = 7 and  Right_IR = 15;
+/*Function Call*/
+wiringPiSetup();
+branch(left_motor)
+  [LeftMotor lm] {
+  /*configure the pin to read output from left motor and call function pinMode(pin, mode) where pin=21,22,23 and mode = OUTPUT and PWM_OUTPUT*/
+  pinMode(pin, OUTPUT);
+}
+branch(right_motor)
+  [RightMotor rm] {
+  /*configure the pin to read output from right motor and call function pinMode(pin, mode) where pin=4,5, 26 and mode = OUTPUT and PWM_OUTPUT*/
+  pinMode(pin, OUTPUT);
+}
+branch(left_IR)
+  [left_IR ls] {
+  /*configure the pin to read output from left sensor and call function pinMode(pin, mode) where pin=7 and mode = INPUT*/
+  pinMode(pin, INPUT);
+}
+branch(right_IR)
+  [right_IR rs] {
+  /*configure the pin to read output from right sensor and call function pinMode(pin, mode) where pin=15 and mode = INPUT*/
+  pinMode(pin, INPUT);
+}
+Read the sensor outputs;
+/*sensor stores the IR sensor*/
+if (sensor = right_IR)
+{
+/*This function reads the output from right IR sensor*/  
+digitalRead(right_IR);
+branch(RightForwardWheel)
+  [right_forward_wheel rfw] {
+    branch(turn_on) [start rfw]
+    {
+      digitalWrite(4,1);
+    }
+    branch(turn_off) [stop rfw]
+    {
+      digitalWrite(5,0);
+    }
+  }
+branch(RightbackwardWheel)
+  [right_backward_wheel rbw] {
+    branch(turn_on) [start rbw]
+    {
+      digitalWrite(4,0);
+    }
+    branch(turn_off) [stop rbw]
+    {
+      digitalWrite(5,1);
+    }
+  }
+}
+else
+{
+/*This function reads the output from left IR sensor*/  
+digitalRead(left_IR); 
+branch(leftforwardWheel)
+  [left_forward_wheel lfw] {
+    branch(turn_on) [start lfw]
+    {
+      digitalWrite(21,1);
+    }
+    branch(turn_off) [stop rfw]
+    {
+      digitalWrite(22,0);
+    }
+  }
+branch(leftbackwardWheel)
+  [left_backward_wheel lbw] {
+    branch(turn_on) [start lbw]
+    {
+      digitalWrite(21,0);
+    }
+    branch(turn_off) [stop lbw]
+    {
+      digitalWrite(22,1);
+    }
+  }
+}
