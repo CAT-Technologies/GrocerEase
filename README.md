@@ -39,8 +39,8 @@ Examples showing the project usage will be illustrated here.
 | Added/Modified      | Author(s)    | Related PR  | Date        |
 | :-----------------: | :----------: | :---------: | :---------: |     
 | GPIO code           | Jia Wei Tan  |    #12      | Feb 16      |
-| GPIO Flowchart      | Adwait Naik  |             | Feb 20      |
-| Flowchart Validation| Sarthak Ahuja|             |   TBD       |
+| GPIO Flowchart      | Adwait Naik  |    #22      | Feb 20      |
+| Flowchart Validation| Sarthak Ahuja|    #22      |   TBD       |
 
 ## [Contribution Guidelines](#GrocerEase)
 
