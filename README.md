@@ -30,6 +30,8 @@ Our approach is based on developing an intelligent, fully autonomous trolley bas
 
 ## [Project Roadmap](#GrocerEase)
 
+The roadmap for our project can be found [here](https://github.com/CAT-Technologies/GrocerEase/projects/1).
+
 ## [Usage Examples](#GrocerEase)
 
 Examples showing the project usage will be illustrated here.
