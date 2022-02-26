@@ -18,29 +18,27 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.
  */
 
- void writeMotor(int L, int R){
- /* L: Left Motor analog output
-  * R: Right Motor analog output
-  * range: -1024 to 1024
-  */
-	
-   if(L >= 0){
-     lw_Forward();
-     pwmWrite(23, L);
-   }
-   else{
-     lw_Backward();
-     pwmWrite(23, -L);
-   }
-   
-    if(R >= 0){
-     rw_Forward();
-     pwmWrite(26, R);
-   }
-   else{
-     rw_Backward();
-     pwmWrite(26, -R);
-   }
-     
- return;
- }
+void writeMotor(int L, int R) {
+  /* L: Left Motor analog output
+   * R: Right Motor analog output
+   * range: -1024 to 1024
+   */
+
+  if (L >= 0) {
+    lw_Forward();
+    pwmWrite(23, L);
+  } else {
+    lw_Backward();
+    pwmWrite(23, -L);
+  }
+
+  if (R >= 0) {
+    rw_Forward();
+    pwmWrite(26, R);
+  } else {
+    rw_Backward();
+    pwmWrite(26, -R);
+  }
+
+  return;
+}
