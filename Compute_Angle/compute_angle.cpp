@@ -18,24 +18,25 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.
  */
 #include <iostream>
+
 #include <cmath>
 
- float calculate_angle(float a, float b, float c){
- /* a: RSSI robot--phone
-  * b: RSSI beacon--robot
-  * c: RSSI beacon--phone
-  * offset_a: offset factor to max received signal of a
-  * offset_b: offset factor to max received signal of b
-  * offset_c: offset factor to max received signal of c
-  * angle: beacon--robot--phone
-  */
-  
- /*Convert RSSI to distance*/
-	d_a = pow(20,(a + off_a));
-	d_b = pow(20,(b + off_b));
-	d_c = pow(20,(c + off_c));
-	
- /*Compute angle*/
-	angle = acos((pow(d_a,2)+pow(d_b,2)-pow(d_c,2))/(2*d_a*d_b));
-	return angle;
- }
+float calculate_angle(float a, float b, float c) {
+  /* a: RSSI robot--phone
+   * b: RSSI beacon--robot
+   * c: RSSI beacon--phone
+   * offset_a: offset factor to max received signal of a
+   * offset_b: offset factor to max received signal of b
+   * offset_c: offset factor to max received signal of c
+   * angle: beacon--robot--phone
+   */
+
+  /*Convert RSSI to distance*/
+  d_a = pow(20, (a + offset_a));
+  d_b = pow(20, (b + offset_b));
+  d_c = pow(20, (c + offset_c));
+
+  /*Compute angle*/
+  angle = acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));
+  return angle;
+}
