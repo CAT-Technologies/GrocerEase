@@ -42,11 +42,11 @@ Examples showing the project usage will be illustrated here.
 | :---------------------: | :----------: | :---------: | :---------: |     
 | GPIO code               | Jia Wei Tan  |    #12      |   Feb 16    |
 | GPIO Flowchart          | Adwait Naik  |    #22      |   Feb 20    |
-| Flowchart Validation    | Sarthak Ahuja|    #22      |   TBD       |
 | Main Program            | Jia Wei Tan  |             |   Feb 26    |
 | Compute Angle           | Jia Wei Tan  |             |   Feb 26    |
 | Motor Writer            | Jia Wei Tan  |             |   Feb 26    |
 | Compute Angle Flowchart | Adwait Naik  |             |   Feb 27    |
+| writeMotor Flowchart    | Adwait Naik  |             |   Feb 27    |
 
 ## [Contribution Guidelines](#GrocerEase)
 
