@@ -47,7 +47,7 @@ Examples showing the project usage will be illustrated here.
 | Motor Writer            | Jia Wei Tan  |    #40      |   Feb 26    |
 | Compute Angle Flowchart | Adwait Naik  |    #34      |   Feb 27    |
 | Motor Writer Flowchart  | Adwait Naik  |    #38      |   Feb 27    |
-| Main program Flowchart  | Adwait Naik  |    #38      |   Feb 28    |
+| Main program Flowchart  | Adwait Naik  |    #43      |   Feb 28    |
 
 ## [Contribution Guidelines](#GrocerEase)
 
