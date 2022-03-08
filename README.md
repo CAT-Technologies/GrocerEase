@@ -56,7 +56,7 @@ Examples showing the project usage will be illustrated here.
 	|–– Compute Angle
 	|–– GPIO
 	|–– Main Program
-	|–– Utils
+	|–– utils
 	|  |–– LOGOS
 	|  |–– compute angle sd
 	|  |–– concept
