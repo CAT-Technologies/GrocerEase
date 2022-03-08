@@ -52,19 +52,18 @@ Examples showing the project usage will be illustrated here.
 
 ## [Directory Tree](#GrocerEase)
 
-    GrocerEase
-    |–– Compute_Angle
-    |–– GPIO
-    |–– main program
-    |–– utils
-    |  |–– Compute angle flowchart
-    |  |–– concept
-    |  |–– GPIO flowchart
-    |  |–– LOGOS
-    |  |–– main program flowchart
-    |  |–– writeMotor flowchart
-    |  |  |–– code
-    |–– writeMotor
+	GrocerEase
+	|–– Compute Angle
+	|–– GPIO
+	|–– Main Program
+	|–– Utils
+	|  |–– LOGOS
+	|  |–– compute angle sd
+	|  |–– concept
+	|  |–– gpio sd
+	|  |–– main program sd
+	|  |–– write motor sd
+	|–– Write Motor
 
 ## [Contribution Guidelines](#GrocerEase)
 
