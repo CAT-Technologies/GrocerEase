@@ -17,6 +17,7 @@
 * [Project Roadmap](#project-roadmap)
 * [Usage Examples](#usage-examples)
 * [Changelog](#changelog)
+* [Directory Tree](#directory-tree)
 * [Contribution Guidelines](#contribution-guidelines)
 * [Credits](#credits)
 
@@ -48,6 +49,22 @@ Examples showing the project usage will be illustrated here.
 | Compute Angle Flowchart | Adwait Naik  |    #34      |   Feb 27    |
 | Motor Writer Flowchart  | Adwait Naik  |    #38      |   Feb 27    |
 | Main program Flowchart  | Adwait Naik  |    #43      |   Feb 28    |
+
+## [Directory Tree](#GrocerEase)
+
+    GrocerEase
+    |–– Compute_Angle
+    |–– GPIO
+    |–– main program
+    |–– utils
+    |  |–– Compute angle flowchart
+    |  |–– concept
+    |  |–– GPIO flowchart
+    |  |–– LOGOS
+    |  |–– main program flowchart
+    |  |–– writeMotor flowchart
+    |  |  |–– code
+    |–– writeMotor
 
 ## [Contribution Guidelines](#GrocerEase)
 
