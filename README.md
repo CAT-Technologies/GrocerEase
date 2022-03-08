@@ -65,6 +65,17 @@ Examples showing the project usage will be illustrated here.
 	|  |–– write motor sd
 	|–– Write Motor
 
+## [Social Media and Outreach](#GrocerEase)
+
+Follow us on social media platforms to keep up to date with our product updates and future plans:
+
+* [Twitter] (https://twitter.com/TechnologiesCat)
+* [Instagram] (https://www.instagram.com/cattechnologiesltd/)
+* [Linkedin] (https://www.linkedin.com/company/cat-technologies8-ltd/)
+* [Youtube] (https://www.youtube.com/channel/UCRmPlp3qE8imQI-GOUK1ZsA)
+
+Email us: cattechnologiesltd8@gmail.com
+
 ## [Contribution Guidelines](#GrocerEase)
 
 Thank you for your interest in our project. We strongly encourage reading the contribution guidelines before you be begin. The contribution guidelines for the repository can be found [here](https://github.com/RTEP-Project-Team/GrocerEase/blob/devel/Contribution_Guidelines.md).
