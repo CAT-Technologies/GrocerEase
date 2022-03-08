@@ -69,10 +69,10 @@ Examples showing the project usage will be illustrated here.
 
 Follow us on social media platforms to keep up to date with our product updates and future plans:
 
-* [Twitter] (https://twitter.com/TechnologiesCat)
-* [Instagram] (https://www.instagram.com/cattechnologiesltd/)
-* [Linkedin] (https://www.linkedin.com/company/cat-technologies8-ltd/)
-* [Youtube] (https://www.youtube.com/channel/UCRmPlp3qE8imQI-GOUK1ZsA)
+* [Twitter](https://twitter.com/TechnologiesCat)
+* [Instagram](https://www.instagram.com/cattechnologiesltd/)
+* [Linkedin](https://www.linkedin.com/company/cat-technologies8-ltd/)
+* [Youtube](https://www.youtube.com/channel/UCRmPlp3qE8imQI-GOUK1ZsA)
 
 Email us: cattechnologiesltd8@gmail.com
 
