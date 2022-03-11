@@ -59,7 +59,7 @@ int main() {
 
       while (rotate == 1) {
         rotation = angleCorrection(angle_diff); //linked to motor PWM output
-        angle_old = calculateAngle(angle_old); //Rotation to change in angle (needs to be tuned)
+        angle_old = estimateRobotAngle(angle_old); //Rotation to change in angle (needs to be tuned)
 
         if (angle_diff == 0) {
           rotate = 0; //stops angle correction                                
