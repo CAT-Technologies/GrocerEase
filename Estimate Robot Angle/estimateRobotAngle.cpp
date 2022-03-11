@@ -17,18 +17,19 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.
  */
-#include <iostream>
 
+#include <iostream>
 #include <cmath>
 
-float estimateRobotAngle(float angle_old, int rotation_left, int rotation_right) {
+float estimateRobotAngle(float angle_old, int rotation_left, int rotation_right, long int timeStep) {
   /* Input:
    * angle_old	  : initial heading angle of robot
    * rotation_left  : change in analog output to be written to left motor
    * rotation_right : change in analog output to be written to right motor
+   * timeStep	  : time since previous loop (unit: nanosecond)
    *
    * Variable:
-   * rocAngle	  : rate of change of angle (!!)_VARIABLE TO BE TUNED_(!!)
+   * rocAngle	  : rate of change of angle ((!!)_VARIABLE TO BE TUNED_(!!)
    *
    * Output:
    * angle_new	  : updated angle of robot
