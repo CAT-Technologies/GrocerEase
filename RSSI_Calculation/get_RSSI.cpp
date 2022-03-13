@@ -11,6 +11,9 @@
 static GDBusConnection *dbus_conn = NULL;
 static GMainLoop *main_loop;
 
+//RUN FILE command - include glib - gcc `pkg-config --cflags glib-2.0` rssi.cpp `pkg-config --libs glib-2.0`
+//Mostly code would be revised as due to lack of compatability issues
+
 struct handler_data
  {	
   const char *bt_address;
