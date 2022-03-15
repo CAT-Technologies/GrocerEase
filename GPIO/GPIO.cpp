@@ -52,7 +52,7 @@ void rw_Backward() {
 
 int main() {
   int left_IR = 7;
-  int right_IR = 15;
+  int right_IR = 16;
 
   wiringPiSetup();
 
@@ -67,7 +67,7 @@ int main() {
   pinMode(26, PWM_OUTPUT);
 
   pinMode(7, INPUT);
-  pinMode(15, INPUT);
+  pinMode(16, INPUT);
 
   while (1) {
     int out1 = digitalRead(right_IR);
