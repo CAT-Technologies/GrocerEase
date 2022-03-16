@@ -12,6 +12,8 @@ static GDBusConnection *dbus_conn = NULL;
 static GMainLoop *main_loop;
 
 //RUN FILE command - include glib - gcc `pkg-config --cflags glib-2.0` rssi.cpp `pkg-config --libs glib-2.0`
+//Updated error in line 113 - err1/png, cant convert int to enum flag
+//Updated fix for same^ - error image attached - err2.png - how to proceed?
 //Mostly code would be revised as due to lack of compatability issues
 
 struct handler_data
