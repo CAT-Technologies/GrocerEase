@@ -1,0 +1,12 @@
+# Set update schedule for GitHub Actions
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "github-actions"
+    # Look for relevant files in the `root` directory
+    directory: "/"
+    # Check the registry for updates every day (weekdays)
+    schedule:
+      interval: "daily"
+    # Disable all pull requests for "Enter Dependency Name" dependencies
+    # open-pull-requests-limit: 0
