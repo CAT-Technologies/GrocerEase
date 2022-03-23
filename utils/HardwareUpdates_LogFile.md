@@ -8,8 +8,14 @@
 	23/01/22			Initial estimatation of hardware procurement 	     	 		              Jia Wei Tan      							        Components_Sourcing&Costing.xlsx/Prepitch_CostingEstimate
 
 	28/01/22			Research for intital hardware shopping 	     	      				      Jia Wei Tan        		 				         Components_Sourcing&Costing.xlsx/EstimatedSourcing_Costing
-		
-		
+	
+	
+	02/02/22			Research to get remote Raspi access and initial testing			              Jia Wei Tan
+															      Adwait Naik
+					
+	05/02/22			Finalise remote raspi access and get it working					      Jia Wei Tan
+															      Sarthak Ahuja
+												
 	8/02/22			        Lab visit for basic hardware procurement and updating   		              Jia Wei Tan	
 
 					component sourcing accordingly				  			      Adwait Naik
