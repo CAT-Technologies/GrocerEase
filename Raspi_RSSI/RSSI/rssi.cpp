@@ -24,7 +24,8 @@ class Adapter {
     struct sockaddr_l2 sockAddr;
     struct l2cap_conninfo l2capConnInfo;
     socklen_t l2capConnInfoLen;
-
+    const bdaddr_t tmp = {{0,0,0,0,0,0}};
+    const bdaddr_t *addr = &tmp;
 
     void init();
 
@@ -67,7 +68,7 @@ void Adapter::init(){
     // bind
     memset(&sockAddr, 0, sizeof(sockAddr));
     sockAddr.l2_family = AF_BLUETOOTH;
-    bacpy(&sockAddr.l2_bdaddr, BDADDR_ANY);
+    bacpy(&sockAddr.l2_bdaddr, addr);
     sockAddr.l2_cid = htobs(ATT_CID);
 
     result = bind(l2capSock, (struct sockaddr*) &sockAddr, sizeof(sockAddr));
