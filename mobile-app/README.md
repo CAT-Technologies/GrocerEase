@@ -1,24 +1,18 @@
-# Punch Through Android BLE Starter App
+# Bluetooth RSSI signal strength scanner android app
 
-[![CircleCI build status](https://circleci.com/gh/PunchThrough/ble-starter-android/tree/master.svg?style=svg)](https://circleci.com/gh/PunchThrough/ble-starter-android/tree/master)
+This is a basic Android app project built on top of exisiting reference blog [Punch Through](https://punchthrough.com)'s "Ultimate Guide to Android BLE Development" blog post for beginners, with examples of how to perform basic Android BLE operations like the following:
 
-Companion Android app project for [Punch Through](https://punchthrough.com)'s "Ultimate Guide to Android BLE Development" blog post for beginners, with examples of how to perform basic BLE operations and some Android BLE tips and tricks on the following:
-
-- Scanning for nearby BLE devices
-- Connecting to BLE devices
+- Scanning for nearby BLE/bluetooth devices
+- Connecting to bluetooth devices
 - Discovering services and characteristics
-- Requesting an ATT MTU update
 - Reading and writing data on characteristics and descriptors
-- Enabling and disabling notifications and indications on characteristics
-- Bonding with a BLE device
-- Implementing your own BLE operations serial queuing mechanism
 
 ## Setup
 
 1. Clone the project to your directory of choice.
 
 ```
-git clone https://github.com/PunchThrough/ble-starter-android.git
+git clone https://github.com/CAT-Technologies/GrocerEase/tree/mobile-app-with-ble/mobile-app
 ```
 
 2. Launch Android Studio and select "Open an existing Android Studio project".
@@ -33,11 +27,11 @@ This project targets Android 10 and has a min SDK requirement of 21 (Android 5.0
 
 ### Reporting bugs
 
-Please [open an issue](https://github.com/PunchThrough/ble-starter-android/issues/new) to report a bug if the app isn't behaving as expected.
+Please [open an issue](https://github.com/CAT-Technologies/GrocerEase/issues) to report a bug if the app isn't behaving as expected.
 
 ### Opening a Pull Request
 
-Please fork the repository and create a feature branch before opening a Pull Request against the `master` branch.
+Please fork the repository and create a feature branch before opening a Pull Request against the `devel` branch.
 
 ### Linting and code style
 
