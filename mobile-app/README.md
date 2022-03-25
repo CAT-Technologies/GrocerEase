@@ -21,7 +21,7 @@ git clone https://github.com/CAT-Technologies/GrocerEase/tree/mobile-app-with-bl
 
 ## Requirements
 
-This project targets Android 10 and has a min SDK requirement of 21 (Android 5.0), in line with our recommendation in [4 Tips to Make Android BLE Actually Work](https://punchthrough.com/android-ble-development-tips/).
+This project targets Android 10 and has a min SDK requirement of 21 (Android 5.0)
 
 ## Contributing
 
