@@ -25,8 +25,25 @@ if (ENABLE_TESTING OR ENABLE_COVERAGE)
     include(CTest)
 endif()
 
+add_subdirectory(external)
+
 add_subdirectory(src)
-#add_subdirectory(tests)
+
+include_directories(include)
+
+add_executable(GrocerEase
+  src/GPIO.cc
+  include/GPIO.hh)
+
+# Include WiringPi directories
+#find_package(WiringPi REQUIRED)
+
+# Include headers
+include_directories(${WIRINGPI_INCLUDE_DIRS})
+
+# Link against libraries
+find_library(WIRINGPI_LIBRARIES NAMES wiringPi)
+target_link_libraries(GrocerEase ${WIRINGPI_LIBRARIES})
 
 install(TARGETS ${EXECUTABLE_NAME}
         EXPORT ${LIBRARY_NAME}
