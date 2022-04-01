@@ -18,62 +18,27 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.
  */
 
-#include <memory>
+void writeMotor(int L, int R) {
+  /* L: Left Motor analog output
+   * R: Right Motor analog output
+   * range: -1024 to 1024
+   */
 
-#include <GPIO.hh>
+  if (L >= 0) {
+    lw_Forward();
+    pwmWrite(23, L);
+  } else {
+    lw_Backward();
+    pwmWrite(23, -L);
+  }
 
-extern "C" {
-  #include <wiringPi.h>
-}
+  if (R >= 0) {
+    rw_Forward();
+    pwmWrite(26, R);
+  } else {
+    rw_Backward();
+    pwmWrite(26, -R);
+  }
 
-using namespace std;
-
-void GPIO::lw_Forward()
-{
-   digitalWrite(21, 1);
-   digitalWrite(22, 0); 
-}
-
-void GPIO::lw_Backward()
-{
-   digitalWrite(21, 0);
-   digitalWrite(22, 1); 
-}
-
-void GPIO::rw_Forward()
-{
-   digitalWrite(4, 1);
-   digitalWrite(5, 0);   
-}
-
-void GPIO::rw_Backward()
-{
-   digitalWrite(4, 0);
-   digitalWrite(5, 1);    
-}
-
-int main()
-{
-   int left_IR = 7;
-   int right_IR = 16;
-   
-   wiringPiSetup();
-
-   pinMode(21, OUTPUT);
-   pinMode(22, OUTPUT);
-   pinMode(23, PWM_OUTPUT);
-
-   pinMode(4, OUTPUT);
-   pinMode(5, OUTPUT);
-   pinMode(26, PWM_OUTPUT);
-
-   pinMode(7, INPUT);
-   pinMode(16, INPUT);
-
-   while (1) 
-   {
-      int out1 = digitalRead(right_IR);
-      int out2 = digitalRead(left_IR);
-      cout << out1 << out2 << "\n";
-   }
+  return;
 }
