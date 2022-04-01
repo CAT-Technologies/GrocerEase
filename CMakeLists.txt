@@ -3,14 +3,23 @@
 
 cmake_minimum_required(VERSION 3.10.2)
 
-set(PROJECT "GrocerEase")
+set(PROJECT "GrocerEase2")
 project("${PROJECT}_Project" VERSION 1.2.3 LANGUAGES CXX)
 
 # Global CMake variables are set here
 set(CMAKE_CXX_STANDARD              17)
 set(CMAKE_CXX_STANDARD_REQUIRED     ON)
-set(CMAKE_CXX_EXTENSIONS            OFF)
+set(CMAKE_CXX_EXTENSIONS            ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS   ON)
+
+set(CMAKE_THREAD_LIBS_INIT "-lpthread")
+set(CMAKE_HAVE_THREADS_LIBRARY 1)
+set(CMAKE_USE_WIN32_THREADS_INIT 0)
+set(CMAKE_USE_PTHREADS_INIT 1)
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+
+#set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lrt")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lrt")
 
 # Options
 option(ENABLE_WARNINGS      "Enable to add warnings to a target."   ON)
@@ -31,7 +40,7 @@ add_subdirectory(src)
 
 include_directories(include)
 
-add_executable(GrocerEase
+add_executable(GrocerEase2
   src/GPIO.cc
   include/GPIO.hh)
 
@@ -43,7 +52,20 @@ include_directories(${WIRINGPI_INCLUDE_DIRS})
 
 # Link against libraries
 find_library(WIRINGPI_LIBRARIES NAMES wiringPi)
-target_link_libraries(GrocerEase ${WIRINGPI_LIBRARIES})
+target_link_libraries(GrocerEase2 ${WIRINGPI_LIBRARIES})
+
+# Link against libraries
+find_package(Threads)
+target_link_libraries(GrocerEase2 Threads::Threads)
+
+
+# Link against libraries
+Target_link_libraries(GrocerEase2 ${Boost_LIBRARIES} rt)
+
+
+target_link_libraries(GrocerEase2 crypt)
+
+
 
 install(TARGETS ${EXECUTABLE_NAME}
         EXPORT ${LIBRARY_NAME}
