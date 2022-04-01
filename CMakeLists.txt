@@ -3,7 +3,7 @@
 
 cmake_minimum_required(VERSION 3.10.2)
 
-set(PROJECT "GrocerEase2")
+set(PROJECT "GrocerEase")
 project("${PROJECT}_Project" VERSION 1.2.3 LANGUAGES CXX)
 
 # Global CMake variables are set here
@@ -40,7 +40,7 @@ add_subdirectory(src)
 
 include_directories(include)
 
-add_executable(GrocerEase2
+add_executable(GrocerEase
   src/GPIO.cc
   include/GPIO.hh)
 
@@ -52,19 +52,18 @@ include_directories(${WIRINGPI_INCLUDE_DIRS})
 
 # Link against libraries
 find_library(WIRINGPI_LIBRARIES NAMES wiringPi)
-target_link_libraries(GrocerEase2 ${WIRINGPI_LIBRARIES})
+target_link_libraries(GrocerEase ${WIRINGPI_LIBRARIES})
 
 # Link against libraries
 find_package(Threads)
-target_link_libraries(GrocerEase2 Threads::Threads)
+target_link_libraries(GrocerEase Threads::Threads)
 
 
 # Link against libraries
-Target_link_libraries(GrocerEase2 ${Boost_LIBRARIES} rt)
+Target_link_libraries(GrocerEase ${Boost_LIBRARIES} rt)
 
 
-target_link_libraries(GrocerEase2 crypt)
-
+target_link_libraries(GrocerEase crypt)
 
 
 install(TARGETS ${EXECUTABLE_NAME}
