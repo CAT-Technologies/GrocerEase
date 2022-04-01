@@ -61,8 +61,8 @@ jobs:
     - run: |
        sudo apt-get install libbluetooth-dev
        sudo apt-get install wiringpi
-       cd /${{github.workspace}} && mkdir build
-       cd /${{github.workspace}}/build
+       cd /GrocerEase && mkdir build
+       cd build
        cmake ..
        make
        
