@@ -61,7 +61,7 @@ jobs:
     - run: |
        sudo apt-get install libbluetooth-dev
        cd /${{github.workspace}} && mkdir build
-       cd build
+       cd /${{github.workspace}}/build
        cmake ..
        make
        
