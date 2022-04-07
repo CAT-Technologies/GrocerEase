@@ -15,10 +15,12 @@ struct sockaddr_l2 {
 };
 
 #define L2CAP_CONNINFO 0x02
+
 struct l2cap_conninfo {
   uint16_t hci_handle;
   uint8_t dev_class[3];
 };
-#define ATT_CID 4
 
+#define ATT_CID 4
+#define BDADDR_ANY_L = const uint8_t &(bdaddr_t) {{0, 0, 0, 0, 0, 0}};
 #endif /* RSS_H_ */
