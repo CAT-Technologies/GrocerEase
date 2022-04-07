@@ -4,7 +4,7 @@ jobs:
   build_and_run:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: install bluetooth
         run: sudo apt-get install libbluetooth-dev
       - name: wiringpi
