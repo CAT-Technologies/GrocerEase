@@ -1,4 +1,5 @@
-#include <rssi.h>
+#include "rssi.h"
+
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
@@ -9,6 +10,8 @@
 
 #include <time.h>
 #include <unistd.h>
+
+
 
 class Adapter {
     const char* bt_addr;
@@ -21,6 +24,7 @@ class Adapter {
     struct sockaddr_l2 sockAddr;
     struct l2cap_conninfo l2capConnInfo;
     socklen_t l2capConnInfoLen;
+
 
     void init();
 
@@ -46,9 +50,9 @@ Adapter::Adapter(const char* bt_addr) {
 
 void Adapter::init(){
     int result;
-    const bdaddr_t *bdaddr;
 
     printf("INIT with: %s via hci%d\n", bt_addr, hci_deviceid);
+
 
     hciSocket = hci_open_dev(hci_deviceid);
     printf("HCISOCKET: %d\n", hciSocket);
@@ -59,17 +63,20 @@ void Adapter::init(){
     printf("L2CAPSOCK: %d\n", l2capSock);
     printf("l2capSock %s\n", (l2capSock == -1) ? strerror(errno) : "success");
 
+
     // bind
     memset(&sockAddr, 0, sizeof(sockAddr));
     sockAddr.l2_family = AF_BLUETOOTH;
-    bacpy(&sockAddr.l2_bdaddr, bdaddr);
+    bacpy(&sockAddr.l2_bdaddr, BDADDR_ANY);
     sockAddr.l2_cid = htobs(ATT_CID);
+
     result = bind(l2capSock, (struct sockaddr*) &sockAddr, sizeof(sockAddr));
     printf("BIND: %d\n", result);
     printf("bind %s\n", (result == -1) ? strerror(errno) : "success");
 
     // connect
     memset(&sockAddr, 0, sizeof(sockAddr));
+
     sockAddr.l2_family = AF_BLUETOOTH;
     str2ba(bt_addr, &sockAddr.l2_bdaddr);
     sockAddr.l2_bdaddr_type = BDADDR_LE_RANDOM; // BDADDR_LE_PUBLIC/RANDOM
@@ -109,6 +116,7 @@ void sleep(int ms){
     clock_t end_time = clock() + ms * CLOCKS_PER_SEC/1000;
     while (clock() < end_time) {}
 }
+
 
 int main(int argc, const char* argv[]) {
 

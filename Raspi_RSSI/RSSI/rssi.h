@@ -12,7 +12,7 @@ struct sockaddr_l2 {
   bdaddr_t l2_bdaddr;
   unsigned short l2_cid;
   uint8_t l2_bdaddr_type;
-};
+}; 
 
 #define L2CAP_CONNINFO 0x02
 struct l2cap_conninfo {
