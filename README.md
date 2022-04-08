@@ -49,6 +49,8 @@ Examples showing the project usage will be illustrated here.
 | Compute Angle Flowchart | Adwait Naik  |    #34      |   Feb 27    |
 | Motor Writer Flowchart  | Adwait Naik  |    #38      |   Feb 27    |
 | Main program Flowchart  | Adwait Naik  |    #43      |   Feb 28    |
+| Estimate Robot Angle    | Jia Wei Tan  |             |   March 17  |
+| Hardware Directory      | Multiple     |             |   March 20  |
 
 ## [Directory Tree](#GrocerEase)
 

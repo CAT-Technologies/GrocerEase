@@ -1,0 +1,53 @@
+/*GPIO */
+
+#include <iostream>	
+#include <wiringPi.h>
+
+using namespace std;	
+
+void lw_Forward(){
+	digitalWrite(21, 1);
+	digitalWrite(22, 0);
+}
+
+void rw_Forward(){
+	digitalWrite(4, 1);
+	digitalWrite(5, 0);
+}
+
+void lw_Backward(){
+	digitalWrite(21, 0);
+	digitalWrite(22, 1);
+}
+
+void rw_Backward(){
+	digitalWrite(4, 0);
+	digitalWrite(5, 1);
+}
+
+
+int main(){
+	int left_IR = 7;
+	int right_IR = 15;
+	
+	wiringPiSetup();
+
+	/*left motor */
+	pinMode(21, OUTPUT); 
+	pinMode(22, OUTPUT);
+	pinMode (23, PWM_OUTPUT);
+
+	/*right motor */
+	pinMode(4, OUTPUT);
+	pinMode(5, OUTPUT);
+	pinMode (26, PWM_OUTPUT);
+
+	pinMode(7, INPUT);
+	pinMode(15, INPUT);
+	
+	while(1){
+	int out1 = digitalRead(right_IR);
+	int out2 = digitalRead(left_IR);
+	cout << out1 << out2 << "\n";
+  }
+}
