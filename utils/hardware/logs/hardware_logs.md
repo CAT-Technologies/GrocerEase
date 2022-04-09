@@ -47,3 +47,7 @@
 
 
 	03/03/22   		    Assembly with all sensors								      Jia Wei Tan	
+	
+	27/03/22                    Initial mobile app testing with raspi						      Sarthak Ahuja
+	
+	07/04/22		    Further mobile app raspi communication testing					      Sarthak Ahuja
