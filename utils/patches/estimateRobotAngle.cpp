@@ -22,34 +22,30 @@
 #include <cmath>
 
 float estimateRobotAngle(float angle_old_robot, int rotation_left, int rotation_right, float timeStep) {
-  	/* Input:
-   	 * angle_old_robot: initial heading angle of robot
-  	 * rotation_left  : change in analog output to be written to left motor
-  	 * rotation_right : change in analog output to be written to right motor
-  	 * timeStep	  	: time since previous loop (unit: milisecond)
-  	 *
-  	 * Variable:
-  	 * rocAngle	  	: rate of change of angle (rot/sec)
-  	 *
-  	 * Output:
- 	 * angle_new	: updated angle of robot
- 	 */
+  /* Input:
+   * angle_old_robot    : initial heading angle of robot
+   * rotation_left      : change in analog output written to left motor
+   * rotation_right	   : change in analog output written to right motor
+   * timeStep		      : time since previous loop (unit: millisecond)
+   *
+   * Variable:
+   * rocAngle	 	      : Revolutions per second ((!!)_VARIABLE TO BE TUNED_(!!)
+   *
+   * Output:
+   * angle_new_robot 	: updated angle of robot
+   */
    
- 	float rocAngle = 0.685557*360;
- 	float timeStep_s = timeStep*pow(10,-3); 
-  	float angle_new_robot = angle_old_robot + rocAngle*(rotation_left - rotation_right)/(510)*timeStep_s;
-
-  	angle_new = angle_old + rocAngle*(rotation_left - rotation_right)/2048*timeStep;
-
-	if (angle_new_robot > 180){
-		angle_new_robot = angle_new_robot - 360;
-	}
+   float rocAngle = 0.685557*360;
+   float timeStep_s = timeStep*pow(10,-3); 
+   float angle_new_robot = angle_old_robot + rocAngle*(rotation_left - rotation_right)/(510)*timeStep_s;
+   
+   
+   if (angle_new_robot > 180){
+	   angle_new_robot = angle_new_robot-360;
+   }
 
 	else if (angle_new_robot < -180){
-		angle_new_robot = angle_new_robot + 360;
-   	}
-   
-
-  	return angle_new;
+	   angle_new_robot = angle_new_robot+360;
+   }
+   return angle_new_robot;
 }
-
