@@ -27,7 +27,7 @@ Our approach is based on developing an intelligent, fully autonomous trolley bas
 
 ## [Conceptualisation](#GrocerEase)
 
-![Temporary Block Diagram](https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/block_diagram.jpeg)
+![Temporary Block Diagram](https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/concept%20illustration/block_diagram.jpeg)
 
 ## [Project Roadmap](#GrocerEase)
 
@@ -54,18 +54,40 @@ Examples showing the project usage will be illustrated here.
 
 ## [Directory Tree](#GrocerEase)
 
-	GrocerEase
-	|–– Compute Angle
-	|–– GPIO
-	|–– Main Program
+	|–– cmake
+	|–– external
+	| |–– wiringPi
+	| | |–– debian
+	| | |–– debian-template
+	| | | |–– wiringPi
+	| | | | |–– DEBIAN
+	| | |–– devLib
+	| | |–– examples
+	| | | |–– Gertboard
+	| | | |–– PiFace
+	| | | |–– PiGlow
+	| | | |–– q2w
+	| | | |–– scrollPhat
+	| | |–– gpio
+	| | |–– pins
+	| | |–– wiringPi
+	| | |–– wiringPiD
+	|–– include
+	|–– src
 	|–– utils
-	|  |–– LOGOS
-	|  |–– compute angle sd
-	|  |–– concept
-	|  |–– gpio sd
-	|  |–– main program sd
-	|  |–– write motor sd
-	|–– Write Motor
+	| |–– GPIO deps
+	| |–– concept illustration
+	| |–– flow diagrams
+	| | |–– compute angle
+	| | |–– gpio
+	| | |–– main program
+	| | |–– write motor
+	| |–– hardware
+	| | |–– logs
+	| |–– patches
+	| |–– social media
+	| | |–– logos
+
 
 ## [Social Media and Outreach](#GrocerEase)
 
