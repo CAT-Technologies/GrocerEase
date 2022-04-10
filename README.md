@@ -2,7 +2,7 @@
   <img src="https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/social%20media/logos/logo.jpeg"/>
 </p>
 
-## GrocerEase
+## GrocerEase 🛒
 
 [![License](https://img.shields.io/badge/license-LGPL_2.1-blue)](LICENSE)
 ![Stars](https://img.shields.io/github/stars/RTEP-Project-Team/GrocerEase.svg?style=flat&label=Star&maxAge=86400)
