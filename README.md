@@ -54,6 +54,8 @@ Examples showing the project usage will be illustrated here.
 
 ## [Directory Tree](#GrocerEase)
 
+A detailed directory tree can be found [here](https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/directory-tree.md)
+
 	|–– cmake
 	|–– external
 	| |–– wiringPi
