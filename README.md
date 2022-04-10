@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/logo.jpeg"/>
+  <img src="https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/social%20media/logos/logo.jpeg"/>
 </p>
 
-## GrocerEase
+## GrocerEase 🛒
 
 [![License](https://img.shields.io/badge/license-LGPL_2.1-blue)](LICENSE)
 ![Stars](https://img.shields.io/github/stars/RTEP-Project-Team/GrocerEase.svg?style=flat&label=Star&maxAge=86400)
@@ -23,11 +23,11 @@
 
 ## [Problem Statement](#GrocerEase)
 
-Our approach is based on developing an intelligent, fully autonomous trolley based on `Raspberry-pi` that is capable of following the consumer in shopping complexes or grocery stores. This incorporates state-of-the-art techniques like object-detection, deep learning, etc.
+Our approach is based on developing an intelligent, fully autonomous trolley based on `Raspberry-pi` that is capable of following the consumer in shopping complexes or grocery stores. This incorporates the concept of trilateration to optimise indoor navigation, making it faster than using techniques like object-detection/deep learning.
 
 ## [Conceptualisation](#GrocerEase)
 
-![Temporary Block Diagram](https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/block_diagram.jpeg)
+![Temporary Block Diagram](https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/concept%20illustration/block_diagram.jpeg)
 
 ## [Project Roadmap](#GrocerEase)
 
@@ -54,18 +54,42 @@ Examples showing the project usage will be illustrated here.
 
 ## [Directory Tree](#GrocerEase)
 
-	GrocerEase
-	|–– Compute Angle
-	|–– GPIO
-	|–– Main Program
+A detailed directory tree can be found [here](https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/directory-tree.md)
+
+	|–– cmake
+	|–– external
+	| |–– wiringPi
+	| | |–– debian
+	| | |–– debian-template
+	| | | |–– wiringPi
+	| | | | |–– DEBIAN
+	| | |–– devLib
+	| | |–– examples
+	| | | |–– Gertboard
+	| | | |–– PiFace
+	| | | |–– PiGlow
+	| | | |–– q2w
+	| | | |–– scrollPhat
+	| | |–– gpio
+	| | |–– pins
+	| | |–– wiringPi
+	| | |–– wiringPiD
+	|–– include
+	|–– src
 	|–– utils
-	|  |–– LOGOS
-	|  |–– compute angle sd
-	|  |–– concept
-	|  |–– gpio sd
-	|  |–– main program sd
-	|  |–– write motor sd
-	|–– Write Motor
+	| |–– GPIO deps
+	| |–– concept illustration
+	| |–– flow diagrams
+	| | |–– compute angle
+	| | |–– gpio
+	| | |–– main program
+	| | |–– write motor
+	| |–– hardware
+	| | |–– logs
+	| |–– patches
+	| |–– social media
+	| | |–– logos
+
 
 ## [Social Media and Outreach](#GrocerEase)
 
