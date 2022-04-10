@@ -19,8 +19,8 @@
  */
 
 #include <iostream>
-
 #include <cstdlib>
+#include <time.h>
 
 using namespace std;
 
@@ -42,8 +42,13 @@ int main() {
     int rotate = 0;
     /*used as a flag (corrects angle to 0 if already rotating
      *waits for angle to accumulate if not*/
+    long int timeOld;
+    long int timeNew;
+    long int timeStep;
 
     while (1) {
+	clock_gettime(CLOCK_REALTIME, &gettime_now);
+	timeNew = gettime_now.tv_nsec;		
       a = receive_a(); //sent via pipes from other threads
       b = receive_b();
       c = receive_c();
@@ -59,7 +64,7 @@ int main() {
 
       while (rotate == 1) {
         rotation = angleCorrection(angle_diff); //linked to motor PWM output
-        angle_old = estimateRobotAngle(angle_old); //Rotation to change in angle (needs to be tuned)
+        angle_old = estimateRobotAngle(angle_old, rotation[0], rotation[1], timeStep);
 
         if (angle_diff == 0) {
           rotate = 0; //stops angle correction                                
@@ -67,7 +72,7 @@ int main() {
       }
 
       /*
-       *rotation_L: rotation{0]
+       *rotation_L: rotation[0]
        *rotation_R: rotation[1]
        */
 
@@ -80,4 +85,5 @@ int main() {
         motorRight = rotation[1];
         writeMotor(motorLeft, motorRight);
       }
+	timeOld = timeNew;
     }
