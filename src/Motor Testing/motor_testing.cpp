@@ -92,15 +92,15 @@ int main() {
   gpioSetMode(24, PI_INPUT);
   gpioSetMode(12, PI_ALT0);
 
-  gpioSetMode(4, PI_INPUT);
-  gpioSetMode(15, PI_INPUT);
+  gpioSetMode(left_IR, PI_INPUT);
+  gpioSetMode(right_IR, PI_INPUT);
   
   int run = 1;
   int L = 0;
   int R = 0;
   while (run == 1) {
    // writeMotor(128, 128);
-   // usleep(3 * microsecond);
+   // sleep(3 * microsecond);  //replaced by usleeep - to be tested
     writeMotor(L, R);
     usleep(1 * microsecond);
     L = L+10;
