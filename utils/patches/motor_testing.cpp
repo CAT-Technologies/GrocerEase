@@ -100,9 +100,9 @@ int main() {
   int R = 0;
   while (run == 1) {
    // writeMotor(128, 128);
-   // sleep(3 * microsecond);  //replaced by usleep - to be tested
+   // sleep(3 * microsecond); 
     writeMotor(L, R);
-    sleep(1 * microsecond);   //replaced by usleep - to be tested
+    sleep(1 * microsecond);   //replaced by usleep by sleep - to be tested
     L = L+10;
     R = R+10;
     if(L>250){
