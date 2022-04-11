@@ -3,7 +3,7 @@ project(RSSI)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(RSSI 
+add_executable(RSSI_gist_addy
   src/rssi.cpp
 )
 
