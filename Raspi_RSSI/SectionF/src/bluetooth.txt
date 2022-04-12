@@ -916,4 +916,422 @@ Waiting to connect to bluetoothd...[22P[0;94m[bluetooth][0m# [KAgent regis
 [0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 66:33:B7:24:C9:9D RSSI: -87
 [0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -82
 [0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 66:33:B7:24:C9:9D RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;92mNEW[0m] Device 6B:54:42:45:B4:88 6B-54-42-45-B4-88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device DD:3E:A3:87:AC:55 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 57:D1:EB:E8:71:F5 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -92
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -82
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 42:5C:CE:44:9A:60 RSSI: -100
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 42:5C:CE:44:9A:60 ManufacturerData Key: 0x004c
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 42:5C:CE:44:9A:60 ManufacturerData Value:
+[0;94m[bluetooth][0m# [K  0c 0e 00 f4 04 ce 87 4a e1 2a d2 67 2c 52 a0 1c  .......J.*.g,R..
+[0;94m[bluetooth][0m# [K  10 06 42 1d fd 16 fb 38                          ..B....8        
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -92
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 66:33:B7:24:C9:9D RSSI: -80
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device DD:3E:A3:87:AC:55 RSSI: -91
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device DD:3E:A3:87:AC:55 ManufacturerData Key: 0x004c
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device DD:3E:A3:87:AC:55 ManufacturerData Value:
+[0;94m[bluetooth][0m# [K  12 19 00 28 ea 97 63 1d 35 4d c0 6b 35 48 1c 34  ...(..c.5M.k5H.4
+[0;94m[bluetooth][0m# [K  d1 e2 1f d2 96 3c 5d bc c6 00 00                 .....<]....     
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 57:D1:EB:E8:71:F5 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -81
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device CC:D3:C1:6F:BB:84 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 51:2E:06:74:3E:6F RSSI: -99
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -91
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 51:76:65:8F:6B:49 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 ManufacturerData Key: 0x004c
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 ManufacturerData Value:
+[0;94m[bluetooth][0m# [K  10 06 73 1d ed a9 7a 78                          ..s...zx        
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 16:45:44:B5:E3:32 RSSI: -100
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 41:1D:89:39:38:C4 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device DD:3E:A3:87:AC:55 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -83
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 41:1D:89:39:38:C4 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -82
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 ManufacturerData Key: 0x004c
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 ManufacturerData Value:
+[0;94m[bluetooth][0m# [K  10 06 73 1d ed a9 7a 68                          ..s...zh        
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device EC:8F:36:1B:BD:38 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 ManufacturerData Key: 0x004c
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 ManufacturerData Value:
+[0;94m[bluetooth][0m# [K  13 07 02 ac f5 a7 40 a7 65                       ......@.e       
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 66:33:B7:24:C9:9D RSSI: -80
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -99
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device CC:D3:C1:6F:BB:84 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 51:76:65:8F:6B:49 RSSI: -99
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 30:21:45:11:81:80 RSSI: -71
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -92
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -91
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device EB:EA:5B:D3:B7:4E RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6D:3A:7B:E7:E7:ED RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 66:33:B7:24:C9:9D RSSI: -78
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -79
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device DA:44:7B:08:B8:3D RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6D:3A:7B:E7:E7:ED RSSI: -100
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -82
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 57:D1:EB:E8:71:F5 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device EB:EA:5B:D3:B7:4E RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 01:2A:4C:3B:0C:90 RSSI: -99
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 66:33:B7:24:C9:9D RSSI: -77
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 66:33:B7:24:C9:9D RSSI: -78
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 79:CC:E1:D7:01:03 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 79:CC:E1:D7:01:03 ManufacturerData Key: 0x004c
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 79:CC:E1:D7:01:03 ManufacturerData Value:
+[0;94m[bluetooth][0m# [K  0c 0e 00 f5 04 a4 72 90 cb 0f 2d d0 65 eb 47 91  ......r...-.e.G.
+[0;94m[bluetooth][0m# [K  10 06 42 1d fd 16 fb 38                          ..B....8        
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -84
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 ManufacturerData Key: 0x004c
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 ManufacturerData Value:
+[0;94m[bluetooth][0m# [K  13 01 00                                         ...             
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device DD:3E:A3:87:AC:55 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device DD:3E:A3:87:AC:55 ManufacturerData Key: 0x004c
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device DD:3E:A3:87:AC:55 ManufacturerData Value:
+[0;94m[bluetooth][0m# [K  12 02 00 00                                      ....            
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6F:75:00:F4:92:2C RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -86
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 57:D1:EB:E8:71:F5 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -78
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -78
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 66:33:B7:24:C9:9D RSSI: -80
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 30:21:45:11:81:80 RSSI: -70
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -92
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 66:33:B7:24:C9:9D RSSI: -81
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 79:CC:E1:D7:01:03 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device F9:3B:D7:B9:9A:3C RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 57:D1:EB:E8:71:F5 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -86
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 79:CC:E1:D7:01:03 RSSI: -100
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -92
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device CC:D3:C1:6F:BB:84 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 01:2A:4C:3B:0C:90 RSSI: -100
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 51:76:65:8F:6B:49 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 51:76:65:8F:6B:49 RSSI: -99
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -80
+[0;94m[bluetooth][0m# [K[[0;92mNEW[0m] Device 58:72:CB:57:0C:81 58-72-CB-57-0C-81
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -78
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device EC:8F:36:1B:BD:38 RSSI: -92
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 57:D1:EB:E8:71:F5 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -78
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 51:76:65:8F:6B:49 RSSI: -100
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D3:AF:73:06:B6:5B RSSI: -39
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -81
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D3:AF:73:06:B6:5B RSSI: -40
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 57:D1:EB:E8:71:F5 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 66:33:B7:24:C9:9D RSSI: -78
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D3:AF:73:06:B6:5B RSSI: -41
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 ManufacturerData Key: 0x004c
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 ManufacturerData Value:
+[0;94m[bluetooth][0m# [K  13 07 02 ac f5 a7 40 a7 65                       ......@.e       
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D3:AF:73:06:B6:5B RSSI: -42
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -91
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D3:AF:73:06:B6:5B RSSI: -41
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D3:AF:73:06:B6:5B RSSI: -40
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -92
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D3:AF:73:06:B6:5B RSSI: -40
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D3:AF:73:06:B6:5B RSSI: -38
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 42:5C:CE:44:9A:60 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 42:5C:CE:44:9A:60 ManufacturerData Key: 0x004c
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 42:5C:CE:44:9A:60 ManufacturerData Value:
+[0;94m[bluetooth][0m# [K  0c 0e 00 f5 04 a4 72 90 cb 0f 2d d0 65 eb 47 91  ......r...-.e.G.
+[0;94m[bluetooth][0m# [K  10 06 4e 1d fd 16 fb 78                          ..N....x        
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 58:72:CB:57:0C:81 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -99
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 58:72:CB:57:0C:81 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -99
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -79
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 42:5C:CE:44:9A:60 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 01:2A:4C:3B:0C:90 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 28:C1:0B:B5:6D:7B RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -78
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device CC:D3:C1:6F:BB:84 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 30:21:45:11:81:80 RSSI: -72
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 ManufacturerData Key: 0x004c
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 ManufacturerData Value:
+[0;94m[bluetooth][0m# [K  13 01 00                                         ...             
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 58:72:CB:57:0C:81 RSSI: -99
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -78
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device EC:8F:36:1B:BD:38 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6D:3A:7B:E7:E7:ED RSSI: -101
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -86
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 57:D1:EB:E8:71:F5 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -84
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device F9:3B:D7:B9:9A:3C RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 79:CC:E1:D7:01:03 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 79:CC:E1:D7:01:03 ManufacturerData Key: 0x004c
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 79:CC:E1:D7:01:03 ManufacturerData Value:
+[0;94m[bluetooth][0m# [K  0c 0e 00 f5 04 a4 72 90 cb 0f 2d d0 65 eb 47 91  ......r...-.e.G.
+[0;94m[bluetooth][0m# [K  10 06 4e 1d fd 16 fb 78                          ..N....x        
+[0;94m[bluetooth][0m# [K[[0;92mNEW[0m] Device E1:9A:55:46:DA:C5 E1-9A-55-46-DA-C5
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device C4:DF:E2:CE:D9:E0 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;92mNEW[0m] Device 79:DB:B3:FC:83:95 79-DB-B3-FC-83-95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -79
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 11:F7:6A:2C:20:76 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 58:72:CB:57:0C:81 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 41:1D:89:39:38:C4 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -92
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -78
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 58:72:CB:57:0C:81 RSSI: -86
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 58:72:CB:57:0C:81 RSSI: -86
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 66:33:B7:24:C9:9D RSSI: -75
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 58:72:CB:57:0C:81 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -80
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device DD:3E:A3:87:AC:55 RSSI: -85
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device CC:D3:C1:6F:BB:84 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 58:72:CB:57:0C:81 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 57:D1:EB:E8:71:F5 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 55:5C:CF:6C:CA:7B RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -92
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 30:21:45:11:81:80 RSSI: -73
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 55:5C:CF:6C:CA:7B RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 51:76:65:8F:6B:49 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -77
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -83
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 41:1D:89:39:38:C4 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 30:21:45:11:81:80 RSSI: -70
+[0;94m[bluetooth][0m# [K[[0;92mNEW[0m] Device EF:8A:B2:12:D0:4B EF-8A-B2-12-D0-4B
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 42:5C:CE:44:9A:60 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;92mNEW[0m] Device EC:02:C3:BB:61:68 EC-02-C3-BB-61-68
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;92mNEW[0m] Device E7:6B:E8:1A:FB:A8 E7-6B-E8-1A-FB-A8
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -79
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 42:5C:CE:44:9A:60 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device CC:D3:C1:6F:BB:84 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -83
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 42:5C:CE:44:9A:60 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 01:2A:4C:3B:0C:90 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device E7:6B:E8:1A:FB:A8 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 51:76:65:8F:6B:49 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 51:76:65:8F:6B:49 RSSI: -102
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 41:1D:89:39:38:C4 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device CC:D3:C1:6F:BB:84 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 41:1D:89:39:38:C4 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6F:75:00:F4:92:2C RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -86
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device EF:8A:B2:12:D0:4B RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6F:75:00:F4:92:2C RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6F:75:00:F4:92:2C RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -84
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device C4:DF:E2:CE:D9:E0 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 57:D1:EB:E8:71:F5 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 57:D1:EB:E8:71:F5 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -80
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -80
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 01:2A:4C:3B:0C:90 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6F:75:00:F4:92:2C RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 4F:83:93:12:11:E5 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 57:D1:EB:E8:71:F5 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 57:D1:EB:E8:71:F5 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device D8:16:35:15:53:57 RSSI: -76
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 63:C5:92:F0:51:77 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -93
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 30:21:45:11:81:80 RSSI: -73
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -86
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -80
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 79:CC:E1:D7:01:03 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 66:33:B7:24:C9:9D RSSI: -78
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -87
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 45:C9:F7:D6:A6:82 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 30:21:45:11:81:80 RSSI: -72
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device EF:8A:B2:12:D0:4B RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -86
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -90
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 51:2E:06:74:3E:6F RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -96
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 51:2E:06:74:3E:6F RSSI: -101
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 01:2A:4C:3B:0C:90 RSSI: -98
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -81
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6F:75:00:F4:92:2C RSSI: -99
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device CC:D3:C1:6F:BB:84 RSSI: -94
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -86
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 53:D1:7F:A5:A8:5D RSSI: -97
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -88
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 37:26:B5:68:7C:11 RSSI: -95
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 7E:FB:30:B8:97:C3 RSSI: -86
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -99
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device C4:DF:E2:CE:D9:E0 RSSI: -89
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 49:7F:29:F2:EC:D6 RSSI: -92
+[0;94m[bluetooth][0m# [K[[0;93mCHG[0m] Device 6B:54:42:45:B4:88 RSSI: -83
 [0;94m[bluetooth][0m# 
