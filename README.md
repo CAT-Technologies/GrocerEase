@@ -23,7 +23,7 @@
 
 ## [Problem Statement](#GrocerEase)
 
-Our approach is based on developing an intelligent, fully autonomous trolley based on `Raspberry-pi` that is capable of following the consumer in shopping complexes or grocery stores. This incorporates the concept of trilateration to optimise indoor navigation, making it faster than using techniques like object-detection/deep learning.
+Our approach is based on developing an intelligent, fully autonomous trolley based on `Raspberry-pi` that is capable of following the consumer in shopping complexes or grocery stores. This incorporates the concept of trilateration to optimise indoor navigation, making it faster/cheaper than GPS navigation or using techniques like object-detection/deep learning.
 
 ## [Conceptualisation](#GrocerEase)
 
