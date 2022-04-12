@@ -1,7 +1,7 @@
 # Sources
-set(LIBRARY_SOURCES "ComputeAngle.cc")
-set(LIBRARY_SOURCES "GPIO.cc")
-set(LIBRARY_HEADERS "${PROJECT_SOURCE_DIR}/include/GPIO.hh")
+set(LIBRARY_SOURCES "ComputeAngle.cpp")
+set(LIBRARY_SOURCES "GPIO.cpp")
+set(LIBRARY_HEADERS "${PROJECT_SOURCE_DIR}/include/GPIO.h")
 set(LIBRARY_INCLUDES "${PROJECT_SOURCE_DIR}/include/")
 
 # add libraries, targets, and compile them
