@@ -20,7 +20,7 @@
 
 #include <memory>
 
-#include <GPIO.hh>
+#include <GPIO.h>
 
 extern "C" {
   #include <wiringPi.h>

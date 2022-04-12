@@ -23,7 +23,7 @@
 
 ## [Problem Statement](#GrocerEase)
 
-Our approach is based on developing an intelligent, fully autonomous trolley based on `Raspberry-pi` that is capable of following the consumer in shopping complexes or grocery stores. This incorporates the concept of trilateration to optimise indoor navigation, making it faster than using techniques like object-detection/deep learning.
+Our approach is based on developing an intelligent, fully autonomous trolley based on `Raspberry-pi` that is capable of following the consumer in shopping complexes or grocery stores. This incorporates the concept of trilateration to optimise indoor navigation, making it faster/cheaper than GPS navigation or using techniques like object-detection/deep learning.
 
 ## [Conceptualisation](#GrocerEase)
 
@@ -49,8 +49,10 @@ Examples showing the project usage will be illustrated here.
 | Compute Angle Flowchart | Adwait Naik  |    #34      |   Feb 27    |
 | Motor Writer Flowchart  | Adwait Naik  |    #38      |   Feb 27    |
 | Main program Flowchart  | Adwait Naik  |    #43      |   Feb 28    |
-| Estimate Robot Angle    | Jia Wei Tan  |             |   March 17  |
-| Hardware Directory      | Multiple     |             |   March 20  |
+| Estimate Robot Angle    | Jia Wei Tan  |    #82      |   March 17  |
+| Motor Testing           | Jia Wei Tan  |    #79      |   March 17  |
+| Initial Template        | Adwait Naik  |    #56      |   March 20  |
+
 
 ## [Directory Tree](#GrocerEase)
 
