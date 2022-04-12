@@ -1,0 +1,122 @@
+[ /org/bluez/hci0/dev_F6_02_3E_CE_36_3A ]
+	Address : F6:02:3E:CE:36:3A
+	AddressType : random
+	Alias : F6-02-3E-CE-36-3A
+	Paired : 0
+	Trusted : 0
+	Blocked : 0
+	LegacyPairing : 0
+	RSSI : Other
+	Connected : 0
+	UUIDs : 
+	Adapter : /org/bluez/hci0
+	ManufacturerData : 	ServicesResolved : 0
+[ /org/bluez/hci0/dev_49_F3_F0_52_13_CC ]
+	Address : 49:F3:F0:52:13:CC
+	AddressType : random
+	Alias : 49-F3-F0-52-13-CC
+	Paired : 0
+	Trusted : 0
+	Blocked : 0
+	LegacyPairing : 0
+	RSSI : Other
+	Connected : 0
+	UUIDs : 
+	Adapter : /org/bluez/hci0
+	ManufacturerData : 	ServicesResolved : 0
+[ /org/bluez/hci0/dev_EC_48_DE_58_52_A6 ]
+	Address : EC:48:DE:58:52:A6
+	AddressType : random
+	Alias : EC-48-DE-58-52-A6
+	Paired : 0
+	Trusted : 0
+	Blocked : 0
+	LegacyPairing : 0
+	RSSI : Other
+	Connected : 0
+	UUIDs : 
+	Adapter : /org/bluez/hci0
+	ManufacturerData : 	ServicesResolved : 0
+[ /org/bluez/hci0/dev_54_77_E3_E6_84_CA ]
+	Address : 54:77:E3:E6:84:CA
+	AddressType : random
+	Alias : 54-77-E3-E6-84-CA
+	Paired : 0
+	Trusted : 0
+	Blocked : 0
+	LegacyPairing : 0
+	RSSI : Other
+	Connected : 0
+	UUIDs : 
+	Adapter : /org/bluez/hci0
+	ManufacturerData : 	TxPower : Other
+	ServicesResolved : 0
+[ /org/bluez/hci0/dev_45_12_54_3B_1D_41 ]
+	Address : 45:12:54:3B:1D:41
+	AddressType : random
+	Alias : 45-12-54-3B-1D-41
+	Paired : 0
+	Trusted : 0
+	Blocked : 0
+	LegacyPairing : 0
+	RSSI : Other
+	Connected : 0
+	UUIDs : 
+	Adapter : /org/bluez/hci0
+	ManufacturerData : 	ServicesResolved : 0
+[ /org/bluez/hci0/dev_2D_3E_3D_16_07_2C ]
+	Address : 2D:3E:3D:16:07:2C
+	AddressType : random
+	Alias : 2D-3E-3D-16-07-2C
+	Paired : 0
+	Trusted : 0
+	Blocked : 0
+	LegacyPairing : 0
+	RSSI : Other
+	Connected : 0
+	UUIDs : 
+		0000fd6f-0000-1000-8000-00805f9b34fb
+	Adapter : /org/bluez/hci0
+	ServiceData : 	ServicesResolved : 0
+[ /org/bluez/hci0/dev_B0_10_A0_3E_4E_85 ]
+	Address : B0:10:A0:3E:4E:85
+	AddressType : public
+	Alias : B0-10-A0-3E-4E-85
+	Paired : 0
+	Trusted : 0
+	Blocked : 0
+	LegacyPairing : 0
+	RSSI : Other
+	Connected : 0
+	UUIDs : 
+	Adapter : /org/bluez/hci0
+	ManufacturerData : 	ServicesResolved : 0
+[ /org/bluez/hci0/dev_B0_10_A0_DD_10_AF ]
+	Address : B0:10:A0:DD:10:AF
+	AddressType : public
+	Name : S206ff71976669aadC
+	Alias : S206ff71976669aadC
+	Paired : 0
+	Trusted : 0
+	Blocked : 0
+	LegacyPairing : 0
+	RSSI : Other
+	Connected : 0
+	UUIDs : 
+		00001122-0000-1000-8000-00805f9b34fb
+	Adapter : /org/bluez/hci0
+	ManufacturerData : 	ServicesResolved : 0
+[ /org/bluez/hci0/dev_3D_1A_43_A2_AE_07 ]
+	Address : 3D:1A:43:A2:AE:07
+	AddressType : random
+	Alias : 3D-1A-43-A2-AE-07
+	Paired : 0
+	Trusted : 0
+	Blocked : 0
+	LegacyPairing : 0
+	RSSI : Other
+	Connected : 0
+	UUIDs : 
+	Adapter : /org/bluez/hci0
+	ManufacturerData : 	ServicesResolved : 0
+^Creceived SIGINT
