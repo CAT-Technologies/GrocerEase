@@ -24,47 +24,88 @@
 
 using namespace std;
 
+// enable debug messages and error messages to stderr
+#ifndef NDEBUG
+#define DEBUG
+#endif
+
+
 /// \brief a class to compute the angle between two RSSI values.
 class ComputeAngle
 {
-   public: 
-           /// \brief angle.
-           float angle;
 
-           /// \brief a function to compute the angle.
-           // @return angle between d_a and d_b
-           float find_angle(float a, float b, float c, 
-                    float offset_a, float offset_b, float offset_c);
+   private:
+   	
+   	unsigned int a, b, c;
+   	 	
+   	float d_a, d_b, d_c;
+   	
+   	//finalise using cross calibration
+   	static const int offset_a = 62;      
+   	static const int offset_b = 62;
+   	static const int offset_c = 62;
+  
+   	/// \brief angle.
+   	float angle;
+
+   public: 
+	
+	/* Setter Function for RSSI values - to be improved using proper 
+	   syntax/updates/callbacks   */
+	
+	 void setRSSI(int a_dB, int b_dB, int c_dB)
+	 {
+		      a = a_dB;
+		      b = b_dB;
+		      c = c_dB;
+	  }
+	  
+	 /* Function for computing distance using RSSI values
+	    to be improved using proper syntax/callbacks   */
+	  
+	 void computeDistance()
+	 {
+         d_a = pow(20, (a + offset_a));
+         d_b = pow(20, (b + offset_b));
+         d_c = pow(20, (c + offset_c));
+    }
+         
+    /* Function for getting angle using distances - (write formula too)
+	    to be improved using proper syntax/callbacks - getters not allowed! 
+	    This might be needed by other GrocerEase class  */
+         
+   float getAngle()
+   {
+   	return acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));
+   }
+         
+   /* Getting distance between Phone and Cart
+	   Improve it using proper syntax/callbacks - getters not allowed! 
+	   This might be needed by other GrocerEase class  */
+         
+   float get_a()
+   {
+      	return d_a;
+   }
+         
 };
 
-float ComputeAngle::find_angle(float a, float b, float c, 
-                     float offset_a, float offset_b, float offset_c)
-{
-   float d_a = pow(20, (a + offset_a));
-   float d_b = pow(20, (b + offset_b));
-   float d_c = pow(20, (c + offset_c));
-
-   float angle = 
-      acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));
-
-   return angle;
-}
 
 int main()
 {
+
+
    ComputeAngle CompAng;
-   float computed_angle;
 
-   float a = -60.046;
-   float b = -75.046;
-   float c = -80.046;
+   CompAng.setRSSI(-52, -52, -52);
 
-   float offset_a = -15;
-   float offset_b = -5;
-   float offset_c = -0.75;
+   /* CompAng.getAngle not working as expected probably */
 
-   computed_angle = CompAng.find_angle(a, b, c, offset_a, offset_b, offset_c);
-   cout << "The computed angle is : " << computed_angle;
+#ifdef DEBUG
+   cout << "\n"<< "The distance a is : " << CompAng.get_a() << endl;
+   cout << "The calculated angle is : "<< CompAng.getAngle() << endl;       
+#endif
 
+   
    return 0;
 }
