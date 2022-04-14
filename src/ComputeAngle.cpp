@@ -66,9 +66,9 @@ class ComputeAngle
 	  
 	 void computeDistance()
 	 {
-         d_a = pow(10, ((offset_a - a)/10*N);
-         d_b = pow(10, ((offset_b - b)/10*N);
-         d_c = pow(10, ((offset_c - c)/10*N);
+         d_a = pow(10, ((offset_a - a)/10*N));
+         d_b = pow(10, ((offset_b - b)/10*N));
+         d_c = pow(10, ((offset_c - c)/10*N));
     }
          
     /* Function for getting angle using distances - (write formula too)
@@ -86,7 +86,7 @@ class ComputeAngle
          
    float get_a()
    {
-      	return d_a;
+      	return d_a*(pow(10,40));
    }
          
 };
@@ -98,7 +98,7 @@ int main()
 
    ComputeAngle CompAng;
 
-   CompAng.setRSSI(-52, -52, -52);
+   CompAng.setRSSI(-60, -70, -90);
 
    /* CompAng.getAngle not working as expected probably */
 
