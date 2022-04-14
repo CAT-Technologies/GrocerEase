@@ -30,21 +30,27 @@ using namespace std;
 #endif
 
 
-/// \brief a class to compute the angle between two RSSI values.
+// a class to compute the angle between two RSSI values.
 class ComputeAngle
 {
 
    private:
    	
+   	
+   	// define what actually a, b,c stand for?
    	unsigned int a, b, c;
    	 	
+      // define what actually d_a, d_b, d_c stand for?
    	float d_a, d_b, d_c;
    	
-   	//finalise using cross calibration
+   	// finalise using cross calibration - done?
+      // define what actually Offset_a, offset_b,c stand for?
    	static const int offset_a = -52;      
    	static const int offset_b = -52;
    	static const int offset_c = -52;
-	static const int N = 2;
+	   
+      //define what actually N is and why 2, can we use macro or something better?
+      static const int N = 2;
   
    	/// \brief angle.
    	float angle;
@@ -52,7 +58,9 @@ class ComputeAngle
    public: 
 	
 	/* Setter Function for RSSI values - to be improved using proper 
-	   syntax/updates/callbacks   */
+	   syntax/updates/callbacks   
+      Use another class/interface to communicate/return these values ?? 
+      Is it a setter/getter ? Do we need a getter callback - better?? */
 	
 	 void setRSSI(int a_dB, int b_dB, int c_dB)
 	 {
@@ -62,18 +70,21 @@ class ComputeAngle
 	  }
 	  
 	 /* Function for computing distance using RSSI values
-	    to be improved using proper syntax/callbacks   */
+	    to be improved using proper syntax/callbacks 
+       a,b,c double declaration again here in setRSSI and above unsigned int too
+       Moreover, test with real values and dummy case  */
 	  
 	 void computeDistance()
 	 {
-         d_a = pow(10, ((offset_a - a)/(10*N)));  // 8/20 - 0.4
+         d_a = pow(10, ((offset_a - a)/(10*N)));  // 8/20 - 0.4 -- test values
          d_b = pow(10, ((offset_b - b)/(10*N)));  // 18/20 - 0.9
          d_c = pow(10, ((offset_c - c)/(10*N)));  // 38/20 - 1.9
     }
          
     /* Function for getting angle using distances - (write formula too)
-	    to be improved using proper syntax/callbacks - getters not allowed! 
-	    This might be needed by other GrocerEase class  */
+	    to be improved using proper syntax/**callbacks - getters not allowed!** 
+	    This might be needed by other GrocerEase class 
+       is it actually a getter? */
          
    float getAngle()
    {
@@ -81,8 +92,9 @@ class ComputeAngle
    }
          
    /* Getting distance between Phone and Cart
-	   Improve it using proper syntax/callbacks - getters not allowed! 
-	   This might be needed by other GrocerEase class  */
+	   Improve it using proper syntax/**callbacks - getters not allowed!** 
+	   This might be needed by other GrocerEase class
+      is it actually a getter?  */
          
    float get_a()
    {
@@ -100,13 +112,15 @@ int main()
 
    CompAng.setRSSI(-60, -70, -90);
 
-   /* CompAng.getAngle not working as expected probably */
+   /* CompAng.getAngle not working as expected probably
+      test with proper values to get angle between a and b - check trilateration demo values*/
 
 #ifdef DEBUG
    cout << "\n"<< "The distance a is : " << CompAng.get_a() << endl;
    cout << "The calculated angle is : "<< CompAng.getAngle() << endl;       
 #endif
 
+  /* add possible unit test after all these changes */
    
    return 0;
 }
