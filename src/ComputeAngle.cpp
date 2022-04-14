@@ -27,11 +27,13 @@ using namespace std;
 /// \brief a class to compute the angle between two RSSI values.
 class ComputeAngle
 {
-   /// \brief angle.
-   public: float angle;
+   public: 
+           /// \brief angle.
+           float angle;
 
-   /// \brief a function to compute the angle.
-   public: float find_angle(float a, float b, float c, 
+           /// \brief a function to compute the angle.
+           // @return angle between d_a and d_b
+           float find_angle(float a, float b, float c, 
                     float offset_a, float offset_b, float offset_c);
 };
 
@@ -44,6 +46,7 @@ float ComputeAngle::find_angle(float a, float b, float c,
 
    float angle = 
       acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));
+
    return angle;
 }
 
@@ -62,5 +65,6 @@ int main()
 
    computed_angle = CompAng.find_angle(a, b, c, offset_a, offset_b, offset_c);
    cout << "The computed angle is : " << computed_angle;
+
    return 0;
 }

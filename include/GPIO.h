@@ -25,35 +25,37 @@ namespace std
    /// \brief GPIO program to control the wheel rotation.
    class GPIO 
    {
-      /// \brief Constructor.
-      public: GPIO();
+      public: 
 
-      /// \brief Destructor.
-      public: ~GPIO();
+              /// \brief Constructor.
+              GPIO();
 
-      /// \brief id left IR sensor output.
-      public: int left_IR;
+              /// \brief Destructor.
+              ~GPIO();
 
-      /// \brief id right IR sensor output.
-      public: int right_IR;
+              /// \brief id left IR sensor output.
+              int left_IR;
 
-      /// \brief store the left IR sensor output.
-      public: int out1;
+              /// \brief id right IR sensor output.
+              int right_IR;
 
-      /// \brief store the right IR sensor output.
-      public: int out2;
+              /// \brief store the left IR sensor output.
+              int out1;
 
-      /// \brief command to rotate the left forward wheel.
-      public: void lw_Forward();
+              /// \brief store the right IR sensor output.
+              int out2;
 
-      /// \brief command to rotate the left backward wheel.
-      public: void lw_Backward();
+              /// \brief command to rotate the left forward wheel.
+              void lw_Forward();
 
-      /// \brief command to rotate the right forward wheel.
-      public: void rw_Forward();
+              /// \brief command to rotate the left backward wheel.
+              void lw_Backward();
 
-      /// \brief command to rotate the right backward wheel.
-      public: void rw_Backward();
+              /// \brief command to rotate the right forward wheel.
+              void rw_Forward();
+
+              /// \brief command to rotate the right backward wheel.
+              void rw_Backward();
 
    };
 }
