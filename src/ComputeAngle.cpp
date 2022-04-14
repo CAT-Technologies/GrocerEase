@@ -30,7 +30,7 @@ using namespace std;
 #endif
 
 
-// a class to compute the angle between two RSSI values.
+// a class to compute the RSSI angle for trilateration  
 class ComputeAngle
 {
 
@@ -64,11 +64,12 @@ class ComputeAngle
             b = 0;
             c = 0;
 
-            d_a = 0;
-            d_b = 0;
-            d_c = 0;
+            d_a = 0.0;
+            d_b = 0.0;
+            d_c = 0.0;
 
             N = 2;
+            angle = 0.0;
       }
 
 	/* Setter Function for RSSI values - to be improved using proper 
