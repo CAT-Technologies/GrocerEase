@@ -66,9 +66,9 @@ class ComputeAngle
 	  
 	 void computeDistance()
 	 {
-         d_a = pow(10, ((offset_a - a)/10*N));
-         d_b = pow(10, ((offset_b - b)/10*N));
-         d_c = pow(10, ((offset_c - c)/10*N));
+         d_a = pow(10, ((offset_a - a)/(10*N)));  // 8/20 - 0.4
+         d_b = pow(10, ((offset_b - b)/(10*N)));  // 18/20 - 0.9
+         d_c = pow(10, ((offset_c - c)/(10*N)));  // 38/20 - 1.9
     }
          
     /* Function for getting angle using distances - (write formula too)
