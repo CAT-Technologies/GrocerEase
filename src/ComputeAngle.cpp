@@ -50,13 +50,27 @@ class ComputeAngle
    	static const int offset_c = -52;
 	   
       //define what actually N is and why 2, can we use macro or something better?
-      static const int N = 2;
+      static const int N ;
   
    	/// \brief angle.
    	float angle;
 
    public: 
 	
+      //constructor
+      ComputeAngle()
+      {
+            a = 0;
+            b = 0;
+            c = 0;
+
+            d_a = 0;
+            d_b = 0;
+            d_c = 0;
+
+            N = 2;
+      }
+
 	/* Setter Function for RSSI values - to be improved using proper 
 	   syntax/updates/callbacks   
       Use another class/interface to communicate/return these values ?? 
