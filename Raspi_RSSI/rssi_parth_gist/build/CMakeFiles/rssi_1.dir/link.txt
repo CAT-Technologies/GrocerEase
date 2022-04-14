@@ -1,1 +1,0 @@
-/usr/bin/cc    CMakeFiles/rssi_1.dir/src/rssi_1.c.o  -o rssi_1  -lbluetooth -lgio-2.0 -lgobject-2.0 -lglib-2.0 

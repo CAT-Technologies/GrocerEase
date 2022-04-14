@@ -1,3 +1,0 @@
-/home/anmol/Github/GrocerEase/Raspi_RSSI/rssi_parth_gist/build/CMakeFiles/rebuild_cache.dir
-/home/anmol/Github/GrocerEase/Raspi_RSSI/rssi_parth_gist/build/CMakeFiles/edit_cache.dir
-/home/anmol/Github/GrocerEase/Raspi_RSSI/rssi_parth_gist/build/CMakeFiles/rssi_1.dir

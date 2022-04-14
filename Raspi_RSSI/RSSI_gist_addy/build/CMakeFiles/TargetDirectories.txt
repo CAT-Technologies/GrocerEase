@@ -1,3 +1,0 @@
-/home/adwait/Desktop/RSSI/build/CMakeFiles/rebuild_cache.dir
-/home/adwait/Desktop/RSSI/build/CMakeFiles/RSSI.dir
-/home/adwait/Desktop/RSSI/build/CMakeFiles/edit_cache.dir
