@@ -41,9 +41,10 @@ class ComputeAngle
    	float d_a, d_b, d_c;
    	
    	//finalise using cross calibration
-   	static const int offset_a = 62;      
-   	static const int offset_b = 62;
-   	static const int offset_c = 62;
+   	static const int offset_a = -52;      
+   	static const int offset_b = -52;
+   	static const int offset_c = -52;
+	static const int N = 2;
   
    	/// \brief angle.
    	float angle;
@@ -65,9 +66,9 @@ class ComputeAngle
 	  
 	 void computeDistance()
 	 {
-         d_a = pow(20, (a + offset_a));
-         d_b = pow(20, (b + offset_b));
-         d_c = pow(20, (c + offset_c));
+         d_a = pow(10, ((a - offset_a)/10*N);
+         d_b = pow(10, ((b - offset_b)/10*N);
+         d_c = pow(10, ((c - offset_c)/10*N);
     }
          
     /* Function for getting angle using distances - (write formula too)
