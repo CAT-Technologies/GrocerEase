@@ -1,0 +1,59 @@
+\hypertarget{src_2motor__testing_8cpp_source}{}\doxysection{motor\+\_\+testing.\+cpp}
+\label{src_2motor__testing_8cpp_source}\index{src/motor\_testing.cpp@{src/motor\_testing.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00002}00002 \textcolor{comment}{ * Copyright (C) 2022 Carry Assistant Trolley (C.A.T) Technologies}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00003}00003 \textcolor{comment}{ *  }}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00004}00004 \textcolor{comment}{ * Jia Wei Tan, March 17, 2022.}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00005}00005 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00006}00006 \textcolor{comment}{ * This library is free software; you can redistribute it and/or}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00007}00007 \textcolor{comment}{ * modify it under the terms of the GNU Lesser General Public}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00008}00008 \textcolor{comment}{ * License as published by the Free Software Foundation; either}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00009}00009 \textcolor{comment}{ * version 2.1 of the License, or (at your option) any later version.}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00010}00010 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00011}00011 \textcolor{comment}{ * This program is distributed in the hope that it will be useful,}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00012}00012 \textcolor{comment}{ * but WITHOUT ANY WARRANTY; without even the implied warranty of}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00013}00013 \textcolor{comment}{ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00014}00014 \textcolor{comment}{ * GNU Lesser General Public License for more details.}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00015}00015 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00016}00016 \textcolor{comment}{ * You should have received a copy of the GNU Lesser General Public License}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00017}00017 \textcolor{comment}{ * along with this program; if not, write to the Free Software}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00018}00018 \textcolor{comment}{ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00019}00019 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00021}00021 \textcolor{comment}{/*General Purpose Input Output for Raspberry Pi */}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00023}00023 \textcolor{preprocessor}{\#include "{}cart.h"{}}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00024}00024 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00025}00025 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00027}00027 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00029}00029 \textcolor{keyword}{static} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} microsecond = 1000000;}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00031}00031 \textcolor{keywordtype}{int} main() }
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00032}00032 \{}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00034}00034     Cart cart;}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00035}00035     cart.start();}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00037}00037     \textcolor{keywordtype}{int} run = 1;}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00038}00038     \textcolor{keywordtype}{int} L = 0;}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00039}00039     \textcolor{keywordtype}{int} R = 0;}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00041}00041     \textcolor{keywordflow}{while} (run == 1) \{}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00043}00043         cart.writeMotor(L, R);}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00044}00044         usleep(1 * microsecond);}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00045}00045         L = L+10;}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00046}00046         R = R+10;}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00047}00047         \textcolor{keywordflow}{if}(L>250)\{}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00048}00048         run = 0;}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00049}00049         \}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00050}00050     \}}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00051}00051     cart.stop();}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00052}00052     }
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00053}00053 \}}
+
+\end{DoxyCode}
