@@ -28,15 +28,15 @@
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00024}00024 \textcolor{preprocessor}{\#include <iostream>}}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00025}00025 \textcolor{preprocessor}{\#include <unistd.h>}}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00026}00026 }
-\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00027}00027 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00027}00027 \textcolor{keyword}{using namespace }\mbox{\hyperlink{namespacestd}{std}};}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00028}00028 }
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00029}00029 \textcolor{keyword}{static} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} microsecond = 1000000;}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00030}00030 }
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00031}00031 \textcolor{keywordtype}{int} main() }
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00032}00032 \{}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00033}00033 }
-\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00034}00034     Cart cart;}
-\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00035}00035     cart.start();}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00034}00034     \mbox{\hyperlink{classCart}{Cart}} cart;}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00035}00035     cart.\mbox{\hyperlink{classCart_a7f3cca3064effa75315bd1cd08fda10b}{start}}();}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00036}00036 }
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00037}00037     \textcolor{keywordtype}{int} run = 1;}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00038}00038     \textcolor{keywordtype}{int} L = 0;}
@@ -44,7 +44,7 @@
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00040}00040 }
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00041}00041     \textcolor{keywordflow}{while} (run == 1) \{}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00042}00042 }
-\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00043}00043         cart.writeMotor(L, R);}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00043}00043         cart.\mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{writeMotor}}(L, R);}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00044}00044         usleep(1 * microsecond);}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00045}00045         L = L+10;}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00046}00046         R = R+10;}
@@ -52,7 +52,7 @@
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00048}00048         run = 0;}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00049}00049         \}}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00050}00050     \}}
-\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00051}00051     cart.stop();}
+\DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00051}00051     cart.\mbox{\hyperlink{classCart_a9500349670b16fdfae1be6ed456967b0}{stop}}();}
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00052}00052     }
 \DoxyCodeLine{\Hypertarget{src_2motor__testing_8cpp_source_l00053}00053 \}}
 

@@ -95,15 +95,15 @@ $(function() {
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacestd.html">std</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> microsecond = 1000000;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">int</span> main() </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    Cart cart;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    cart.start();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="classCart.html">Cart</a> cart;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    cart.<a class="code hl_function" href="classCart.html#a7f3cca3064effa75315bd1cd08fda10b">start</a>();</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">int</span> run = 1;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">int</span> L = 0;</div>
@@ -111,7 +111,7 @@ $(function() {
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">while</span> (run == 1) {</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        cart.writeMotor(L, R);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        cart.<a class="code hl_function" href="classCart.html#a98eefe9a8b411e548c919cde2e6ba7ba">writeMotor</a>(L, R);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        usleep(1 * microsecond);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        L = L+10;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        R = R+10;</div>
@@ -119,9 +119,14 @@ $(function() {
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        run = 0;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    cart.stop();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    cart.<a class="code hl_function" href="classCart.html#a9500349670b16fdfae1be6ed456967b0">stop</a>();</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<div class="ttc" id="aclassCart_html"><div class="ttname"><a href="classCart.html">Cart</a></div><div class="ttdoc">brief description Purpose Input Output for Raspberry Pi</div><div class="ttdef"><b>Definition:</b> <a href="cart_8h_source.html#l00027">cart.h:28</a></div></div>
+<div class="ttc" id="aclassCart_html_a7f3cca3064effa75315bd1cd08fda10b"><div class="ttname"><a href="classCart.html#a7f3cca3064effa75315bd1cd08fda10b">Cart::start</a></div><div class="ttdeci">void start()</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00027">cart.cpp:27</a></div></div>
+<div class="ttc" id="aclassCart_html_a9500349670b16fdfae1be6ed456967b0"><div class="ttname"><a href="classCart.html#a9500349670b16fdfae1be6ed456967b0">Cart::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">stopping the cart</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00046">cart.cpp:46</a></div></div>
+<div class="ttc" id="aclassCart_html_a98eefe9a8b411e548c919cde2e6ba7ba"><div class="ttname"><a href="classCart.html#a98eefe9a8b411e548c919cde2e6ba7ba">Cart::writeMotor</a></div><div class="ttdeci">void writeMotor(int L, int R)</div><div class="ttdoc">motor working</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00075">cart.cpp:75</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> <a href="GPIO_8h_source.html#l00023">GPIO.h:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

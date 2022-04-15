@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['angle_0',['angle',['../classComputeAngle.html#af76c71d5803f7de1a1790b8e82c21eb4',1,'ComputeAngle']]]
+  ['left_5fir_0',['left_IR',['../classstd_1_1GPIO.html#a3a41068c5f76ba3bd19ac96777cc388f',1,'std::GPIO']]]
 ];
