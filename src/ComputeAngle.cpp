@@ -50,7 +50,7 @@ class ComputeAngle
    	static const int offset_c = -52;
 	   
       //define what actually N is and why 2, can we use macro or something better?
-      static const int N ;
+      static const int N = 2;
   
    	/// \brief angle.
    	float angle;
@@ -68,7 +68,6 @@ class ComputeAngle
             d_b = 0.0;
             d_c = 0.0;
 
-            N = 2;
             angle = 0.0;
       }
 
@@ -91,6 +90,7 @@ class ComputeAngle
 	  
 	 void computeDistance()
 	 {
+
          d_a = pow(10, ((offset_a - a)/(10*N)));  // 8/20 - 0.4 -- test values
          d_b = pow(10, ((offset_b - b)/(10*N)));  // 18/20 - 0.9
          d_c = pow(10, ((offset_c - c)/(10*N)));  // 38/20 - 1.9
@@ -121,8 +121,6 @@ class ComputeAngle
 
 int main()
 {
-
-
    ComputeAngle CompAng;
 
    CompAng.setRSSI(-60, -70, -90);

@@ -92,11 +92,11 @@ void Cart::compute_angle(int a, int b, int c){
     d_c = pow(20, (c + offset_c));
 }
 
-int get_leftIR(){
+int get_leftIR(const int left_IR){
     return gpioRead(left_IR);
 }
 
-int get_rightIR(){
+int get_rightIR(const int right_IR){
     return gpioRead(right_IR);
 }
 
