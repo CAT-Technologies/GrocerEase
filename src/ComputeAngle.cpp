@@ -35,22 +35,28 @@ class ComputeAngle
 {
 
    private:
-   	
-   	
-   	// define what actually a, b,c stand for?
+   /* VARIABLES *
+    * a: RSSI robot--phone
+    * b: RSSI beacon--robot
+    * c: RSSI beacon--phone
+    * offset_a: RSSI received of a at 1 metre (!!TO BE RECALIBRATED)
+    * offset_b: RSSI received of b at 1 metre (!!TO BE RECALIBRATED)
+    * offset_c: RSSI received of c at 1 metre (!!TO BE RECALIBRATED)
+    * d_a: a converted into distance (unit: metre)
+    * d_b: b converted into distance (unit: metre)
+    * d_c: c converted into distance (unit: metre)
+    * N: broadcasting power value (Constant depends on the Environmental factor. Range 2–4)
+    * angle: beacon--robot--phone
+    */
+   	   	
    	unsigned int a, b, c;
    	 	
-      // define what actually d_a, d_b, d_c stand for?
    	float d_a, d_b, d_c;
    	
-   	// finalise using cross calibration - done?
-      // define what actually Offset_a, offset_b,c stand for?
    	static const int offset_a = -52;      
    	static const int offset_b = -52;
    	static const int offset_c = -52;
-	   
-      //define what actually N is and why 2, can we use macro or something better?
-      static const int N = 2;
+      	static const int N = 2;
   
    	/// \brief angle.
    	float angle;
