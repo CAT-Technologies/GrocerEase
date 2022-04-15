@@ -1,4 +1,4 @@
-/*
+/*!
  * Copyright (C) 2022 Carry Assistant Trolley (C.A.T) Technologies
  *  
  * Jia Wei Tan, February 26, 2022.
@@ -24,18 +24,18 @@
 
 using namespace std;
 
-// enable debug messages and error messages to stderr
+/// \brief enable debug messages and error messages to stderr
 #ifndef NDEBUG
 #define DEBUG
 #endif
 
 
-// a class to compute the RSSI angle for trilateration  
+/// \brief a class to compute the RSSI angle for trilateration  
 class ComputeAngle
 {
 
    private:
-   /* VARIABLES *
+   /*! VARIABLES *
     * a: RSSI robot--phone
     * b: RSSI beacon--robot
     * c: RSSI beacon--phone
@@ -63,7 +63,7 @@ class ComputeAngle
 
    public: 
 	
-      //constructor
+      /// \brief brief description
       ComputeAngle()
       {
             a = 0;
@@ -77,7 +77,7 @@ class ComputeAngle
             angle = 0.0;
       }
 
-	/* Setter Function for RSSI values - to be improved using proper 
+	/*! Setter Function for RSSI values - to be improved using proper 
 	   syntax/updates/callbacks   
       Use another class/interface to communicate/return these values ?? 
       Is it a setter/getter ? Do we need a getter callback - better?? */
@@ -89,7 +89,7 @@ class ComputeAngle
 		      c = c_dB;
 	  }
 	  
-	 /* Function for computing distance using RSSI values
+	 /*! Function for computing distance using RSSI values
 	    to be improved using proper syntax/callbacks 
        a,b,c double declaration again here in setRSSI and above unsigned int too
        Moreover, test with real values and dummy case  */
@@ -102,7 +102,7 @@ class ComputeAngle
          d_c = pow(10, ((offset_c - c)/(10*N)));  // 38/20 - 1.9
     }
          
-    /* Function for getting angle using distances - (write formula too)
+    /*! Function for getting angle using distances - (write formula too)
 	    to be improved using proper syntax/**callbacks - getters not allowed!** 
 	    This might be needed by other GrocerEase class 
        is it actually a getter? */
@@ -112,7 +112,7 @@ class ComputeAngle
    	return acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));
    }
          
-   /* Getting distance between Phone and Cart
+   /*! Getting distance between Phone and Cart
 	   Improve it using proper syntax/**callbacks - getters not allowed!** 
 	   This might be needed by other GrocerEase class
       is it actually a getter?  */
@@ -131,7 +131,7 @@ int main()
 
    CompAng.setRSSI(-60, -70, -90);
 
-   /* CompAng.getAngle not working as expected probably
+   /*! CompAng.getAngle not working as expected probably
       test with proper values to get angle between a and b - check trilateration demo values*/
 
 #ifdef DEBUG
@@ -139,7 +139,7 @@ int main()
    cout << "The calculated angle is : "<< CompAng.getAngle() << endl;       
 #endif
 
-  /* add possible unit test after all these changes */
+  /*! add possible unit test after all these changes */
    
    return 0;
 }
