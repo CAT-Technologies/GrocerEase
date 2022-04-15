@@ -18,6 +18,7 @@
 * [Usage Examples](#usage-examples)
 * [Changelog](#changelog)
 * [Directory Tree](#directory-tree)
+* [Social Media and Outreach](#social-media-and-outreach)
 * [Contribution Guidelines](#contribution-guidelines)
 * [Credits](#credits)
 
@@ -58,51 +59,19 @@ Examples showing the project usage will be illustrated here.
 
 A detailed directory tree can be found [here](https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/directory-tree.md)
 
-	|–– cmake
-	|–– external
-	| |–– wiringPi
-	| | |–– debian
-	| | |–– debian-template
-	| | | |–– wiringPi
-	| | | | |–– DEBIAN
-	| | |–– devLib
-	| | |–– examples
-	| | | |–– Gertboard
-	| | | |–– PiFace
-	| | | |–– PiGlow
-	| | | |–– q2w
-	| | | |–– scrollPhat
-	| | |–– gpio
-	| | |–– pins
-	| | |–– wiringPi
-	| | |–– wiringPiD
-	|–– include
-	|–– src
-	|–– utils
-	| |–– GPIO deps
-	| |–– concept illustration
-	| |–– flow diagrams
-	| | |–– compute angle
-	| | |–– gpio
-	| | |–– main program
-	| | |–– write motor
-	| |–– hardware
-	| | |–– logs
-	| |–– patches
-	| |–– social media
-	| | |–– logos
-
-
 ## [Social Media and Outreach](#GrocerEase)
 
 Follow us on social media platforms to keep up to date with our product updates and future plans:
 
-* [Twitter](https://twitter.com/TechnologiesCat)
-* [Instagram](https://www.instagram.com/cattechnologiesltd/)
-* [Linkedin](https://www.linkedin.com/company/cat-technologies8-ltd/)
-* [Youtube](https://www.youtube.com/channel/UCRmPlp3qE8imQI-GOUK1ZsA)
-
-Email us: cattechnologiesltd8@gmail.com
+<nav>
+    <div class="sociallinks"><!--links to social pages, opened in new tabs-->
+        <a href="https://twitter.com/TechnologiesCat" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/twitter.png" style="width: 40px; vertical-align: middle; margin-right: 5px;"></a>
+        <a href="https://www.instagram.com/cattechnologiesltd/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" style="width: 40px; vertical-align: middle; margin-right: 5px;"></a>
+        <a href="https://www.linkedin.com/company/cat-technologies8-ltd/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" style="width: 36px; vertical-align: middle; margin-right: 5px;"></a>
+	<a href="https://www.youtube.com/channel/UCRmPlp3qE8imQI-GOUK1ZsA" target="_blank"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" style="width: 36px; vertical-align: middle; margin-right: 5px;"></a>
+        <a href="cattechnologiesltd8@gmail.com" target="_blank"><img src="https://img.icons8.com/clouds/150/000000/gmail-new.png" style="width: 36px; vertical-align: middle; margin-right: 5px;"></a>
+    </div>
+</nav>
 
 ## [Contribution Guidelines](#GrocerEase)
 
