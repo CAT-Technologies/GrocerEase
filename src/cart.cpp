@@ -1,4 +1,4 @@
-/*!
+/*
  * Copyright (C) 2022 Carry Assistant Trolley (C.A.T) Technologies
  *  
  * Jia Wei Tan, April 11, 2022.
@@ -27,53 +27,47 @@
 void Cart::start(){
     if (gpioInitialise()<0) exit(1);
 
-    /// \brief left motor working
+    /*left motor */
     gpioSetMode(en1, PI_INPUT);
     gpioSetMode(en2, PI_INPUT);
     gpioSetMode(motorL, PI_ALT0);
 
-    /// \brief right motor working
+    /*right motor */
     gpioSetMode(en3, PI_INPUT);
     gpioSetMode(en4, PI_INPUT);
     gpioSetMode(motorR, PI_ALT0);
 
-    /// \brief left and right ir input
     gpioSetMode(left_IR, PI_INPUT);
     gpioSetMode(right_IR, PI_INPUT);
 }
 
-/// \brief stopping the cart
 void Cart::stop(){
+    writeMotor(0,0);
     gpioTerminate();
 }
 
-/// \brief left wheel forward
 void Cart::lw_Forward(){
     gpioWrite(en1, 1);
     gpioWrite(en2, 0);
 }
 
-/// \brief right wheel forward
 void Cart::rw_Forward(){
     gpioWrite(en3, 1);
     gpioWrite(en4, 0);
 }
 
-/// \brief left wheel forward
 void Cart::lw_Backward(){
     gpioWrite(en1, 0);
     gpioWrite(en2, 1);
 }
 
-/// \brief right wheel backward
 void Cart::rw_Backward(){
     gpioWrite(en3, 0);
     gpioWrite(en4, 1);
 }
 
-/// \brief motor working
 void Cart::writeMotor(int L, int R){
-    /*! L: Left Motor analog output
+    /* L: Left Motor analog output
     * R: Right Motor analog output
     * range: -255 to 255
     */
@@ -93,36 +87,30 @@ void Cart::writeMotor(int L, int R){
     gpioPWM(motorR, abs(R));
 }
 
-/// \brief angle computation for cart rotation
 void Cart::compute_angle(int a, int b, int c){
     d_a = pow(20, (a + offset_a));
     d_b = pow(20, (b + offset_b));
     d_c = pow(20, (c + offset_c));
 }
 
-/// \brief fetching left IR response
-int get_leftIR(const int left_IR){
-    return gpioRead(left_IR);
-}
-
-/// \brief fetching right IR response
-int get_rightIR(const int right_IR){
-    return gpioRead(right_IR);
-}
-
-/// \brief angle computation formula
 float Cart::getAngle(){
     return acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));
 }
 
-/// \brief fetching the distance between the beacon and the cart
 float Cart::getDistance_a(){
     return d_a;
 }
 
-/// \brief  floating function for robot rotation angle estimation in the direction of beacon
+int Cart::get_leftIR(){
+    return gpioRead(left_IR);
+}
+
+int Cart::get_rightIR(){
+    return gpioRead(right_IR);
+}
+
 float Cart::estimateRobotAngle(float angle_old_robot, int rotation_left, int rotation_right, float timeStep){
-    timeStep_s = timeStep*pow(10,-3);
+    timeStep_s = timeStep*pow(10,-2);
     angle_new_robot = angle_old_robot + rocAngle*360*(rotation_left - rotation_right)/(510)*timeStep_s;
 
     if (angle_new_robot > 180){
@@ -132,7 +120,10 @@ float Cart::estimateRobotAngle(float angle_old_robot, int rotation_left, int rot
 	else if (angle_new_robot < -180){
 	   angle_new_robot = angle_new_robot+360;
     }
-
+    
     return angle_new_robot;
 }
 
+float Cart::angleToTime(float angle_diff, int rotation_left, int rotation_right){
+    return abs(angle_diff*510/rocAngle/360/(rotation_left - rotation_right)*pow(10,2));
+}
