@@ -71,17 +71,24 @@ void Cart::writeMotor(int L, int R){
     * range: -255 to 255
     */
 
-    if (L >= 0) {
+    if (L >= 0) 
+    {
         lw_Forward();
-    } else {
+    } 
+    else 
+    {
         lw_Backward();
     }
 
-    if (R >= 0) {
+    if (R >= 0) 
+    {
         rw_Forward();
-    } else {
+    } 
+    else 
+    {
         rw_Backward();
     }
+    
     gpioPWM(motorL, abs(L));
     gpioPWM(motorR, abs(R));
 }
@@ -92,11 +99,11 @@ void Cart::compute_angle(int a, int b, int c){
     d_c = pow(20, (c + offset_c));
 }
 
-int get_leftIR(const int left_IR){
+int Cart::get_leftIR(const int left_IR){
     return gpioRead(left_IR);
 }
 
-int get_rightIR(const int right_IR){
+int Cart::get_rightIR(const int right_IR){
     return gpioRead(right_IR);
 }
 

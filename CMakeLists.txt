@@ -44,7 +44,7 @@ add_executable(GrocerEase
   src/GPIO.cpp
   src/main_program.cpp
   src/cart.cpp
-  src/motor_testing.cpp
+  src/motor_testing_TEST.cpp
   include/cart.h
   include/GPIO.h
   )
