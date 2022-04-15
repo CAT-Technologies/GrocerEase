@@ -1,0 +1,77 @@
+\hypertarget{classComputeAngle}{}\doxysection{Compute\+Angle Class Reference}
+\label{classComputeAngle}\index{ComputeAngle@{ComputeAngle}}
+
+
+a class to compute the angle between two RSSI values.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classComputeAngle_a88ca22ece134bf566eaa9a0b801ee534}{find\+\_\+angle}} (float a, float b, float c, float offset\+\_\+a, float offset\+\_\+b, float offset\+\_\+c)
+\begin{DoxyCompactList}\small\item\em a function to compute the angle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}{angle}}
+\begin{DoxyCompactList}\small\item\em angle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a class to compute the angle between two RSSI values. 
+
+Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComputeAngle_a88ca22ece134bf566eaa9a0b801ee534}\label{classComputeAngle_a88ca22ece134bf566eaa9a0b801ee534}} 
+\index{ComputeAngle@{ComputeAngle}!find\_angle@{find\_angle}}
+\index{find\_angle@{find\_angle}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{find\_angle()}{find\_angle()}}
+{\footnotesize\ttfamily float Compute\+Angle\+::find\+\_\+angle (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b,  }\item[{float}]{c,  }\item[{float}]{offset\+\_\+a,  }\item[{float}]{offset\+\_\+b,  }\item[{float}]{offset\+\_\+c }\end{DoxyParamCaption})}
+
+
+
+a function to compute the angle. 
+
+
+
+Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00042 \{}
+\DoxyCodeLine{00043    \textcolor{keywordtype}{float} d\_a = pow(20, (a + offset\_a));}
+\DoxyCodeLine{00044    \textcolor{keywordtype}{float} d\_b = pow(20, (b + offset\_b));}
+\DoxyCodeLine{00045    \textcolor{keywordtype}{float} d\_c = pow(20, (c + offset\_c));}
+\DoxyCodeLine{00046 }
+\DoxyCodeLine{00047    \textcolor{keywordtype}{float} \mbox{\hyperlink{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}{angle}} = }
+\DoxyCodeLine{00048       acos((pow(d\_a, 2) + pow(d\_b, 2) -\/ pow(d\_c, 2))/(2 * d\_a * d\_b));}
+\DoxyCodeLine{00049 }
+\DoxyCodeLine{00050    \textcolor{keywordflow}{return} \mbox{\hyperlink{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}{angle}};}
+\DoxyCodeLine{00051 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}\label{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}} 
+\index{ComputeAngle@{ComputeAngle}!angle@{angle}}
+\index{angle@{angle}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily float Compute\+Angle\+::angle}
+
+
+
+angle. 
+
+
+
+Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Compute\+Angle.\+cpp\end{DoxyCompactItemize}
