@@ -2,74 +2,142 @@
 \label{classComputeAngle}\index{ComputeAngle@{ComputeAngle}}
 
 
-a class to compute the angle between two RSSI values.  
+a class to compute the RSSI angle for trilateration ~\newline
+  
 
 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-float \mbox{\hyperlink{classComputeAngle_a88ca22ece134bf566eaa9a0b801ee534}{find\+\_\+angle}} (float a, float b, float c, float offset\+\_\+a, float offset\+\_\+b, float offset\+\_\+c)
-\begin{DoxyCompactList}\small\item\em a function to compute the angle. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
-\begin{DoxyCompactItemize}
+\mbox{\hyperlink{classComputeAngle_afbd50f065d38f541878e394db2363782}{Compute\+Angle}} ()
+\begin{DoxyCompactList}\small\item\em brief description \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComputeAngle_ae78b6f692437579da19761509683040d}{set\+RSSI}} (int a\+\_\+dB, int b\+\_\+dB, int c\+\_\+dB)
 \item 
-float \mbox{\hyperlink{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}{angle}}
-\begin{DoxyCompactList}\small\item\em angle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classComputeAngle_ab0098935ecf2eb5f30a959c13252acc1}{compute\+Distance}} ()
+\item 
+float \mbox{\hyperlink{classComputeAngle_ac0f6a3e78cafdb8ca88ef0f2f365e440}{get\+Angle}} ()
+\item 
+float \mbox{\hyperlink{classComputeAngle_a0098593dbbcc6c9bf165dc927d47f116}{get\+\_\+a}} ()
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-a class to compute the angle between two RSSI values. 
+a class to compute the RSSI angle for trilateration ~\newline
+ 
 
-Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
-
-
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classComputeAngle_a88ca22ece134bf566eaa9a0b801ee534}\label{classComputeAngle_a88ca22ece134bf566eaa9a0b801ee534}} 
-\index{ComputeAngle@{ComputeAngle}!find\_angle@{find\_angle}}
-\index{find\_angle@{find\_angle}!ComputeAngle@{ComputeAngle}}
-\doxysubsubsection{\texorpdfstring{find\_angle()}{find\_angle()}}
-{\footnotesize\ttfamily float Compute\+Angle\+::find\+\_\+angle (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b,  }\item[{float}]{c,  }\item[{float}]{offset\+\_\+a,  }\item[{float}]{offset\+\_\+b,  }\item[{float}]{offset\+\_\+c }\end{DoxyParamCaption})}
+Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
 
 
 
-a function to compute the angle. 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComputeAngle_afbd50f065d38f541878e394db2363782}\label{classComputeAngle_afbd50f065d38f541878e394db2363782}} 
+\index{ComputeAngle@{ComputeAngle}!ComputeAngle@{ComputeAngle}}
+\index{ComputeAngle@{ComputeAngle}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{ComputeAngle()}{ComputeAngle()}}
+{\footnotesize\ttfamily Compute\+Angle\+::\+Compute\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
+brief description 
+
+
+
+Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00067}{67}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00042 \{}
-\DoxyCodeLine{00043    \textcolor{keywordtype}{float} d\_a = pow(20, (a + offset\_a));}
-\DoxyCodeLine{00044    \textcolor{keywordtype}{float} d\_b = pow(20, (b + offset\_b));}
-\DoxyCodeLine{00045    \textcolor{keywordtype}{float} d\_c = pow(20, (c + offset\_c));}
-\DoxyCodeLine{00046 }
-\DoxyCodeLine{00047    \textcolor{keywordtype}{float} \mbox{\hyperlink{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}{angle}} = }
-\DoxyCodeLine{00048       acos((pow(d\_a, 2) + pow(d\_b, 2) -\/ pow(d\_c, 2))/(2 * d\_a * d\_b));}
-\DoxyCodeLine{00049 }
-\DoxyCodeLine{00050    \textcolor{keywordflow}{return} \mbox{\hyperlink{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}{angle}};}
-\DoxyCodeLine{00051 \}}
+\DoxyCodeLine{00068       \{}
+\DoxyCodeLine{00069             a = 0;}
+\DoxyCodeLine{00070             b = 0;}
+\DoxyCodeLine{00071             c = 0;}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{00073             d\_a = 0.0;}
+\DoxyCodeLine{00074             d\_b = 0.0;}
+\DoxyCodeLine{00075             d\_c = 0.0;}
+\DoxyCodeLine{00076 }
+\DoxyCodeLine{00077             angle = 0.0;}
+\DoxyCodeLine{00078       \}}
 
 \end{DoxyCode}
 
 
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}\label{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}} 
-\index{ComputeAngle@{ComputeAngle}!angle@{angle}}
-\index{angle@{angle}!ComputeAngle@{ComputeAngle}}
-\doxysubsubsection{\texorpdfstring{angle}{angle}}
-{\footnotesize\ttfamily float Compute\+Angle\+::angle}
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComputeAngle_ab0098935ecf2eb5f30a959c13252acc1}\label{classComputeAngle_ab0098935ecf2eb5f30a959c13252acc1}} 
+\index{ComputeAngle@{ComputeAngle}!computeDistance@{computeDistance}}
+\index{computeDistance@{computeDistance}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{computeDistance()}{computeDistance()}}
+{\footnotesize\ttfamily void Compute\+Angle\+::compute\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function for computing distance using RSSI values to be improved using proper syntax/callbacks a,b,c double declaration again here in set\+RSSI and above unsigned int too Moreover, test with real values and dummy case ~\newline
+ 
+
+Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00097}{97}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
 
 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00098      \{}
+\DoxyCodeLine{00099 }
+\DoxyCodeLine{00100          d\_a = pow(10, ((offset\_a -\/ a)/(10*N)));  \textcolor{comment}{// 8/20 -\/ 0.4 -\/-\/ test values}}
+\DoxyCodeLine{00101          d\_b = pow(10, ((offset\_b -\/ b)/(10*N)));  \textcolor{comment}{// 18/20 -\/ 0.9}}
+\DoxyCodeLine{00102          d\_c = pow(10, ((offset\_c -\/ c)/(10*N)));  \textcolor{comment}{// 38/20 -\/ 1.9}}
+\DoxyCodeLine{00103     \}}
 
-angle. 
+\end{DoxyCode}
+\mbox{\Hypertarget{classComputeAngle_a0098593dbbcc6c9bf165dc927d47f116}\label{classComputeAngle_a0098593dbbcc6c9bf165dc927d47f116}} 
+\index{ComputeAngle@{ComputeAngle}!get\_a@{get\_a}}
+\index{get\_a@{get\_a}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{get\_a()}{get\_a()}}
+{\footnotesize\ttfamily float Compute\+Angle\+::get\+\_\+a (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getting distance between Phone and Cart Improve it using proper syntax/$\ast$$\ast$callbacks -\/ getters not allowed!$\ast$$\ast$ This might be needed by other Grocer\+Ease class is it actually a getter? ~\newline
+ 
+
+Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00120}{120}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
 
 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00121    \{}
+\DoxyCodeLine{00122         \textcolor{keywordflow}{return} d\_a*(pow(10,40));}
+\DoxyCodeLine{00123    \}}
 
-Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
+\end{DoxyCode}
+\mbox{\Hypertarget{classComputeAngle_ac0f6a3e78cafdb8ca88ef0f2f365e440}\label{classComputeAngle_ac0f6a3e78cafdb8ca88ef0f2f365e440}} 
+\index{ComputeAngle@{ComputeAngle}!getAngle@{getAngle}}
+\index{getAngle@{getAngle}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{getAngle()}{getAngle()}}
+{\footnotesize\ttfamily float Compute\+Angle\+::get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+Function for getting angle using distances -\/ (write formula too) to be improved using proper syntax/$\ast$$\ast$callbacks -\/ getters not allowed!$\ast$$\ast$ This might be needed by other Grocer\+Ease class is it actually a getter? 
+
+Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00110}{110}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00111    \{}
+\DoxyCodeLine{00112     \textcolor{keywordflow}{return} acos((pow(d\_a, 2) + pow(d\_b, 2) -\/ pow(d\_c, 2))/(2 * d\_a * d\_b));}
+\DoxyCodeLine{00113    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classComputeAngle_ae78b6f692437579da19761509683040d}\label{classComputeAngle_ae78b6f692437579da19761509683040d}} 
+\index{ComputeAngle@{ComputeAngle}!setRSSI@{setRSSI}}
+\index{setRSSI@{setRSSI}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{setRSSI()}{setRSSI()}}
+{\footnotesize\ttfamily void Compute\+Angle\+::set\+RSSI (\begin{DoxyParamCaption}\item[{int}]{a\+\_\+dB,  }\item[{int}]{b\+\_\+dB,  }\item[{int}]{c\+\_\+dB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Setter Function for RSSI values -\/ to be improved using proper syntax/updates/callbacks ~\newline
+ Use another class/interface to communicate/return these values ?? Is it a setter/getter ? Do we need a getter callback -\/ better?? 
+
+Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00085}{85}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00086      \{}
+\DoxyCodeLine{00087               a = a\_dB;}
+\DoxyCodeLine{00088               b = b\_dB;}
+\DoxyCodeLine{00089               c = c\_dB;}
+\DoxyCodeLine{00090       \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

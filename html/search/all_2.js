@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['find_5fangle_0',['find_angle',['../classComputeAngle.html#a88ca22ece134bf566eaa9a0b801ee534',1,'ComputeAngle']]]
+  ['setrssi_0',['setRSSI',['../classComputeAngle.html#ae78b6f692437579da19761509683040d',1,'ComputeAngle']]]
 ];

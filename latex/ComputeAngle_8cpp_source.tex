@@ -2,72 +2,88 @@
 \label{ComputeAngle_8cpp_source}\index{src/ComputeAngle.cpp@{src/ComputeAngle.cpp}}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00001}00001 \textcolor{comment}{/*}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00002}00002 \textcolor{comment}{ * Copyright (C) 2022 Carry Assistant Trolley (C.A.T) Technologies}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00003}00003 \textcolor{comment}{ *  }}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00004}00004 \textcolor{comment}{ * Jia Wei Tan, February 26, 2022.}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00005}00005 \textcolor{comment}{ *}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00006}00006 \textcolor{comment}{ * This library is free software; you can redistribute it and/or}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00007}00007 \textcolor{comment}{ * modify it under the terms of the GNU Lesser General Public}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00008}00008 \textcolor{comment}{ * License as published by the Free Software Foundation; either}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00009}00009 \textcolor{comment}{ * version 2.1 of the License, or (at your option) any later version.}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00010}00010 \textcolor{comment}{ *}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00011}00011 \textcolor{comment}{ * This program is distributed in the hope that it will be useful,}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00012}00012 \textcolor{comment}{ * but WITHOUT ANY WARRANTY; without even the implied warranty of}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00013}00013 \textcolor{comment}{ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00014}00014 \textcolor{comment}{ * GNU Lesser General Public License for more details.}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00015}00015 \textcolor{comment}{ *}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00016}00016 \textcolor{comment}{ * You should have received a copy of the GNU Lesser General Public License}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00017}00017 \textcolor{comment}{ * along with this program; if not, write to the Free Software}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00018}00018 \textcolor{comment}{ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00019}00019 \textcolor{comment}{ */}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00001}00001 }
 \DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00021}00021 \textcolor{preprocessor}{\#include <iostream>}}
 \DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00022}00022 }
 \DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00023}00023 \textcolor{preprocessor}{\#include <cmath>}}
 \DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00024}00024 }
 \DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00025}00025 \textcolor{keyword}{using namespace }std;}
 \DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00026}00026 }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00028}\mbox{\hyperlink{classComputeAngle}{00028}} \textcolor{keyword}{class }\mbox{\hyperlink{classComputeAngle}{ComputeAngle}}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00029}00029 \{}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00030}00030    \textcolor{keyword}{public}: }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00032}\mbox{\hyperlink{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}{00032}}            \textcolor{keywordtype}{float} \mbox{\hyperlink{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}{angle}};}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00033}00033 }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00035}00035            \textcolor{comment}{// @return angle between d\_a and d\_b}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00036}00036            \textcolor{keywordtype}{float} \mbox{\hyperlink{classComputeAngle_a88ca22ece134bf566eaa9a0b801ee534}{find\_angle}}(\textcolor{keywordtype}{float} a, \textcolor{keywordtype}{float} b, \textcolor{keywordtype}{float} c, }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00037}00037                     \textcolor{keywordtype}{float} offset\_a, \textcolor{keywordtype}{float} offset\_b, \textcolor{keywordtype}{float} offset\_c);}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00038}00038 \};}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00039}00039 }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00040}\mbox{\hyperlink{classComputeAngle_a88ca22ece134bf566eaa9a0b801ee534}{00040}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classComputeAngle_a88ca22ece134bf566eaa9a0b801ee534}{ComputeAngle::find\_angle}}(\textcolor{keywordtype}{float} a, \textcolor{keywordtype}{float} b, \textcolor{keywordtype}{float} c, }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00041}00041                      \textcolor{keywordtype}{float} offset\_a, \textcolor{keywordtype}{float} offset\_b, \textcolor{keywordtype}{float} offset\_c)}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00042}00042 \{}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00043}00043    \textcolor{keywordtype}{float} d\_a = pow(20, (a + offset\_a));}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00044}00044    \textcolor{keywordtype}{float} d\_b = pow(20, (b + offset\_b));}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00045}00045    \textcolor{keywordtype}{float} d\_c = pow(20, (c + offset\_c));}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00046}00046 }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00047}00047    \textcolor{keywordtype}{float} \mbox{\hyperlink{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}{angle}} = }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00048}00048       acos((pow(d\_a, 2) + pow(d\_b, 2) -\/ pow(d\_c, 2))/(2 * d\_a * d\_b));}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00049}00049 }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00050}00050    \textcolor{keywordflow}{return} \mbox{\hyperlink{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}{angle}};}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00051}00051 \}}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00052}00052 }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00053}00053 \textcolor{keywordtype}{int} main()}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00054}00054 \{}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00055}00055    \mbox{\hyperlink{classComputeAngle}{ComputeAngle}} CompAng;}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00056}00056    \textcolor{keywordtype}{float} computed\_angle;}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00057}00057 }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00058}00058    \textcolor{keywordtype}{float} a = -\/60.046;}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00059}00059    \textcolor{keywordtype}{float} b = -\/75.046;}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00060}00060    \textcolor{keywordtype}{float} c = -\/80.046;}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00061}00061 }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00062}00062    \textcolor{keywordtype}{float} offset\_a = -\/15;}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00063}00063    \textcolor{keywordtype}{float} offset\_b = -\/5;}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00064}00064    \textcolor{keywordtype}{float} offset\_c = -\/0.75;}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00065}00065 }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00066}00066    computed\_angle = CompAng.\mbox{\hyperlink{classComputeAngle_a88ca22ece134bf566eaa9a0b801ee534}{find\_angle}}(a, b, c, offset\_a, offset\_b, offset\_c);}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00067}00067    cout << \textcolor{stringliteral}{"{}The computed angle is : "{}} << computed\_angle;}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00068}00068 }
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00069}00069    \textcolor{keywordflow}{return} 0;}
-\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00070}00070 \}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00028}00028 \textcolor{preprocessor}{\#ifndef NDEBUG}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00029}00029 \textcolor{preprocessor}{\#define DEBUG}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00030}00030 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00034}\mbox{\hyperlink{classComputeAngle}{00034}} \textcolor{keyword}{class }\mbox{\hyperlink{classComputeAngle}{ComputeAngle}}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00035}00035 \{}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00037}00037    \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00052}00052     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} a, b, c;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00053}00053         }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00054}00054     \textcolor{keywordtype}{float} d\_a, d\_b, d\_c;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00055}00055     }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00056}00056     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} offset\_a = -\/52;      }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00057}00057     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} offset\_b = -\/52;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00058}00058     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} offset\_c = -\/52;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00059}00059         \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} N = 2;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00060}00060   }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00062}00062     \textcolor{keywordtype}{float} angle;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00064}00064    \textcolor{keyword}{public}: }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00065}00065     }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00067}\mbox{\hyperlink{classComputeAngle_afbd50f065d38f541878e394db2363782}{00067}}       \mbox{\hyperlink{classComputeAngle_afbd50f065d38f541878e394db2363782}{ComputeAngle}}()}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00068}00068       \{}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00069}00069             a = 0;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00070}00070             b = 0;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00071}00071             c = 0;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00073}00073             d\_a = 0.0;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00074}00074             d\_b = 0.0;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00075}00075             d\_c = 0.0;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00077}00077             angle = 0.0;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00078}00078       \}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00085}\mbox{\hyperlink{classComputeAngle_ae78b6f692437579da19761509683040d}{00085}}      \textcolor{keywordtype}{void} \mbox{\hyperlink{classComputeAngle_ae78b6f692437579da19761509683040d}{setRSSI}}(\textcolor{keywordtype}{int} a\_dB, \textcolor{keywordtype}{int} b\_dB, \textcolor{keywordtype}{int} c\_dB)}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00086}00086      \{}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00087}00087               a = a\_dB;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00088}00088               b = b\_dB;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00089}00089               c = c\_dB;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00090}00090       \}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00091}00091       }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00097}\mbox{\hyperlink{classComputeAngle_ab0098935ecf2eb5f30a959c13252acc1}{00097}}      \textcolor{keywordtype}{void} \mbox{\hyperlink{classComputeAngle_ab0098935ecf2eb5f30a959c13252acc1}{computeDistance}}()}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00098}00098      \{}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00100}00100          d\_a = pow(10, ((offset\_a -\/ a)/(10*N)));  \textcolor{comment}{// 8/20 -\/ 0.4 -\/-\/ test values}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00101}00101          d\_b = pow(10, ((offset\_b -\/ b)/(10*N)));  \textcolor{comment}{// 18/20 -\/ 0.9}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00102}00102          d\_c = pow(10, ((offset\_c -\/ c)/(10*N)));  \textcolor{comment}{// 38/20 -\/ 1.9}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00103}00103     \}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00104}00104          }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00110}\mbox{\hyperlink{classComputeAngle_ac0f6a3e78cafdb8ca88ef0f2f365e440}{00110}}    \textcolor{keywordtype}{float} \mbox{\hyperlink{classComputeAngle_ac0f6a3e78cafdb8ca88ef0f2f365e440}{getAngle}}()}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00111}00111    \{}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00112}00112     \textcolor{keywordflow}{return} acos((pow(d\_a, 2) + pow(d\_b, 2) -\/ pow(d\_c, 2))/(2 * d\_a * d\_b));}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00113}00113    \}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00114}00114          }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00120}\mbox{\hyperlink{classComputeAngle_a0098593dbbcc6c9bf165dc927d47f116}{00120}}    \textcolor{keywordtype}{float} \mbox{\hyperlink{classComputeAngle_a0098593dbbcc6c9bf165dc927d47f116}{get\_a}}()}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00121}00121    \{}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00122}00122         \textcolor{keywordflow}{return} d\_a*(pow(10,40));}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00123}00123    \}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00124}00124          }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00125}00125 \};}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00128}00128 \textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00129}00129 \{}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00130}00130    \mbox{\hyperlink{classComputeAngle}{ComputeAngle}} CompAng;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00132}00132    CompAng.\mbox{\hyperlink{classComputeAngle_ae78b6f692437579da19761509683040d}{setRSSI}}(-\/60, -\/70, -\/90);}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00133}00133 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00137}00137 \textcolor{preprocessor}{\#ifdef DEBUG}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00138}00138    cout << \textcolor{stringliteral}{"{}\(\backslash\)n"{}}<< \textcolor{stringliteral}{"{}The distance a is : "{}} << CompAng.\mbox{\hyperlink{classComputeAngle_a0098593dbbcc6c9bf165dc927d47f116}{get\_a}}() << endl;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00139}00139    cout << \textcolor{stringliteral}{"{}The calculated angle is : "{}}<< CompAng.\mbox{\hyperlink{classComputeAngle_ac0f6a3e78cafdb8ca88ef0f2f365e440}{getAngle}}() << endl;       }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00140}00140 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00144}00144    \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{ComputeAngle_8cpp_source_l00145}00145 \}}
 
 \end{DoxyCode}

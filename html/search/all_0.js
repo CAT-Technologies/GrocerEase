@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['angle_0',['angle',['../classComputeAngle.html#af76c71d5803f7de1a1790b8e82c21eb4',1,'ComputeAngle']]]
+  ['computeangle_0',['ComputeAngle',['../classComputeAngle.html',1,'ComputeAngle'],['../classComputeAngle.html#afbd50f065d38f541878e394db2363782',1,'ComputeAngle::ComputeAngle()']]],
+  ['computedistance_1',['computeDistance',['../classComputeAngle.html#ab0098935ecf2eb5f30a959c13252acc1',1,'ComputeAngle']]]
 ];
