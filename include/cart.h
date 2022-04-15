@@ -58,10 +58,13 @@ public:
     float getDistance_a();
     
     float estimateRobotAngle(float angle_old_robot, int rotation_left, int rotation_right, float timeStep);
-
-private:
+    
     static const int left_IR = 4;
     static const int right_IR = 15;
+
+private:
+    //static const int left_IR = 4;
+    //static const int right_IR = 15;
     static const int motorL = 13;
     static const int motorR = 12;
     static const int en1 = 5;
