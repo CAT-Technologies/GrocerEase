@@ -27,15 +27,15 @@ using namespace std;
 
 int main() {
   	/***INITIALIZE VARIABLES***/
-    int a, b, c;                    //a: RSSI robot--phone, b: RSSI beacon--robot, c:vRSSI beacon--phone.
+        int a, b, c;                    //a: RSSI robot--phone, b: RSSI beacon--robot, c:vRSSI beacon--phone.
 	float angle_old;		        //previous angle of the user.
 	float angle_new;		        //current angle of the user.
-    float angle_robot;              //current angle of the robot.
+        float angle_robot;              //current angle of the robot.
 	float angle_1;			        //used solely to compute angle difference.
 	float angle_2;			        //used solely to compute angle difference.
 	int followDistance = 1; 	    //the 'a' value the robot will try to maintain. Unit: metre.
 	int angleMove = 15; 		    //angle to accumulate before moving. Unit: degrees.
-    float a_distance;               //a converted into distance.
+        float a_distance;               //a converted into distance.
 	//int *rotation;
 	int motorForward = 200;	        // !!--EDITABLE--!! default analog value to write to motor when moving forward. Range: 140-255.
 	int motorLeft;			        //analog value to left motor.
@@ -48,35 +48,35 @@ int main() {
 	int read_rotation = 1;		    //when read_rotation=1, reads user rotation: CW/CCW/Static
 	int leftAmend;			        //correction to left motor speed.
 	int rightAmend;		            //correction to right motor speed.
-    int correction = 50;            // !!--EDITABLE--!! default motor speed correction. 
-    int ir_left;                    //Left IR sensor.
-    int ir_right;                   //Right IR sensor.
+        int correction = 50;            // !!--EDITABLE--!! default motor speed correction. 
+        int ir_left;                    //Left IR sensor.
+        int ir_right;                   //Right IR sensor.
 	double elapsed_time_ms = 0;	    //elapsed time.
 	double timeRotate_right = 0;	//accumulated time where robot has rotated to the right whilst in forward motion.
 	double timeRotate_left = 0;	    //accumulated time where robot has rotated to the left whilst in forward motion.
-    double timeUserStatic = 0;      //accumulated time where user has not moved.
+        double timeUserStatic = 0;      //accumulated time where user has not moved.
 
     
     //initialize all angles based on the first received values of a, b, and c.
-	a = receive_a();                //unit: dB
-	b = receive_b();                //unit: dB
-	c = receive_c();                //unit: dB
-	angle_new = calculate_angle(a, b, c);   
-	angle_robot = angle_new;
-	angle_old = angle_new;
+	//a = receive_a();                //unit: dB
+	//b = receive_b();                //unit: dB
+	//c = receive_c();                //unit: dB
+	//angle_new = compute_angle(a, b, c);   
+	//angle_robot = angle_new;
+	//angle_old = angle_new;
 
     Cart cart;
 	
     /***MAIN SECTION***/
 	while (1) {
-      	a = receive_a(); 		
-      	b = receive_b();
-      	c = receive_c();
+      	//a = receive_a(); 		
+      	//b = receive_b();
+      	//c = receive_c();
 	
 	    auto t_start = std::chrono::high_resolution_clock::now();     //start time of the current loop
         cart.compute_angle(a,b,c);
-      	angle_new = flip_cart*cart.getAngle;                          //!!--FUNCTION--!! Refer to calculate_angle()
-        a_distance = cart.getDistance_a;                              //
+      	angle_new = flip_cart*cart.getAngle();                          //!!--FUNCTION--!! Refer to calculate_angle()
+        a_distance = cart.getDistance_a();                              //
 
         /******SECTION A: WHEN ROBOT IS STILL WITHIN FOLLOW DISTANCE******/
         if (a_distance <= followDistance){
@@ -193,7 +193,7 @@ int main() {
             /*COMPUTE ANGLE DIFFERENCE*/
             //Function of this segment: dedicated to compute the angle difference between the robot and the user.
             //+ve value: CW, -ve: CCW
-            angle_diff = angle_new - angle_robot;
+            static float angle_diff = angle_new - angle_robot;
 
             if (angle_diff > 180){
                 angle_diff = angle_diff - 360;
@@ -222,7 +222,7 @@ int main() {
                     motorLeft = -255;               //!!--EDITABLE--!! Range: 0 to -255
                     motorRight = 255;               //!!--EDITABLE--!! Range: 0 to 255
                 }
-                writeMotor(motorLeft, motorRight);                                                            //!!--FUNCTION--!! Refer to writeMotor()
+                cart.writeMotor(motorLeft, motorRight);                                                            //!!--FUNCTION--!! Refer to writeMotor()
                 angle_robot = cart.estimateRobotAngle(angle_robot, motorLeft, motorRight, elapsed_time_ms);        //!!--FUNCTION--!! Refer to estimateRobotAngle()
             
                 if (abs(angle_robot-angle_new < 1){
@@ -237,8 +237,8 @@ int main() {
         else if (a_distance > followDistance) {
 
             /*READS IR SENSOR*/
-            ir_left = cart.get_leftIR;
-            ir_right = cart.get_rightIR;
+            ir_left = cart.get_leftIR();
+            ir_right = cart.get_rightIR();
 
             /*ROTATION DUE TO OBSTACLE*/
             if (ir_left == 1 && ir_right == 0){
