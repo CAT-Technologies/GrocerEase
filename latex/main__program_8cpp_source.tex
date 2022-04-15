@@ -8,7 +8,7 @@
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00023}00023 \textcolor{preprocessor}{\#include <cstdlib>}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00024}00024 \textcolor{preprocessor}{\#include "{}cart.h"{}}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00025}00025 }
-\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00026}00026 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00026}00026 \textcolor{keyword}{using namespace }\mbox{\hyperlink{namespacestd}{std}};}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00027}00027 }
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00028}00028 \textcolor{keywordtype}{int} main() \{}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00029}00029 \textcolor{comment}{    /***INITIALIZE VARIABLES***/}}
@@ -50,7 +50,7 @@
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00065}00065     angle\_robot = angle\_new;}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00066}00066     angle\_old = angle\_new;}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00067}00067 }
-\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00068}00068     Cart cart;}
+\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00068}00068     \mbox{\hyperlink{classCart}{Cart}} cart;}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00069}00069     }
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00070}00070 \textcolor{comment}{    /***MAIN SECTION***/}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00071}00071     \textcolor{keywordflow}{while} (1) \{}
@@ -59,9 +59,9 @@
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00074}00074         c = receive\_c();}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00075}00075     }
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00076}00076         \textcolor{keyword}{auto} t\_start = std::chrono::high\_resolution\_clock::now();     \textcolor{comment}{//start time of the current loop}}
-\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00077}00077         cart.compute\_angle(a,b,c);}
-\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00078}00078         angle\_new = flip\_cart*cart.getAngle;                          }
-\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00079}00079         a\_distance = cart.getDistance\_a;                              \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00077}00077         cart.\mbox{\hyperlink{classCart_a86560e8bd70d1bedb01c715896821e1c}{compute\_angle}}(a,b,c);}
+\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00078}00078         angle\_new = flip\_cart*cart.\mbox{\hyperlink{classCart_ac2d720d602e6eebdb7a6c7538324ef67}{getAngle}};                          }
+\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00079}00079         a\_distance = cart.\mbox{\hyperlink{classCart_a084416c7d23c92b48542c3740671f09b}{getDistance\_a}};                              \textcolor{comment}{//}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00080}00080 }
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00081}00081 \textcolor{comment}{        /******SECTION A: WHEN ROBOT IS STILL WITHIN FOLLOW DISTANCE******/}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00082}00082         \textcolor{keywordflow}{if} (a\_distance <= followDistance)\{}
@@ -69,12 +69,12 @@
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00084}00084             \textcolor{comment}{/*ANGLE CORRECTION IF ROTATION FROM FORWARD MOTION HAS NOT BEEN COMPLETED (REFER TO SECTION B)*/}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00085}00085             \textcolor{comment}{//Function of this segment: estimates the amount of rotation -\/-\/> adds to the current angle\_robot -\/-\/> resets accumulated time}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00086}00086             \textcolor{keywordflow}{if} (timeRotate\_left > 0)\{}
-\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00087}00087                 angle\_robot = cart.estimateRobotAngle(angle\_robot, 0, -\/50, timeRotate\_left);     }
+\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00087}00087                 angle\_robot = cart.\mbox{\hyperlink{classCart_a2b7c7ccb0a092affd0123d3a62d0da44}{estimateRobotAngle}}(angle\_robot, 0, -\/50, timeRotate\_left);     }
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00088}00088                 timeRotate\_left = 0;}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00089}00089             \}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00090}00090 }
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00091}00091             \textcolor{keywordflow}{if} (timeRotate\_right > 0)\{}
-\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00092}00092                 angle\_robot = cart.estimateRobotAngle(angle\_robot, -\/50, 0, timeRotate\_right);}
+\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00092}00092                 angle\_robot = cart.\mbox{\hyperlink{classCart_a2b7c7ccb0a092affd0123d3a62d0da44}{estimateRobotAngle}}(angle\_robot, -\/50, 0, timeRotate\_right);}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00093}00093                 timeRotate\_right = 0;}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00094}00094             \}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00095}00095 }
@@ -194,7 +194,7 @@
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00209}00209                 \}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00210}00210             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (rotate == 0 \&\& abs(angle\_diff) < angleMove)\{}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00211}00211                     rotate = 0;}
-\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00212}00212                     cart.writeMotor(0, 0); }
+\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00212}00212                     cart.\mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{writeMotor}}(0, 0); }
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00213}00213                 \}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00214}00214 }
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00215}00215             \textcolor{comment}{/*ROTATION*/}}
@@ -208,12 +208,12 @@
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00223}00223                     motorRight = 255;               }
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00224}00224                 \}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00225}00225                 writeMotor(motorLeft, motorRight);                                                            }
-\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00226}00226                 angle\_robot = cart.estimateRobotAngle(angle\_robot, motorLeft, motorRight, elapsed\_time\_ms);        }
+\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00226}00226                 angle\_robot = cart.\mbox{\hyperlink{classCart_a2b7c7ccb0a092affd0123d3a62d0da44}{estimateRobotAngle}}(angle\_robot, motorLeft, motorRight, elapsed\_time\_ms);        }
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00227}00227             }
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00228}00228                 \textcolor{keywordflow}{if} (abs(angle\_robot-\/angle\_new < 1)\{}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00229}00229                 \textcolor{comment}{//If current robot angle is equal to current angle of the user. (Tolerance 1 degrees !!-\/-\/EDITABLE-\/-\/!!)}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00230}00230                     rotate = 0;                     \textcolor{comment}{//stops rotation   }}
-\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00231}00231                     cart.writeMotor(0, 0);                             }
+\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00231}00231                     cart.\mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{writeMotor}}(0, 0);                             }
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00232}00232                     \}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00233}00233                 \}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00234}00234         \}}
@@ -274,12 +274,12 @@
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00289}00289             \textcolor{comment}{/*MOVES CART*/}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00290}00290             motorLeft = motorForward + leftAmend;}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00291}00291             motorRight = motorForward + rightAmend;}
-\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00292}00292             cart.writeMotor(motorLeft, motorRight);}
+\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00292}00292             cart.\mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{writeMotor}}(motorLeft, motorRight);}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00293}00293             angle\_robot = angle\_new;}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00294}00294             \}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00295}00295         \} }
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00296}00296         \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00297}00297             cart.writeMotor(0, 0);}
+\DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00297}00297             cart.\mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{writeMotor}}(0, 0);}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00298}00298         \}}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00299}00299     \textcolor{keyword}{auto} t\_end = std::chrono::high\_resolution\_clock::now();}
 \DoxyCodeLine{\Hypertarget{main__program_8cpp_source_l00300}00300     elapsed\_time\_ms = std::chrono::duration<double, std::milli>(t\_end-\/t\_start).count();}

@@ -18,7 +18,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.
  */
 
-/*General Purpose Input Output for Raspberry Pi */
+/// \brief brief description Purpose Input Output for Raspberry Pi
 
 #ifndef CART_H
 #define CART_H
@@ -33,16 +33,16 @@ public:
 
     void stop();
 
-    //Left forward wheel
+    /// \brief brief description forward wheel
     void lw_Forward();
 
-    //Right forward wheel
+    /// \brief brief description forward wheel
     void rw_Forward();
 
-    //Left backward wheel
+    /// \brief brief description backward wheel
     void lw_Backward();
 
-    //Right forward wheel
+    /// \brief Right forward wheel
     void rw_Backward();
 
     void writeMotor(int L, int R);
