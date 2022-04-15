@@ -1,0 +1,98 @@
+
+
+ \hypertarget{md_README_autotoc_md21}{}\doxysubsection{Grocer\+Ease 🛒}\label{md_README_autotoc_md21}
+\mbox{[}\mbox{]}(LICENSE)  \href{https://github.com/RTEP-Project-Team/GrocerEase/issues}{\texttt{ }} \href{https://github.com/RTEP-Project-Team/GrocerEase/pulls}{\texttt{ }} ~  \href{https://www.codacy.com/gh/CAT-Technologies/GrocerEase/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=CAT-Technologies/GrocerEase&amp;utm_campaign=Badge_Grade}{\texttt{ }} \hypertarget{md_README_autotoc_md22}{}\doxyparagraph{Contents}\label{md_README_autotoc_md22}
+
+\begin{DoxyItemize}
+\item Problem Statement
+\item Conceptualisation
+\item Project Roadmap
+\item Usage Examples
+\item Changelog
+\item Directory Tree
+\item Contribution Guidelines
+\item Credits
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md23}{}\doxysubsection{@ref Grocer\+Ease \char`\"{}\+Problem Statement\char`\"{}}\label{md_README_autotoc_md23}
+Our approach is based on developing an intelligent, fully autonomous trolley based on {\ttfamily Raspberry-\/pi} that is capable of following the consumer in shopping complexes or grocery stores. This incorporates the concept of trilateration to optimise indoor navigation, making it faster/cheaper than GPS navigation or using techniques like object-\/detection/deep learning.\hypertarget{md_README_autotoc_md24}{}\doxysubsection{@ref Grocer\+Ease \char`\"{}\+Conceptualisation\char`\"{}}\label{md_README_autotoc_md24}
+\hypertarget{md_README_autotoc_md25}{}\doxysubsection{@ref Grocer\+Ease \char`\"{}\+Project Roadmap\char`\"{}}\label{md_README_autotoc_md25}
+The roadmap for our project can be found \href{https://github.com/CAT-Technologies/GrocerEase/projects/1}{\texttt{ here}}.\hypertarget{md_README_autotoc_md26}{}\doxysubsection{@ref Grocer\+Ease \char`\"{}\+Usage Examples\char`\"{}}\label{md_README_autotoc_md26}
+Examples showing the project usage will be illustrated here.\hypertarget{md_README_autotoc_md27}{}\doxysubsection{@ref Grocer\+Ease \char`\"{}\+Changelog\char`\"{}}\label{md_README_autotoc_md27}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Added/\+Modified   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Author(s)   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Related PR   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Date    }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Added/\+Modified   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Author(s)   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Related PR   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Date    }\\\cline{1-4}
+\endhead
+\PBS\centering GPIO code   &\PBS\centering Jia Wei Tan   &\PBS\centering \#12   &\PBS\centering Feb 16    \\\cline{1-4}
+\PBS\centering GPIO Flowchart   &\PBS\centering Adwait Naik   &\PBS\centering \#22   &\PBS\centering Feb 20    \\\cline{1-4}
+\PBS\centering Main Program   &\PBS\centering Jia Wei Tan   &\PBS\centering \#39   &\PBS\centering Feb 26    \\\cline{1-4}
+\PBS\centering Compute Angle   &\PBS\centering Jia Wei Tan   &\PBS\centering \#41   &\PBS\centering Feb 26    \\\cline{1-4}
+\PBS\centering Motor Writer   &\PBS\centering Jia Wei Tan   &\PBS\centering \#40   &\PBS\centering Feb 26    \\\cline{1-4}
+\PBS\centering Compute Angle Flowchart   &\PBS\centering Adwait Naik   &\PBS\centering \#34   &\PBS\centering Feb 27    \\\cline{1-4}
+\PBS\centering Motor Writer Flowchart   &\PBS\centering Adwait Naik   &\PBS\centering \#38   &\PBS\centering Feb 27    \\\cline{1-4}
+\PBS\centering Main program Flowchart   &\PBS\centering Adwait Naik   &\PBS\centering \#43   &\PBS\centering Feb 28    \\\cline{1-4}
+\PBS\centering Estimate Robot Angle   &\PBS\centering Jia Wei Tan   &\PBS\centering \#82   &\PBS\centering March 17    \\\cline{1-4}
+\PBS\centering Motor Testing   &\PBS\centering Jia Wei Tan   &\PBS\centering \#79   &\PBS\centering March 17    \\\cline{1-4}
+\PBS\centering Initial Template   &\PBS\centering Adwait Naik   &\PBS\centering \#56   &\PBS\centering March 20   \\\cline{1-4}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md28}{}\doxysubsection{@ref Grocer\+Ease \char`\"{}\+Directory Tree\char`\"{}}\label{md_README_autotoc_md28}
+A detailed directory tree can be found \href{https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/directory-tree.md}{\texttt{ here}} \begin{DoxyVerb}|–– cmake
+|–– external
+| |–– wiringPi
+| | |–– debian
+| | |–– debian-template
+| | | |–– wiringPi
+| | | | |–– DEBIAN
+| | |–– devLib
+| | |–– examples
+| | | |–– Gertboard
+| | | |–– PiFace
+| | | |–– PiGlow
+| | | |–– q2w
+| | | |–– scrollPhat
+| | |–– gpio
+| | |–– pins
+| | |–– wiringPi
+| | |–– wiringPiD
+|–– include
+|–– src
+|–– utils
+| |–– GPIO deps
+| |–– concept illustration
+| |–– flow diagrams
+| | |–– compute angle
+| | |–– gpio
+| | |–– main program
+| | |–– write motor
+| |–– hardware
+| | |–– logs
+| |–– patches
+| |–– social media
+| | |–– logos
+\end{DoxyVerb}
+\hypertarget{md_README_autotoc_md29}{}\doxysubsection{@ref Grocer\+Ease \char`\"{}\+Social Media and Outreach\char`\"{}}\label{md_README_autotoc_md29}
+Follow us on social media platforms to keep up to date with our product updates and future plans\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://twitter.com/TechnologiesCat}{\texttt{ Twitter}}
+\item \href{https://www.instagram.com/cattechnologiesltd/}{\texttt{ Instagram}}
+\item \href{https://www.linkedin.com/company/cat-technologies8-ltd/}{\texttt{ Linkedin}}
+\item \href{https://www.youtube.com/channel/UCRmPlp3qE8imQI-GOUK1ZsA}{\texttt{ Youtube}}
+\end{DoxyItemize}
+
+Email us\+: \href{mailto:cattechnologiesltd8@gmail.com}{\texttt{ cattechnologiesltd8@gmail.\+com}}\hypertarget{md_README_autotoc_md30}{}\doxysubsection{@ref Grocer\+Ease \char`\"{}\+Contribution Guidelines\char`\"{}}\label{md_README_autotoc_md30}
+Thank you for your interest in our project. We strongly encourage reading the contribution guidelines before you be begin. The contribution guidelines for the repository can be found \href{https://github.com/RTEP-Project-Team/GrocerEase/blob/devel/Contribution_Guidelines.md}{\texttt{ here}}.\hypertarget{md_README_autotoc_md31}{}\doxysubsection{@ref Grocer\+Ease \char`\"{}\+Credits\char`\"{}}\label{md_README_autotoc_md31}
+{\ttfamily Grocer\+Ease} is maintained by the team at C.\+A.\+T technologies. Contributors include\+:
+
+
+\begin{DoxyItemize}
+\item Adwait Naik
+\item Anmol Kumar
+\item Jia Wei Tan
+\item Sarthak Ahuja 
+\end{DoxyItemize}
