@@ -15,7 +15,7 @@
 * [Problem Statement](#problem-statement)
 * [Conceptualisation](#conceptualisation)
 * [Project Roadmap](#project-roadmap)
-* [Usage Examples](#usage-examples)
+* [Language and Technologies](#language-and-technologies)
 * [Changelog](#changelog)
 * [Directory Tree](#directory-tree)
 * [Social Media and Outreach](#social-media-and-outreach)
@@ -34,10 +34,10 @@ Our approach is based on developing an intelligent, fully autonomous trolley bas
 
 The roadmap for our project can be found [here](https://github.com/CAT-Technologies/GrocerEase/projects/1).
 
-## [Usage Examples](#GrocerEase)
+## [Language and Technologies](#GrocerEase)
 
-Examples showing the project usage will be illustrated here.
-
+<p align="left"> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="jsp" width="40" height="40"/> </a> <a href="https://www.latex-project.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="latex" width="40" height="40"/> </a> <a href="https://cmake.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" alt="cmake" width="40" height="40"/> </a> <a href="https://www.raspberrypi.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" alt="cmake" width="40" height="40"/> </a>
+	
 ## [Changelog](#GrocerEase)
 
 | Added/Modified          | Author(s)    | Related PR  | Date        |
@@ -69,7 +69,7 @@ Follow us on social media platforms to keep up to date with our product updates 
         <a href="https://www.instagram.com/cattechnologiesltd/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" style="width: 40px; vertical-align: middle; margin-right: 5px;"></a>
         <a href="https://www.linkedin.com/company/cat-technologies8-ltd/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" style="width: 36px; vertical-align: middle; margin-right: 5px;"></a>
 	<a href="https://www.youtube.com/channel/UCRmPlp3qE8imQI-GOUK1ZsA" target="_blank"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" style="width: 36px; vertical-align: middle; margin-right: 5px;"></a>
-        <a href="cattechnologiesltd8@gmail.com" target="_blank"><img src="https://img.icons8.com/clouds/150/000000/gmail-new.png" style="width: 36px; vertical-align: middle; margin-right: 5px;"></a>
+        <a href="mailto:cattechnologiesltd8@gmail.com" target="_blank"><img src="https://img.icons8.com/clouds/150/000000/gmail-new.png" style="width: 36px; vertical-align: middle; margin-right: 5px;"></a>
     </div>
 </nav>
 
@@ -78,6 +78,8 @@ Follow us on social media platforms to keep up to date with our product updates 
 Thank you for your interest in our project. We strongly encourage reading the contribution guidelines before you be begin. The contribution guidelines for the repository can be found [here](https://github.com/RTEP-Project-Team/GrocerEase/blob/devel/Contribution_Guidelines.md).
 
 ## [Credits](#GrocerEase)
+
+We take this opportunity to express our gratitude and sincere appreciation to **Prof. Dr. Bernd Porr** and **Prof. Nicolas Bailey** for their constant support, and conscientious guidance throughtout the project. We would also like to thank **Mr. Tom O'Hara** for providing the appratus and guidance.
 
 `GrocerEase` is maintained by the team at C.A.T technologies. Contributors include:
 
