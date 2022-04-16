@@ -1,0 +1,19 @@
+name: build_and_run_DEBUG
+on: [push]
+jobs:
+  build_and_run:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: install bluetooth
+        run: sudo apt-get install libbluetooth-dev
+      - name: wiringpi
+        run: cd /${{github.workspace}}/external/wiringPi && ./build
+      - name: enter into correct dir and create a dir debug
+        run: cd /${{github.workspace}} && mkdir Debug
+      - name: run cmake
+        working-directory: /${{github.workspace}}/Debug
+        run: cmake -DCMAKE_BUILD_TYPE=Debug ..
+      - name: run make
+        working-directory: /${{github.workspace}}/Debug
+        run: make

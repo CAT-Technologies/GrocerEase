@@ -1,0 +1,347 @@
+\hypertarget{classCart}{}\doxysection{Cart Class Reference}
+\label{classCart}\index{Cart@{Cart}}
+
+
+brief description Purpose Input Output for Raspberry Pi  
+
+
+
+
+{\ttfamily \#include $<$cart.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCart_a7f3cca3064effa75315bd1cd08fda10b}{start}} ()
+\item 
+void \mbox{\hyperlink{classCart_a9500349670b16fdfae1be6ed456967b0}{stop}} ()
+\begin{DoxyCompactList}\small\item\em stopping the cart \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCart_a1600bad83beb1b1ac3479528a334ef87}{lw\+\_\+\+Forward}} ()
+\begin{DoxyCompactList}\small\item\em brief description forward wheel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCart_a740821510b4fd6976c42a0156925859f}{rw\+\_\+\+Forward}} ()
+\begin{DoxyCompactList}\small\item\em brief description forward wheel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCart_aaa4f76abf4b9cd8d8267e31a8b864f1b}{lw\+\_\+\+Backward}} ()
+\begin{DoxyCompactList}\small\item\em brief description backward wheel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCart_a937d094639672a935177af282ea45a98}{rw\+\_\+\+Backward}} ()
+\begin{DoxyCompactList}\small\item\em Right forward wheel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{write\+Motor}} (int L, int R)
+\begin{DoxyCompactList}\small\item\em motor working \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCart_a86560e8bd70d1bedb01c715896821e1c}{compute\+\_\+angle}} (int a, int b, int c)
+\begin{DoxyCompactList}\small\item\em angle computation for cart rotation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCart_a4c56b715229e0353c9fa6ba433f85138}\label{classCart_a4c56b715229e0353c9fa6ba433f85138}} 
+int {\bfseries get\+\_\+left\+IR} ()
+\item 
+\mbox{\Hypertarget{classCart_a3ae5766475e97d78fb1a9013cc1c80b9}\label{classCart_a3ae5766475e97d78fb1a9013cc1c80b9}} 
+int {\bfseries get\+\_\+right\+IR} ()
+\item 
+float \mbox{\hyperlink{classCart_ac2d720d602e6eebdb7a6c7538324ef67}{get\+Angle}} ()
+\begin{DoxyCompactList}\small\item\em angle computation formula \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCart_a084416c7d23c92b48542c3740671f09b}{get\+Distance\+\_\+a}} ()
+\begin{DoxyCompactList}\small\item\em fetching the distance between the beacon and the cart \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCart_a2b7c7ccb0a092affd0123d3a62d0da44}{estimate\+Robot\+Angle}} (float angle\+\_\+old\+\_\+robot, int rotation\+\_\+left, int rotation\+\_\+right, float time\+Step)
+\begin{DoxyCompactList}\small\item\em floating function for robot rotation angle estimation in the direction of beacon \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+brief description Purpose Input Output for Raspberry Pi 
+
+Copyright (C) 2022 Carry Assistant Trolley (C.\+A.\+T) Technologies
+
+Jia Wei Tan, February 16, 2022.
+
+This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02111, USA. 
+
+Definition at line \mbox{\hyperlink{cart_8h_source_l00027}{27}} of file \mbox{\hyperlink{cart_8h_source}{cart.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCart_a86560e8bd70d1bedb01c715896821e1c}\label{classCart_a86560e8bd70d1bedb01c715896821e1c}} 
+\index{Cart@{Cart}!compute\_angle@{compute\_angle}}
+\index{compute\_angle@{compute\_angle}!Cart@{Cart}}
+\doxysubsubsection{\texorpdfstring{compute\_angle()}{compute\_angle()}}
+{\footnotesize\ttfamily void Cart\+::compute\+\_\+angle (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+angle computation for cart rotation 
+
+
+
+Definition at line \mbox{\hyperlink{cart_8cpp_source_l00097}{97}} of file \mbox{\hyperlink{cart_8cpp_source}{cart.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00097                                            \{}
+\DoxyCodeLine{00098     d\_a = pow(20, (a + offset\_a));}
+\DoxyCodeLine{00099     d\_b = pow(20, (b + offset\_b));}
+\DoxyCodeLine{00100     d\_c = pow(20, (c + offset\_c));}
+\DoxyCodeLine{00101 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCart_a2b7c7ccb0a092affd0123d3a62d0da44}\label{classCart_a2b7c7ccb0a092affd0123d3a62d0da44}} 
+\index{Cart@{Cart}!estimateRobotAngle@{estimateRobotAngle}}
+\index{estimateRobotAngle@{estimateRobotAngle}!Cart@{Cart}}
+\doxysubsubsection{\texorpdfstring{estimateRobotAngle()}{estimateRobotAngle()}}
+{\footnotesize\ttfamily float Cart\+::estimate\+Robot\+Angle (\begin{DoxyParamCaption}\item[{float}]{angle\+\_\+old\+\_\+robot,  }\item[{int}]{rotation\+\_\+left,  }\item[{int}]{rotation\+\_\+right,  }\item[{float}]{time\+Step }\end{DoxyParamCaption})}
+
+
+
+floating function for robot rotation angle estimation in the direction of beacon 
+
+
+
+Definition at line \mbox{\hyperlink{cart_8cpp_source_l00124}{124}} of file \mbox{\hyperlink{cart_8cpp_source}{cart.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00124                                                                                                           \{}
+\DoxyCodeLine{00125     timeStep\_s = timeStep*pow(10,-\/3);}
+\DoxyCodeLine{00126     angle\_new\_robot = angle\_old\_robot + rocAngle*360*(rotation\_left -\/ rotation\_right)/(510)*timeStep\_s;}
+\DoxyCodeLine{00127 }
+\DoxyCodeLine{00128     \textcolor{keywordflow}{if} (angle\_new\_robot > 180)\{}
+\DoxyCodeLine{00129        angle\_new\_robot = angle\_new\_robot-\/360;}
+\DoxyCodeLine{00130     \}}
+\DoxyCodeLine{00131 }
+\DoxyCodeLine{00132     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (angle\_new\_robot < -\/180)\{}
+\DoxyCodeLine{00133        angle\_new\_robot = angle\_new\_robot+360;}
+\DoxyCodeLine{00134     \}}
+\DoxyCodeLine{00135 }
+\DoxyCodeLine{00136     \textcolor{keywordflow}{return} angle\_new\_robot;}
+\DoxyCodeLine{00137 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCart_ac2d720d602e6eebdb7a6c7538324ef67}\label{classCart_ac2d720d602e6eebdb7a6c7538324ef67}} 
+\index{Cart@{Cart}!getAngle@{getAngle}}
+\index{getAngle@{getAngle}!Cart@{Cart}}
+\doxysubsubsection{\texorpdfstring{getAngle()}{getAngle()}}
+{\footnotesize\ttfamily float Cart\+::get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+angle computation formula 
+
+
+
+Definition at line \mbox{\hyperlink{cart_8cpp_source_l00114}{114}} of file \mbox{\hyperlink{cart_8cpp_source}{cart.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00114                     \{}
+\DoxyCodeLine{00115     \textcolor{keywordflow}{return} acos((pow(d\_a, 2) + pow(d\_b, 2) -\/ pow(d\_c, 2))/(2 * d\_a * d\_b));}
+\DoxyCodeLine{00116 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCart_a084416c7d23c92b48542c3740671f09b}\label{classCart_a084416c7d23c92b48542c3740671f09b}} 
+\index{Cart@{Cart}!getDistance\_a@{getDistance\_a}}
+\index{getDistance\_a@{getDistance\_a}!Cart@{Cart}}
+\doxysubsubsection{\texorpdfstring{getDistance\_a()}{getDistance\_a()}}
+{\footnotesize\ttfamily float Cart\+::get\+Distance\+\_\+a (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+fetching the distance between the beacon and the cart 
+
+
+
+Definition at line \mbox{\hyperlink{cart_8cpp_source_l00119}{119}} of file \mbox{\hyperlink{cart_8cpp_source}{cart.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00119                          \{}
+\DoxyCodeLine{00120     \textcolor{keywordflow}{return} d\_a;}
+\DoxyCodeLine{00121 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCart_aaa4f76abf4b9cd8d8267e31a8b864f1b}\label{classCart_aaa4f76abf4b9cd8d8267e31a8b864f1b}} 
+\index{Cart@{Cart}!lw\_Backward@{lw\_Backward}}
+\index{lw\_Backward@{lw\_Backward}!Cart@{Cart}}
+\doxysubsubsection{\texorpdfstring{lw\_Backward()}{lw\_Backward()}}
+{\footnotesize\ttfamily void Cart\+::lw\+\_\+\+Backward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+brief description backward wheel 
+
+left wheel forward 
+
+Definition at line \mbox{\hyperlink{cart_8cpp_source_l00063}{63}} of file \mbox{\hyperlink{cart_8cpp_source}{cart.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00063                       \{}
+\DoxyCodeLine{00064     gpioWrite(en1, 0);}
+\DoxyCodeLine{00065     gpioWrite(en2, 1);}
+\DoxyCodeLine{00066 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCart_a1600bad83beb1b1ac3479528a334ef87}\label{classCart_a1600bad83beb1b1ac3479528a334ef87}} 
+\index{Cart@{Cart}!lw\_Forward@{lw\_Forward}}
+\index{lw\_Forward@{lw\_Forward}!Cart@{Cart}}
+\doxysubsubsection{\texorpdfstring{lw\_Forward()}{lw\_Forward()}}
+{\footnotesize\ttfamily void Cart\+::lw\+\_\+\+Forward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+brief description forward wheel 
+
+left wheel forward 
+
+Definition at line \mbox{\hyperlink{cart_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{cart_8cpp_source}{cart.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00051                      \{}
+\DoxyCodeLine{00052     gpioWrite(en1, 1);}
+\DoxyCodeLine{00053     gpioWrite(en2, 0);}
+\DoxyCodeLine{00054 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCart_a937d094639672a935177af282ea45a98}\label{classCart_a937d094639672a935177af282ea45a98}} 
+\index{Cart@{Cart}!rw\_Backward@{rw\_Backward}}
+\index{rw\_Backward@{rw\_Backward}!Cart@{Cart}}
+\doxysubsubsection{\texorpdfstring{rw\_Backward()}{rw\_Backward()}}
+{\footnotesize\ttfamily void Cart\+::rw\+\_\+\+Backward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Right forward wheel. 
+
+right wheel backward 
+
+Definition at line \mbox{\hyperlink{cart_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{cart_8cpp_source}{cart.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00069                       \{}
+\DoxyCodeLine{00070     gpioWrite(en3, 0);}
+\DoxyCodeLine{00071     gpioWrite(en4, 1);}
+\DoxyCodeLine{00072 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCart_a740821510b4fd6976c42a0156925859f}\label{classCart_a740821510b4fd6976c42a0156925859f}} 
+\index{Cart@{Cart}!rw\_Forward@{rw\_Forward}}
+\index{rw\_Forward@{rw\_Forward}!Cart@{Cart}}
+\doxysubsubsection{\texorpdfstring{rw\_Forward()}{rw\_Forward()}}
+{\footnotesize\ttfamily void Cart\+::rw\+\_\+\+Forward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+brief description forward wheel 
+
+right wheel forward 
+
+Definition at line \mbox{\hyperlink{cart_8cpp_source_l00057}{57}} of file \mbox{\hyperlink{cart_8cpp_source}{cart.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00057                      \{}
+\DoxyCodeLine{00058     gpioWrite(en3, 1);}
+\DoxyCodeLine{00059     gpioWrite(en4, 0);}
+\DoxyCodeLine{00060 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCart_a7f3cca3064effa75315bd1cd08fda10b}\label{classCart_a7f3cca3064effa75315bd1cd08fda10b}} 
+\index{Cart@{Cart}!start@{start}}
+\index{start@{start}!Cart@{Cart}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Cart\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Copyright (C) 2022 Carry Assistant Trolley (C.\+A.\+T) Technologies
+
+Jia Wei Tan, April 11, 2022.
+
+This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02111, USA. left motor working
+
+right motor working
+
+left and right ir input
+
+Definition at line \mbox{\hyperlink{cart_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{cart_8cpp_source}{cart.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027                 \{}
+\DoxyCodeLine{00028     \textcolor{keywordflow}{if} (gpioInitialise()<0) exit(1);}
+\DoxyCodeLine{00029 }
+\DoxyCodeLine{00031     gpioSetMode(en1, PI\_INPUT);}
+\DoxyCodeLine{00032     gpioSetMode(en2, PI\_INPUT);}
+\DoxyCodeLine{00033     gpioSetMode(motorL, PI\_ALT0);}
+\DoxyCodeLine{00034 }
+\DoxyCodeLine{00036     gpioSetMode(en3, PI\_INPUT);}
+\DoxyCodeLine{00037     gpioSetMode(en4, PI\_INPUT);}
+\DoxyCodeLine{00038     gpioSetMode(motorR, PI\_ALT0);}
+\DoxyCodeLine{00039 }
+\DoxyCodeLine{00041     gpioSetMode(left\_IR, PI\_INPUT);}
+\DoxyCodeLine{00042     gpioSetMode(right\_IR, PI\_INPUT);}
+\DoxyCodeLine{00043 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCart_a9500349670b16fdfae1be6ed456967b0}\label{classCart_a9500349670b16fdfae1be6ed456967b0}} 
+\index{Cart@{Cart}!stop@{stop}}
+\index{stop@{stop}!Cart@{Cart}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Cart\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+stopping the cart 
+
+
+
+Definition at line \mbox{\hyperlink{cart_8cpp_source_l00046}{46}} of file \mbox{\hyperlink{cart_8cpp_source}{cart.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00046                \{}
+\DoxyCodeLine{00047     gpioTerminate();}
+\DoxyCodeLine{00048 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}\label{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}} 
+\index{Cart@{Cart}!writeMotor@{writeMotor}}
+\index{writeMotor@{writeMotor}!Cart@{Cart}}
+\doxysubsubsection{\texorpdfstring{writeMotor()}{writeMotor()}}
+{\footnotesize\ttfamily void Cart\+::write\+Motor (\begin{DoxyParamCaption}\item[{int}]{L,  }\item[{int}]{R }\end{DoxyParamCaption})}
+
+
+
+motor working 
+
+L\+: Left Motor analog output R\+: Right Motor analog output range\+: -\/255 to 255
+
+Definition at line \mbox{\hyperlink{cart_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{cart_8cpp_source}{cart.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00075                                  \{}
+\DoxyCodeLine{00081     \textcolor{keywordflow}{if} (L >= 0) \{}
+\DoxyCodeLine{00082         \mbox{\hyperlink{classCart_a1600bad83beb1b1ac3479528a334ef87}{lw\_Forward}}();}
+\DoxyCodeLine{00083     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00084         \mbox{\hyperlink{classCart_aaa4f76abf4b9cd8d8267e31a8b864f1b}{lw\_Backward}}();}
+\DoxyCodeLine{00085     \}}
+\DoxyCodeLine{00086 }
+\DoxyCodeLine{00087     \textcolor{keywordflow}{if} (R >= 0) \{}
+\DoxyCodeLine{00088         \mbox{\hyperlink{classCart_a740821510b4fd6976c42a0156925859f}{rw\_Forward}}();}
+\DoxyCodeLine{00089     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00090         \mbox{\hyperlink{classCart_a937d094639672a935177af282ea45a98}{rw\_Backward}}();}
+\DoxyCodeLine{00091     \}}
+\DoxyCodeLine{00092     gpioPWM(motorL, abs(L));}
+\DoxyCodeLine{00093     gpioPWM(motorR, abs(R));}
+\DoxyCodeLine{00094 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/cart.\+h\item 
+src/cart.\+cpp\end{DoxyCompactItemize}
