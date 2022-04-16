@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['writemotor_0',['writeMotor',['../classCart.html#a98eefe9a8b411e548c919cde2e6ba7ba',1,'Cart']]]
+  ['setrssi_0',['setRSSI',['../classComputeAngle.html#ae78b6f692437579da19761509683040d',1,'ComputeAngle']]],
+  ['std_1',['std',['../namespacestd.html',1,'']]]
 ];
