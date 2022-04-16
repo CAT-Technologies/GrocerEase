@@ -1,0 +1,66 @@
+\hypertarget{src_2GPIO_8cpp_source}{}\doxysection{GPIO.\+cpp}
+\label{src_2GPIO_8cpp_source}\index{src/GPIO.cpp@{src/GPIO.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00021}00021 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00023}00023 \textcolor{preprocessor}{\#include <GPIO.h>}}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00025}00025 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \{}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00026}00026 \textcolor{preprocessor}{  \#include <wiringPi.h>}}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00029}00029 \textcolor{keyword}{using namespace }\mbox{\hyperlink{namespacestd}{std}};}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00031}\mbox{\hyperlink{classstd_1_1GPIO_a39c228dac6817b021fb19f26bc540858}{00031}} \textcolor{keywordtype}{void} GPIO::lw\_Forward()}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00032}00032 \{}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00033}00033    digitalWrite(21, 1);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00034}00034    digitalWrite(22, 0); }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00035}00035 \}}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00037}\mbox{\hyperlink{classstd_1_1GPIO_a6e53394512c1d113c5d5066fb3dd6de2}{00037}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classstd_1_1GPIO_a6e53394512c1d113c5d5066fb3dd6de2}{GPIO::lw\_Backward}}()}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00038}00038 \{}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00039}00039    digitalWrite(21, 0);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00040}00040    digitalWrite(22, 1); }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00041}00041 \}}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00043}\mbox{\hyperlink{classstd_1_1GPIO_a33b4eb4a066ca3437f46d7334f99835c}{00043}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classstd_1_1GPIO_a33b4eb4a066ca3437f46d7334f99835c}{GPIO::rw\_Forward}}()}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00044}00044 \{}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00045}00045    digitalWrite(4, 1);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00046}00046    digitalWrite(5, 0);   }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00047}00047 \}}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00049}\mbox{\hyperlink{classstd_1_1GPIO_a77aea82d66082df0bbcfcc1e5b6a15a2}{00049}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classstd_1_1GPIO_a77aea82d66082df0bbcfcc1e5b6a15a2}{GPIO::rw\_Backward}}()}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00050}00050 \{}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00051}00051    digitalWrite(4, 0);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00052}00052    digitalWrite(5, 1);    }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00053}00053 \}}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00055}00055 \textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00056}00056 \{}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00057}00057    \textcolor{keywordtype}{int} left\_IR = 7;}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00058}00058    \textcolor{keywordtype}{int} right\_IR = 16;}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00059}00059    }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00060}00060    wiringPiSetup();}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00062}00062    pinMode(21, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00063}00063    pinMode(22, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00064}00064    pinMode(23, PWM\_OUTPUT);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00066}00066    pinMode(4, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00067}00067    pinMode(5, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00068}00068    pinMode(26, PWM\_OUTPUT);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00070}00070    pinMode(7, INPUT);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00071}00071    pinMode(16, INPUT);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00073}00073    \textcolor{keywordflow}{while} (1) }
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00074}00074    \{}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00075}00075       \textcolor{keywordtype}{int} out1 = digitalRead(right\_IR);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00076}00076       \textcolor{keywordtype}{int} out2 = digitalRead(left\_IR);}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00077}00077       cout << out1 << out2 << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00078}00078    \}}
+\DoxyCodeLine{\Hypertarget{src_2GPIO_8cpp_source_l00079}00079 \}}
+
+\end{DoxyCode}

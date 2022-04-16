@@ -1,4 +1,4 @@
-/*
+/*!
  * Copyright (C) 2022 Carry Assistant Trolley (C.A.T) Technologies
  *  
  * Jia Wei Tan, February 26, 2022.
@@ -17,6 +17,8 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.
  */
+
+// TO BE DELETED OLD VERSION 
 
 #include <iostream>
 #include <cstdlib>

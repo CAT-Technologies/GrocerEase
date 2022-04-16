@@ -1,7 +1,7 @@
-/*!
+/*
  * Copyright (C) 2022 Carry Assistant Trolley (C.A.T) Technologies
  *  
- * Jia Wei Tan, February 26, 2022.
+ * Jia Wei Tan, March 17, 2022.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -18,62 +18,36 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.
  */
 
-#include <memory>
+/*General Purpose Input Output for Raspberry Pi */
 
-#include <GPIO.h>
-
-extern "C" {
-  #include <wiringPi.h>
-}
+#include "cart.h"
+#include <iostream>
+#include <unistd.h>
 
 using namespace std;
 
-void GPIO::lw_Forward()
+static unsigned int microsecond = 1000000;
+
+int main() 
 {
-   digitalWrite(21, 1);
-   digitalWrite(22, 0); 
-}
 
-void GPIO::lw_Backward()
-{
-   digitalWrite(21, 0);
-   digitalWrite(22, 1); 
-}
+    Cart cart;
+    cart.start();
 
-void GPIO::rw_Forward()
-{
-   digitalWrite(4, 1);
-   digitalWrite(5, 0);   
-}
+    int run = 1;
+    int L = 0;
+    int R = 0;
 
-void GPIO::rw_Backward()
-{
-   digitalWrite(4, 0);
-   digitalWrite(5, 1);    
-}
+    while (run == 1) {
 
-int main()
-{
-   int left_IR = 7;
-   int right_IR = 16;
-   
-   wiringPiSetup();
-
-   pinMode(21, OUTPUT);
-   pinMode(22, OUTPUT);
-   pinMode(23, PWM_OUTPUT);
-
-   pinMode(4, OUTPUT);
-   pinMode(5, OUTPUT);
-   pinMode(26, PWM_OUTPUT);
-
-   pinMode(7, INPUT);
-   pinMode(16, INPUT);
-
-   while (1) 
-   {
-      int out1 = digitalRead(right_IR);
-      int out2 = digitalRead(left_IR);
-      cout << out1 << out2 << "\n";
-   }
+        cart.writeMotor(L, R);
+        usleep(1 * microsecond);
+        L = L+10;
+        R = R+10;
+        if(L>250){
+        run = 0;
+        }
+    }
+    cart.stop();
+    
 }
