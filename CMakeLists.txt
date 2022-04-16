@@ -67,6 +67,8 @@ target_link_libraries(GrocerEase Threads::Threads)
 target_link_libraries(GrocerEase ${Boost_LIBRARIES} rt)
 
 include_directories(${pigpio_INCLUDE_DIR})
+
+find_library(pigpio_LIBRARIES NAMES pigpio)
 target_link_libraries(GrocerEase ${pigpio_LIBRARY} rt)
 
 target_link_libraries(GrocerEase crypt)
