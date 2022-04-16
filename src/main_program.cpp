@@ -25,24 +25,43 @@
 
 using namespace std;
 
+/***USED FOR TESTING***/
+// #include <time.h>
+// #include <unistd.h>
+
+// static unsigned int microsecond = 1000000;
+
+// float *feedAngle(float angleNflip_in[], int flip_test, float angle_new){
+//     //cout << angle_new << "  ";
+//     float angle = angle_new + flip_test*0.001;
+//     if (angle >=180){
+//         angle = 180;
+//         flip_test = -flip_test;
+//     }
+//     if (angle <= 0){
+//         angle = 0;
+//         flip_test = -flip_test;
+//     }
+//     angleNflip_in[0] = angle;
+//     angleNflip_in[1] = flip_test;
+//     return angleNflip_in;
+// }   
+    
 int main() {
   	/***INITIALIZE VARIABLES***/
     int a, b, c;                    //a: RSSI robot--phone, b: RSSI beacon--robot, c:vRSSI beacon--phone.
 	float angle_old;		        //previous angle of the user.
 	float angle_new;		        //current angle of the user.
     float angle_robot;              //current angle of the robot.
-	float angle_1;			        //used solely to compute angle difference.
-	float angle_2;			        //used solely to compute angle difference.
+    float angle_diff;
 	int followDistance = 1; 	    //the 'a' value the robot will try to maintain. Unit: metre.
 	int angleMove = 15; 		    //angle to accumulate before moving. Unit: degrees.
     float a_distance;               //a converted into distance.
-	//int *rotation;
 	int motorForward = 200;	        // !!--EDITABLE--!! default analog value to write to motor when moving forward. Range: 140-255.
 	int motorLeft;			        //analog value to left motor.
 	int motorRight;		            //analog value to right motor.
 	int rotate = 0;		            //when rotate=1, robot rotates.
 	int flip_cart = 1;		        //when flip_cart=1, angle is between 0 to 180. When flip_cart=-1, angle is between 0 to -180.
-	//int flip_robot = 1;
 	int clockwise = 0;		        //when clockwise=1, user is assumed to be moving clockwise.
 	int counterclockwise = 0;	    //when counterclockwise=1, user is assumed to be moving clockwise.
 	int read_rotation = 1;		    //when read_rotation=1, reads user rotation: CW/CCW/Static
@@ -55,29 +74,56 @@ int main() {
 	double timeRotate_right = 0;	//accumulated time where robot has rotated to the right whilst in forward motion.
 	double timeRotate_left = 0;	    //accumulated time where robot has rotated to the left whilst in forward motion.
     double timeUserStatic = 0;      //accumulated time where user has not moved.
-
+    Cart cart;
+    cart.start();
     
+    /***RSSI PART***/
     //initialize all angles based on the first received values of a, b, and c.
 	a = receive_a();                //unit: dB
 	b = receive_b();                //unit: dB
 	c = receive_c();                //unit: dB
-	angle_new = calculate_angle(a, b, c);   
+    cart.compute_angle(a,b,c);
+	angle_new = cart.getAngle();
 	angle_robot = angle_new;
 	angle_old = angle_new;
-
-    Cart cart;
+    
+    /***USED FOR TESTING***/
+    // angle_new = -60;
+	// angle_robot = 0;
+    // //angle_robot = 0;
+	// angle_old = angle_new;
+    // a_distance = 1.5;
+    // double runtime=0;
+    // int run = 1;
+    // float angleNflip_in[2];
+	// float *angleNflip_out;
+	// int flip_test = 1;
+    // float angle_feed = angle_new;
+    // int i=0;
+    // angle_diff = 90;
+     
 	
     /***MAIN SECTION***/
-	while (1) {
-      	a = receive_a(); 		
-      	b = receive_b();
-      	c = receive_c();
+	while (run == 1) {
+      	//a = receive_a(); 		
+      	//b = receive_b();
+      	//c = receive_c();
 	
 	    auto t_start = std::chrono::high_resolution_clock::now();     //start time of the current loop
         cart.compute_angle(a,b,c);
-      	angle_new = flip_cart*cart.getAngle;                          //!!--FUNCTION--!! Refer to calculate_angle()
-        a_distance = cart.getDistance_a;                              //
+      	angle_new = flip_cart*cart.getAngle();                          //!!--FUNCTION--!! Refer to calculate_angle()
+        a_distance = cart.getDistance_a();                              //
 
+        /***USED FOR TESTING: INCREASING ANGLES***/
+        //angleNflip_out = feedAngle(angleNflip_in, flip_test, angle_feed);
+        //angle_feed = angleNflip_out[0];
+		//flip_test = angleNflip_out[1];
+        //angle_new = flip_cart*angle_feed;
+        
+        //cout << "angle_new_in: " << angle_new << "  ";
+        //cout << "angle_old_in: " << angle_old << "  ";
+        //cout << "flip cart_in:" << flip_cart << "  ";
+        
         /******SECTION A: WHEN ROBOT IS STILL WITHIN FOLLOW DISTANCE******/
         if (a_distance <= followDistance){
             
@@ -92,7 +138,8 @@ int main() {
                 angle_robot = cart.estimateRobotAngle(angle_robot, -50, 0, timeRotate_right);
                 timeRotate_right = 0;
             }
-
+            //cout << "read_rotation in :" << read_rotation << "  ";
+            
             /*READ_CURRENT ROTATION*/
             //Function of this segment: Reads the current rotation of the user.
             if (read_rotation == 1){
@@ -100,34 +147,40 @@ int main() {
                     if (angle_new > angle_old){
                         clockwise = 1;
                         counterclockwise = 0;
+                        read_rotation = 0;
                     }
                     else if (angle_new < angle_old){
                         clockwise = 0;
                         counterclockwise = 1;
+                        read_rotation = 0;
                     }
                     else{
                         clockwise = 0;
                         counterclockwise = 0;
+                        read_rotation = 1;
                     }
-                    read_rotation = 0;
+                    //read_rotation = 0;
                 }
                 else{
                     if (angle_new > angle_old){
                         clockwise = 0;
                         counterclockwise = 1;
+                        read_rotation = 0;
                     }
                     else if (angle_new < angle_old){
                         clockwise = 1;
                         counterclockwise = 0;
+                        read_rotation = 0;
                     }
                     else{
                         clockwise = 0;
                         counterclockwise = 0;
+                        read_rotation = 1;
                     }
-                    read_rotation = 0;
+                    //read_rotation = 0;
                 }
             }
-            else
+            else{
             //frees up read_rotation if user remains static for more than 1 second.
                 if (abs(angle_new - angle_old) < 1){
                     timeUserStatic = timeUserStatic + elapsed_time_ms;
@@ -139,54 +192,24 @@ int main() {
                 else{
                     timeUserStatic = 0;    
                 }
-        
+            }
             /*RECOMPUTE angle_new WITH FLIPPING LOGIC*/
             //Function of this segment: conducts logical checks to deduce if a sign change is necessary.
 
             if (clockwise == 1){
-                if (flip_cart == 1){
-                //Explanation: When user is heading in the clockwise direction, the angle should be increasing in the 0 to 180 degrees segment.
-                //             If a decrease in angle is detected, flipping is conducted, thus changing the angle to the 0 to -180 degrees segment.
-                    if (angle_new < angle_old){
-                        angle_new = -angle_new;
-                        flip_cart = -1;
-                    }
-                    else{
-                        angle_new = angle_new;
-                    }
-                }
-                else {
-                //Vise Versa
-                    if (angle_new > angle_old){
-                        angle_new = -angle_new;
-                        flip_cart = 1;
-                    }
-                    else{
-                        angle_new = angle_new;
-                    }
+            //Explanation: When user is heading in the clockwise direction, the angle should be increasing in the 0 to 180 degrees segment.
+            //             If a decrease in angle is detected, flipping is conducted, thus changing the angle to the 0 to -180 degrees segment.
+                if (angle_new < angle_old){
+                    angle_new = -angle_new;
+                    flip_cart = -flip_cartS;
                 }
             }
             else if (counterclockwise == 1){
-                if (flip_cart == 1){
-                //Explanation: When user is heading in the counterclockwise direction, the angle should be decreasing in the 0 to 180 degrees segment.
-                //             If an increase in angle is detected, flipping is conducted, thus changing the angle to the 0 to -180 degrees segment.
-                    if (angle_new > angle_old){
-                        angle_new = -angle_new;
-                        flip_cart = -1;
-                    }
-                    else{
-                        angle_new = angle_new;                       
-                    }
-                }
-                else {
-                //Vise Versa
-                    if (angle_new < angle_old){
-                        angle_new = -angle_new;
-                        flip_cart = 1;
-                    }
-                    else{
-                        angle_new = angle_new;
-                    }
+            //Explanation: When user is heading in the counterclockwise direction, the angle should be decreasing in the 0 to 180 degrees segment.
+            //             If an increase in angle is detected, flipping is conducted, thus changing the angle to the 0 to -180 degrees segment.
+                if (angle_new > angle_old){
+                    angle_new = -angle_new;
+                    flip_cart = -flip_cart;
                 }
             }
         
@@ -222,41 +245,56 @@ int main() {
                     motorLeft = -255;               //!!--EDITABLE--!! Range: 0 to -255
                     motorRight = 255;               //!!--EDITABLE--!! Range: 0 to 255
                 }
-                writeMotor(motorLeft, motorRight);                                                            //!!--FUNCTION--!! Refer to writeMotor()
+                cart.writeMotor(motorLeft, motorRight);                                                            //!!--FUNCTION--!! Refer to writeMotor()
                 angle_robot = cart.estimateRobotAngle(angle_robot, motorLeft, motorRight, elapsed_time_ms);        //!!--FUNCTION--!! Refer to estimateRobotAngle()
-            
-                if (abs(angle_robot-angle_new < 1){
-                //If current robot angle is equal to current angle of the user. (Tolerance 1 degrees !!--EDITABLE--!!)
+
+                
+                if (abs(angle_robot-angle_new) < 0.1){
+                //If current robot angle is equal to current angle of the user. (Tolerance 0.1 degrees !!--EDITABLE--!!)
                     rotate = 0; 		            //stops rotation   
                     cart.writeMotor(0, 0);                             
-                    }
                 }
+            }
+            
         }
 
         /******SECTION B: WHEN ROBOT IS OUTSIDE FOLLOW DISTANCE******/
         else if (a_distance > followDistance) {
-
+            
+            /*CONVERTS ANGLE DIFFERENCE BEFORE MOVING FORWARD TO TIME (REVERSE OF ANGLE CORRECTION IN SECTION A)*/
+            if (angle_diff != 0){
+                if (angle_diff > 0){
+                   timeRotate_left = cart.angleToTime(angle_diff, 0, -correction);
+                   angle_diff = 0;
+                }
+                else{
+                   timeRotate_right = cart.angleToTime(angle_diff, -correction, 0);
+                   angle_diff = 0;
+                }
+            }
             /*READS IR SENSOR*/
-            ir_left = cart.get_leftIR;
-            ir_right = cart.get_rightIR;
+            ir_left = cart.get_leftIR();
+            ir_right = cart.get_rightIR();
+            
+            //cout << ir_left << "  " << ir_right << "  ";
 
             /*ROTATION DUE TO OBSTACLE*/
-            if (ir_left == 1 && ir_right == 0){
+            if (ir_left == 0 && ir_right == 1){
             //If obstacle is detected at left while robot is moving, moves to the right. Also, counts the time of the rotation to the right.
                 leftAmend = 0;          //!!--EDITABLE--!!
-                rightAmend = -50;       //!!--EDITABLE--!!
+                rightAmend = -correction;       //!!--EDITABLE--!!
                 timeRotate_right = timeRotate_right + elapsed_time_ms;
             }
 
-            else if (ir_left == 0 && ir_right == 1){
+            else if (ir_left == 1 && ir_right == 0){
             //If obstacle is detected at right while robot is moving, moves to the left. Also, counts the time of the rotation to the left.
-                leftAmend = -50;        //!!--EDITABLE--!!
+                leftAmend = -correction;        //!!--EDITABLE--!!
                 rightAmend = 0;         //!!--EDITABLE--!!
                 timeRotate_left = timeRotate_left + elapsed_time_ms;
             }
-            else if (ir_left == 1 && ir_right == 1){
+            else if (ir_left == 0 && ir_right == 0){
             //If obstacle is detected at both sides while robot is moving, moves to the left. Also, counts the time of the rotation to the left.
-                leftAmend = -50;        //!!--EDITABLE--!!
+                leftAmend = -correction;        //!!--EDITABLE--!!
                 rightAmend = 0;         //!!--EDITABLE--!!
                 timeRotate_left = timeRotate_left + elapsed_time_ms;
             }
@@ -291,11 +329,37 @@ int main() {
             motorRight = motorForward + rightAmend;
             cart.writeMotor(motorLeft, motorRight);
             angle_robot = angle_new;
-            }
-        } 
+            
+            cout << motorLeft << "  " << motorRight << "  ";
+        }
+         
         else {
             cart.writeMotor(0, 0);
         }
-    auto t_end = std::chrono::high_resolution_clock::now();
-    elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
+        angle_old = angle_new;
+        auto t_end = std::chrono::high_resolution_clock::now();
+        elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
+        
+        /**USED FOR TESTING**/
+        // runtime = runtime + elapsed_time_ms;
+        // //cout << "angle feed:" << angle_feed << "  ";
+        // //cout << "angle new:" << angle_new << "  ";
+        // //cout << "angle robot:" << angle_robot << "  ";
+        // //cout << "angle diff:" << angle_diff << "  ";
+        
+        // //cout << "read_rotation out:" << read_rotation << "  ";
+        // //cout << "clockwise:" << clockwise << "  ";
+        // //cout << "counterclockwise:" << counterclockwise << "  ";
+        // //cout << "flip cart:" << flip_cart << "  ";
+        // cout << "\n";
+        
+        // //run = 0;
+        // //i++;
+        // if (runtime > 10000){
+        // //if (i > 1000){
+        //     run = 0;
+        //     cart.stop();
+        //     cout << "END!";
+        // }
     }
+}
