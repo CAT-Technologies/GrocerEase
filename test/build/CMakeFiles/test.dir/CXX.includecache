@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anmol/GitHub/GrocerEase/src/ComputeAngle.cpp
+iostream
+-
+cmath
+-
+
+/home/anmol/GitHub/GrocerEase/test/ComputeAngleTest.cpp
+../src/ComputeAngle.cpp
+/home/anmol/GitHub/GrocerEase/src/ComputeAngle.cpp
+gtest/gtest.h
+-
+

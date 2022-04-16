@@ -56,7 +56,7 @@ class ComputeAngle
    	static const int offset_a = -52;      
    	static const int offset_b = -52;
    	static const int offset_c = -52;
-      	static const int N = 2;
+      	static const int N = 3;
   
    	/// \brief angle.
    	float angle;
@@ -124,23 +124,23 @@ class ComputeAngle
          
 };
 
-/// 
-/// int main()
-/// {
-///    ComputeAngle CompAng;
-/// 
-///    CompAng.setRSSI(-60, -70, -90);
-/// 
-///    /*! CompAng.getAngle not working as expected probably
-///       test with proper values to get angle between a and b - check trilateration demo values*/
-/// 
-/// #ifdef DEBUG
-///    cout << "\n"<< "The distance a is : " << CompAng.get_a() << endl;
-///    cout << "The calculated angle is : "<< CompAng.getAngle() << endl;       
-/// #endif
-/// 
-///   /*! add possible unit test after all these changes */
-///    
-///    return 0;
-/// }
-/// 
+ // 
+ // int main()
+ // {
+ //    ComputeAngle CompAng;
+ // 
+ //    CompAng.setRSSI(-60, -70, -90);
+ // 
+ //    /*! CompAng.getAngle not working as expected probably
+ //       test with proper values to get angle between a and b - check trilateration demo values*/
+ // 
+ // #ifdef DEBUG
+ //    cout << "\n"<< "The distance a is : " << CompAng.get_a() << endl;
+ //    cout << "The calculated angle is : "<< CompAng.getAngle() << endl;       
+ // #endif
+ // 
+ //   /*! add possible unit test after all these changes */
+ //    
+ //    return 0;
+ // }
+ // 
