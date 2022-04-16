@@ -66,8 +66,9 @@ target_link_libraries(GrocerEase Threads::Threads)
 # Link against libraries
 Target_link_libraries(GrocerEase ${Boost_LIBRARIES} rt)
 
-find_package(pigpio REQUIRED)
+find_library(PIGPIO_LIBRARIES NAMES pigpio)
 target_link_libraries(GrocerEase pigpio rt)
+
 target_link_libraries(GrocerEase crypt)
 
 
