@@ -50,7 +50,7 @@ add_executable(GrocerEase
   )
 
 # Include WiringPi directories
-#find_package(WiringPi REQUIRED)
+find_package(WiringPi REQUIRED)
 
 # Include headers
 include_directories(${WIRINGPI_INCLUDE_DIRS})
@@ -66,6 +66,7 @@ target_link_libraries(GrocerEase Threads::Threads)
 # Link against libraries
 target_link_libraries(GrocerEase ${Boost_LIBRARIES} rt)
 
+find_package(pigpio REQUIRED)
 include_directories(${pigpio_INCLUDE_DIRS})
 
 find_library(pigpio_LIBRARIES NAMES pigpio)
