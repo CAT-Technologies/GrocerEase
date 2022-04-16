@@ -19,10 +19,13 @@
  */
 
 #include "cart.h"
-#include <pigpio.h> 
 #include <iostream>
 #include <unistd.h>
 #include <cmath>
+
+extern "C" {
+  #include <pigpio.h>
+}
 
 void Cart::start(){
     if (gpioInitialise()<0) exit(1);
