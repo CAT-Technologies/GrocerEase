@@ -31,14 +31,11 @@
 	18/02/22			Misc hardware/stationery shopping  						      Sarthak Ahuja
 													                      Adwait Naik
 
-	
-
 		
-					Circuit design ? etc.. to be added in order by Jia Wei Tan
-	
-	
-	
-	
+	17/2/22				Circuit design									      Jia Wei Tan
+															      Adwait Naik
+					
+					Assembly (IR sensors), sensor testing					              Jia Wei Tan	
 	
 	
 	01/03/22		    Lab Visit for soldering 						  		      Jia Wei Tan
@@ -46,8 +43,12 @@
 
 
 
-	03/03/22   		    Assembly with all sensors								      Jia Wei Tan	
+	03/03/22   		    Assembly (chassis + motor driver + motors), motor testing				      Jia Wei Tan			    
 	
 	27/03/22                    Initial mobile app testing with raspi						      Sarthak Ahuja
 	
 	07/04/22		    Further mobile app raspi communication testing					      Sarthak Ahuja
+	
+	13/04/22		    RSSI calibration for offset calculation						      Sarthak Ahuja
+	
+	15/04/22		    Testing for rotation and obstacle avoidance algoritm				      Jia Wei Tan
