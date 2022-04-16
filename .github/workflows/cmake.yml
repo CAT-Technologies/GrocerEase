@@ -10,7 +10,7 @@ jobs:
       - name: wiringpi
         run: cd /${{github.workspace}}/external/wiringPi && ./build
       - name: pigpio
-        run: cd /${{github.workspace}}/external/pigpio && make
+        run: cd /${{github.workspace}}/external/pigpio && make install
       - name: enter into correct dir and create build file
         run: cd /${{github.workspace}} && mkdir build
       - name: run cmake
