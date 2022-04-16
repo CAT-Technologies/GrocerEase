@@ -50,7 +50,7 @@ add_executable(GrocerEase
   )
 
 # Include WiringPi directories
-find_package(WiringPi REQUIRED)
+# find_package(WiringPi REQUIRED)
 
 # Include headers
 include_directories(${WIRINGPI_INCLUDE_DIRS})
