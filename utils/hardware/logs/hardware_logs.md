@@ -49,4 +49,6 @@
 	
 	07/04/22		    Further mobile app raspi communication testing					      Sarthak Ahuja
 	
+	13/04/22		    RSSI calibration for offset calculation						      Sarthak Ahuja
+	
 	15/04/22		    Testing for rotation and obstacle avoidance algoritm				      Jia Wei Tan
