@@ -1,4 +1,4 @@
-/*
+/*!
  * Copyright (C) 2022 Carry Assistant Trolley (C.A.T) Technologies
  *  
  * Jia Wei Tan, February 26, 2022.
@@ -203,10 +203,6 @@ int main() {
                     angle_new = -angle_new;
                     flip_cart = -flip_cartS;
                 }
-                else{
-                    angle_new = angle_new;
-                }
-
             }
             else if (counterclockwise == 1){
             //Explanation: When user is heading in the counterclockwise direction, the angle should be decreasing in the 0 to 180 degrees segment.
@@ -214,9 +210,6 @@ int main() {
                 if (angle_new > angle_old){
                     angle_new = -angle_new;
                     flip_cart = -flip_cart;
-                }
-                else{
-                    angle_new = angle_new;                       
                 }
             }
         
