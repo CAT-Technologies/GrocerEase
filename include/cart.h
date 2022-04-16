@@ -40,32 +40,40 @@ public:
     	void stop();
     }
     
-    /// \brief Left forward wheel
+    /// \brief Left forward wheel declaration
     void lw_Forward();
 
-    /// \brief Right forward wheel
+    /// \brief Right forward wheel declaration
     void rw_Forward();
 
-    /// \brief Left backward wheel
+    /// \brief Left backward wheel declaration
     void lw_Backward();
 
-    /// \brief Right forward wheel
+    /// \brief Right forward wheel declaration
     void rw_Backward();
 
+    /// \brief write motor declaration
     void writeMotor(int L, int R);
 
+    /// \brief compute angle  declaration
     void compute_angle(int a, int b, int c);
     
+    /// \brief left IR sensor declaration
     int get_leftIR();
 
+    /// \brief right IR sensor declaration
     int get_rightIR();
 
+    /// \brief get calcualted angle declaration
     float getAngle();
 
+    /// \brief get calculated distance declaration
     float getDistance_a();
     
+    /// \brief calculate angle declaration
     float estimateRobotAngle(float angle_old_robot, int rotation_left, int rotation_right, float timeStep);
     
+    /// \brief angle-time estimation declaration
     float angleToTime(float angle_diff, int rotation_left, int rotation_right);
 
 private:
