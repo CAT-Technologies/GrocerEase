@@ -9,97 +9,120 @@
 \DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00024}00024 \textcolor{preprocessor}{\#include <unistd.h>}}
 \DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00025}00025 \textcolor{preprocessor}{\#include <cmath>}}
 \DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00026}00026 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00027}\mbox{\hyperlink{classCart_a7f3cca3064effa75315bd1cd08fda10b}{00027}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a7f3cca3064effa75315bd1cd08fda10b}{Cart::start}}()\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00028}00028     \textcolor{keywordflow}{if} (gpioInitialise()<0) exit(1);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00029}00029 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00031}00031     gpioSetMode(en1, PI\_INPUT);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00032}00032     gpioSetMode(en2, PI\_INPUT);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00033}00033     gpioSetMode(motorL, PI\_ALT0);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00034}00034 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00036}00036     gpioSetMode(en3, PI\_INPUT);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00037}00037     gpioSetMode(en4, PI\_INPUT);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00038}00038     gpioSetMode(motorR, PI\_ALT0);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00039}00039 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00041}00041     gpioSetMode(left\_IR, PI\_INPUT);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00042}00042     gpioSetMode(right\_IR, PI\_INPUT);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00043}00043 \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00044}00044 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00046}\mbox{\hyperlink{classCart_a9500349670b16fdfae1be6ed456967b0}{00046}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a9500349670b16fdfae1be6ed456967b0}{Cart::stop}}()\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00047}00047     gpioTerminate();}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00048}00048 \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00049}00049 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00051}\mbox{\hyperlink{classCart_a1600bad83beb1b1ac3479528a334ef87}{00051}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a1600bad83beb1b1ac3479528a334ef87}{Cart::lw\_Forward}}()\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00052}00052     gpioWrite(en1, 1);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00053}00053     gpioWrite(en2, 0);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00054}00054 \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00055}00055 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00057}\mbox{\hyperlink{classCart_a740821510b4fd6976c42a0156925859f}{00057}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a740821510b4fd6976c42a0156925859f}{Cart::rw\_Forward}}()\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00058}00058     gpioWrite(en3, 1);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00059}00059     gpioWrite(en4, 0);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00060}00060 \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00061}00061 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00063}\mbox{\hyperlink{classCart_aaa4f76abf4b9cd8d8267e31a8b864f1b}{00063}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_aaa4f76abf4b9cd8d8267e31a8b864f1b}{Cart::lw\_Backward}}()\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00064}00064     gpioWrite(en1, 0);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00065}00065     gpioWrite(en2, 1);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00066}00066 \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00067}00067 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00069}\mbox{\hyperlink{classCart_a937d094639672a935177af282ea45a98}{00069}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a937d094639672a935177af282ea45a98}{Cart::rw\_Backward}}()\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00070}00070     gpioWrite(en3, 0);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00071}00071     gpioWrite(en4, 1);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00072}00072 \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00073}00073 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00075}\mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{00075}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{Cart::writeMotor}}(\textcolor{keywordtype}{int} L, \textcolor{keywordtype}{int} R)\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00081}00081     \textcolor{keywordflow}{if} (L >= 0) \{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00082}00082         \mbox{\hyperlink{classCart_a1600bad83beb1b1ac3479528a334ef87}{lw\_Forward}}();}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00083}00083     \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00084}00084         \mbox{\hyperlink{classCart_aaa4f76abf4b9cd8d8267e31a8b864f1b}{lw\_Backward}}();}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00085}00085     \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00086}00086 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00087}00087     \textcolor{keywordflow}{if} (R >= 0) \{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00088}00088         \mbox{\hyperlink{classCart_a740821510b4fd6976c42a0156925859f}{rw\_Forward}}();}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00089}00089     \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00090}00090         \mbox{\hyperlink{classCart_a937d094639672a935177af282ea45a98}{rw\_Backward}}();}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00091}00091     \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00092}00092     gpioPWM(motorL, abs(L));}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00093}00093     gpioPWM(motorR, abs(R));}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00094}00094 \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00095}00095 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00097}\mbox{\hyperlink{classCart_a86560e8bd70d1bedb01c715896821e1c}{00097}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a86560e8bd70d1bedb01c715896821e1c}{Cart::compute\_angle}}(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b, \textcolor{keywordtype}{int} c)\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00098}00098     d\_a = pow(20, (a + offset\_a));}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00099}00099     d\_b = pow(20, (b + offset\_b));}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00100}00100     d\_c = pow(20, (c + offset\_c));}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00101}00101 \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00102}00102 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00104}00104 \textcolor{keywordtype}{int} get\_leftIR(\textcolor{keyword}{const} \textcolor{keywordtype}{int} left\_IR)\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00105}00105     \textcolor{keywordflow}{return} gpioRead(left\_IR);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00106}00106 \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00107}00107 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00109}00109 \textcolor{keywordtype}{int} get\_rightIR(\textcolor{keyword}{const} \textcolor{keywordtype}{int} right\_IR)\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00110}00110     \textcolor{keywordflow}{return} gpioRead(right\_IR);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00111}00111 \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00112}00112 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00114}\mbox{\hyperlink{classCart_ac2d720d602e6eebdb7a6c7538324ef67}{00114}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCart_ac2d720d602e6eebdb7a6c7538324ef67}{Cart::getAngle}}()\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00115}00115     \textcolor{keywordflow}{return} acos((pow(d\_a, 2) + pow(d\_b, 2) -\/ pow(d\_c, 2))/(2 * d\_a * d\_b));}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00116}00116 \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00117}00117 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00119}\mbox{\hyperlink{classCart_a084416c7d23c92b48542c3740671f09b}{00119}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCart_a084416c7d23c92b48542c3740671f09b}{Cart::getDistance\_a}}()\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00120}00120     \textcolor{keywordflow}{return} d\_a;}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00121}00121 \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00122}00122 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00124}\mbox{\hyperlink{classCart_a2b7c7ccb0a092affd0123d3a62d0da44}{00124}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCart_a2b7c7ccb0a092affd0123d3a62d0da44}{Cart::estimateRobotAngle}}(\textcolor{keywordtype}{float} angle\_old\_robot, \textcolor{keywordtype}{int} rotation\_left, \textcolor{keywordtype}{int} rotation\_right, \textcolor{keywordtype}{float} timeStep)\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00125}00125     timeStep\_s = timeStep*pow(10,-\/3);}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00126}00126     angle\_new\_robot = angle\_old\_robot + rocAngle*360*(rotation\_left -\/ rotation\_right)/(510)*timeStep\_s;}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00027}00027 \textcolor{keywordtype}{void} Cart::start()}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00028}00028 \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00029}00029     \textcolor{keywordflow}{if} (gpioInitialise()<0) }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00030}00030         exit(1);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00032}00032     \textcolor{comment}{// \(\backslash\)brief left motor}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00033}00033     gpioSetMode(en1, PI\_INPUT);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00034}00034     gpioSetMode(en2, PI\_INPUT);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00035}00035     gpioSetMode(motorL, PI\_ALT0);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00037}00037     \textcolor{comment}{// \(\backslash\)brief right motor}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00038}00038     gpioSetMode(en3, PI\_INPUT);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00039}00039     gpioSetMode(en4, PI\_INPUT);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00040}00040     gpioSetMode(motorR, PI\_ALT0);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00042}00042     gpioSetMode(left\_IR, PI\_INPUT);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00043}00043     gpioSetMode(right\_IR, PI\_INPUT);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00044}00044 \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00046}00046 \textcolor{keywordtype}{void} Cart::stop()}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00047}00047 \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00048}00048     \mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{writeMotor}}(0,0);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00049}00049     gpioTerminate();}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00050}00050 \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00052}\mbox{\hyperlink{classCart_a1600bad83beb1b1ac3479528a334ef87}{00052}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a1600bad83beb1b1ac3479528a334ef87}{Cart::lw\_Forward}}()}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00053}00053 \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00054}00054     gpioWrite(en1, 1);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00055}00055     gpioWrite(en2, 0);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00056}00056 \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00058}\mbox{\hyperlink{classCart_a740821510b4fd6976c42a0156925859f}{00058}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a740821510b4fd6976c42a0156925859f}{Cart::rw\_Forward}}()}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00059}00059 \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00060}00060     gpioWrite(en3, 1);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00061}00061     gpioWrite(en4, 0);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00062}00062 \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00064}\mbox{\hyperlink{classCart_aaa4f76abf4b9cd8d8267e31a8b864f1b}{00064}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_aaa4f76abf4b9cd8d8267e31a8b864f1b}{Cart::lw\_Backward}}()}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00065}00065 \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00066}00066     gpioWrite(en1, 0);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00067}00067     gpioWrite(en2, 1);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00068}00068 \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00070}\mbox{\hyperlink{classCart_a937d094639672a935177af282ea45a98}{00070}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a937d094639672a935177af282ea45a98}{Cart::rw\_Backward}}()}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00071}00071 \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00072}00072     gpioWrite(en3, 0);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00073}00073     gpioWrite(en4, 1);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00074}00074 \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00076}\mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{00076}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{Cart::writeMotor}}(\textcolor{keywordtype}{int} L, \textcolor{keywordtype}{int} R)}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00077}00077 \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00083}00083     \textcolor{keywordflow}{if} (L >= 0) \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00084}00084         \mbox{\hyperlink{classCart_a1600bad83beb1b1ac3479528a334ef87}{lw\_Forward}}();}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00085}00085     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00086}00086         \mbox{\hyperlink{classCart_aaa4f76abf4b9cd8d8267e31a8b864f1b}{lw\_Backward}}();}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00087}00087     \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00089}00089     \textcolor{keywordflow}{if} (R >= 0) \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00090}00090         \mbox{\hyperlink{classCart_a740821510b4fd6976c42a0156925859f}{rw\_Forward}}();}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00091}00091     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00092}00092         \mbox{\hyperlink{classCart_a937d094639672a935177af282ea45a98}{rw\_Backward}}();}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00093}00093     \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00094}00094     gpioPWM(motorL, abs(L));}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00095}00095     gpioPWM(motorR, abs(R));}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00096}00096 \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00098}\mbox{\hyperlink{classCart_a86560e8bd70d1bedb01c715896821e1c}{00098}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a86560e8bd70d1bedb01c715896821e1c}{Cart::compute\_angle}}(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b, \textcolor{keywordtype}{int} c)}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00099}00099 \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00100}00100     d\_a = pow(20, (a + offset\_a));}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00101}00101     d\_b = pow(20, (b + offset\_b));}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00102}00102     d\_c = pow(20, (c + offset\_c));}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00103}00103 \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00105}\mbox{\hyperlink{classCart_ac2d720d602e6eebdb7a6c7538324ef67}{00105}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCart_ac2d720d602e6eebdb7a6c7538324ef67}{Cart::getAngle}}()}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00106}00106 \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00107}00107     \textcolor{keywordflow}{return} acos((pow(d\_a, 2) + pow(d\_b, 2) -\/ pow(d\_c, 2))/(2 * d\_a * d\_b));}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00108}00108 \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00110}\mbox{\hyperlink{classCart_a084416c7d23c92b48542c3740671f09b}{00110}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCart_a084416c7d23c92b48542c3740671f09b}{Cart::getDistance\_a}}()}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00111}00111 \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00112}00112     \textcolor{keywordflow}{return} d\_a;}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00113}00113 \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00115}\mbox{\hyperlink{classCart_a4c56b715229e0353c9fa6ba433f85138}{00115}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classCart_a4c56b715229e0353c9fa6ba433f85138}{Cart::get\_leftIR}}()}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00116}00116 \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00117}00117     \textcolor{keywordflow}{return} gpioRead(left\_IR);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00118}00118 \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00120}\mbox{\hyperlink{classCart_a3ae5766475e97d78fb1a9013cc1c80b9}{00120}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classCart_a3ae5766475e97d78fb1a9013cc1c80b9}{Cart::get\_rightIR}}()}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00121}00121 \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00122}00122     \textcolor{keywordflow}{return} gpioRead(right\_IR);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00123}00123 \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00125}\mbox{\hyperlink{classCart_a2b7c7ccb0a092affd0123d3a62d0da44}{00125}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCart_a2b7c7ccb0a092affd0123d3a62d0da44}{Cart::estimateRobotAngle}}(\textcolor{keywordtype}{float} angle\_old\_robot, \textcolor{keywordtype}{int} rotation\_left, \textcolor{keywordtype}{int} rotation\_right, \textcolor{keywordtype}{float} timeStep)}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00126}00126 \{}
 \DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00127}00127 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00128}00128     \textcolor{keywordflow}{if} (angle\_new\_robot > 180)\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00129}00129        angle\_new\_robot = angle\_new\_robot-\/360;}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00130}00130     \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00131}00131 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00132}00132     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (angle\_new\_robot < -\/180)\{}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00133}00133        angle\_new\_robot = angle\_new\_robot+360;}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00134}00134     \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00135}00135 }
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00136}00136     \textcolor{keywordflow}{return} angle\_new\_robot;}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00137}00137 \}}
-\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00138}00138 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00128}00128     timeStep\_s = timeStep*pow(10,-\/2);}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00129}00129     angle\_new\_robot = angle\_old\_robot + rocAngle*360*(rotation\_left -\/ rotation\_right)/(510)*timeStep\_s;}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00130}00130 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00131}00131     \textcolor{keywordflow}{if} (angle\_new\_robot > 180)\{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00132}00132        angle\_new\_robot = angle\_new\_robot-\/360;}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00133}00133     \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00134}00134 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00135}00135     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (angle\_new\_robot < -\/180)\{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00136}00136        angle\_new\_robot = angle\_new\_robot+360;}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00137}00137     \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00138}00138     }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00139}00139     \textcolor{keywordflow}{return} angle\_new\_robot;}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00140}00140 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00141}00141 \}}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00142}00142 }
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00143}\mbox{\hyperlink{classCart_a9ece0a7138b3da7075ba186109b2e713}{00143}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCart_a9ece0a7138b3da7075ba186109b2e713}{Cart::angleToTime}}(\textcolor{keywordtype}{float} angle\_diff, \textcolor{keywordtype}{int} rotation\_left, \textcolor{keywordtype}{int} rotation\_right)}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00144}00144 \{}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00145}00145     \textcolor{keywordflow}{return} abs(angle\_diff*510/rocAngle/360/(rotation\_left -\/ rotation\_right)*pow(10,2));}
+\DoxyCodeLine{\Hypertarget{cart_8cpp_source_l00146}00146 \}}
 
 \end{DoxyCode}

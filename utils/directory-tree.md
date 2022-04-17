@@ -1,64 +1,85 @@
-    .
-    ├── CMakeLists.txt
-    ├── CODE_OF_CONDUCT.md
-    ├── CONTRIBUTING.md
-    ├── LICENSE
-    ├── README.md
-    ├── cmake
-    │   ├── Ccache.cmake
-    │   ├── CodeCoverage.cmake
-    │   ├── ConfigSafeGuards.cmake
-    │   ├── Documentation.cmake
-    │   ├── LTO.cmake
-    │   ├── StaticAnalyzers.cmake
-    │   └── Warnings.cmake
-    ├── include
-    │   └── GPIO.hh
-    ├── src
-    │   ├── CMakeLists.txt
-    │   ├── ComputeAngle.cc
-    │   └── GPIO.cc
-    └── utils
-        ├── Components_Sourcing&Costing.xlsx
-        ├── GPIO deps
-        │   └── GPIO
-        ├── concept illustration
-        │   ├── 1.png
-        │   ├── 2.png
-        │   ├── 3.png
-        │   ├── 4.png
-        │   ├── 5.png
-        │   ├── Concept_rssi.png
-        │   ├── DataFlow_Trilateration.jpeg
-        │   ├── Trilateration_discussion.png
-        │   └── block_diagram.jpeg
-        ├── flow diagrams
-        │   ├── compute angle
-        │   │   ├── code.txt
-        │   │   └── flow_diagrams.png
-        │   ├── gpio
-        │   │   ├── code.txt
-        │   │   └── flow_diagrams.png
-        │   ├── main program
-        │   │   ├── code.txt
-        │   │   └── flow_diagrams.png
-        │   └── write motor
-        │       ├── code.txt
-        │       └── flow_diagrams.png
-        ├── hardware
-        │   └── logs
-        │       ├── Circuit Diagram.pdf
-        │       └── hardware_logs.md
-        ├── patches
-        │   ├── GPIO.cpp
-        │   ├── compute_angle.cpp
-        │   ├── main_program.cpp
-        │   └── write_motor.cpp
-        └── social media
-            ├── logos
-            │   ├── Cat technologies LOGO.png
-            │   ├── GrocerEase LOGO.png
-            │   └── logo.jpeg
-            └── sneak_peek.mp4
+This directory tree is created for the `devel` branch. Currently, we have a total of `81` directories.
 
-    32 directories
+        .
+        ├── cmake
+        ├── external
+        │   ├── pigpio
+        │   │   ├── DOC
+        │   │   │   ├── HTML
+        │   │   │   │   ├── images
+        │   │   │   │   └── scripts
+        │   │   │   ├── MAN
+        │   │   │   ├── bin
+        │   │   │   ├── dbase
+        │   │   │   └── src
+        │   │   │       ├── defs
+        │   │   │       └── html
+        │   │   ├── EXAMPLES
+        │   │   │   ├── C
+        │   │   │   │   ├── COUNTER_1
+        │   │   │   │   ├── COUNTER_2
+        │   │   │   │   ├── HALL_EFFECT_SENSOR
+        │   │   │   │   ├── I2C_SNIFFER
+        │   │   │   │   ├── IR_RECEIVER
+        │   │   │   │   ├── PCF8591_YL-40
+        │   │   │   │   ├── POT_CAP_RECHARGE
+        │   │   │   │   ├── ROTARY_ENCODER
+        │   │   │   │   └── WIEGAND_CODE
+        │   │   │   ├── CPP
+        │   │   │   │   ├── IR_RECEIVER
+        │   │   │   │   ├── ROTARY_ENCODER
+        │   │   │   │   └── WIEGAND_CODE
+        │   │   │   ├── Python
+        │   │   │   │   ├── DHT11_SENSOR
+        │   │   │   │   ├── DHT22_AM2302_SENSOR
+        │   │   │   │   ├── GPIO_STATUS
+        │   │   │   │   ├── HALL_EFFECT_SENSOR
+        │   │   │   │   ├── I2C_SNIFFER
+        │   │   │   │   ├── IR_RECEIVER
+        │   │   │   │   ├── MORSE_CODE
+        │   │   │   │   ├── PCF8591_YL-40
+        │   │   │   │   ├── PIGPIO_BENCHMARK
+        │   │   │   │   ├── ROTARY_ENCODER
+        │   │   │   │   ├── SENT_PROTOCOL
+        │   │   │   │   ├── SONAR_RANGER
+        │   │   │   │   ├── VIRTUAL_WIRE
+        │   │   │   │   └── WIEGAND_CODE
+        │   │   │   └── Shell
+        │   │   │       └── GPIOTEST
+        │   │   ├── cmake
+        │   │   └── util
+        │   └── wiringPi
+        │       ├── debian
+        │       ├── debian-template
+        │       │   └── wiringPi
+        │       │       └── DEBIAN
+        │       ├── devLib
+        │       ├── examples
+        │       │   ├── Gertboard
+        │       │   ├── PiFace
+        │       │   ├── PiGlow
+        │       │   ├── q2w
+        │       │   └── scrollPhat
+        │       ├── gpio
+        │       ├── pins
+        │       ├── wiringPi
+        │       └── wiringPiD
+        ├── html
+        │   └── search
+        ├── include
+        ├── latex
+        ├── src
+        └── utils
+            ├── GPIO deps
+            ├── concept illustration
+            ├── flow diagrams
+            │   ├── compute angle
+            │   ├── gpio
+            │   ├── main program
+            │   └── write motor
+            ├── hardware
+            │   └── logs
+            ├── patches
+            └── social media
+                └── logos
+
