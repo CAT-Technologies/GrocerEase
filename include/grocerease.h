@@ -28,41 +28,56 @@ class Grocerease
 {
 
 public:
-
+    
+    /// \brief initialize variables
     void initialize();
 
     void initialize_test(float angle_feed, float angle_robot_feed, float dist_a_feed); //  FOR TESTING
 
+    /// \brief main program
     void run_program();
 
     void run_program_test(float angle_feed, float dist_a_feed); //  FOR TESTING
 
+    /// \brief exit program
     void stop();
 
+    /// \brief acquire RSSI values a,b,c
     void read_RSSI();
 
+    /// \brief assign current new angle
     void write_newAngle();
 
+    /// \brief assign current a_distance
     void write_a_distance();
 
-    /**SECTION A**/
+    /**SECTION A - ROTATION LOGIC WHEN WITHIN FOLLOW DISTANCE**/
+    /// \brief calculate angle to amend from remaining time of rotation
     void amendAngle();
 
+    /// \brief read current user rotation, decide if reading is required in next iteration
     void readCurrentRotation();
 
+    /// \brief recompute new angle and flipping logic
     void angleRecompute();
 
+    /// \brief calculate angle difference
     void angleDifference();
 
+    /// \brief decide if rotation is required
     void rotateDecision();
 
+    /// \brief performs rotation
     void rotation();
 
-    /**SECTION B**/
+    /**SECTION B - OBSTACLE AVOIDANCE LOGIC WHEN BEYOND FOLLOW DISTANCE**/
+    /// \brief calculate time of rotation to amend from remaining angle difference
     void amendTime();
 
+    /// \brief get input from IR sensors
     void readIR();
 
+    /// \brief obstacle avoidance algorithm
     void ObstacleAvoidance();
     
     void printvar(); // FOR TESTING
