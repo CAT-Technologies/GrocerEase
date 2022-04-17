@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['setrssi_0',['setRSSI',['../classComputeAngle.html#ae78b6f692437579da19761509683040d',1,'ComputeAngle']]],
-  ['start_1',['start',['../classCart.html#a7f3cca3064effa75315bd1cd08fda10b',1,'Cart']]],
-  ['std_2',['std',['../namespacestd.html',1,'']]],
-  ['stop_3',['stop',['../classCart.html#a9500349670b16fdfae1be6ed456967b0',1,'Cart']]]
+  ['right_5fir_0',['right_IR',['../classstd_1_1GPIO.html#a6cc0d6c4e775d83055142eb4efb54f2c',1,'std::GPIO']]],
+  ['rw_5fbackward_1',['rw_Backward',['../classCart.html#a937d094639672a935177af282ea45a98',1,'Cart::rw_Backward()'],['../classstd_1_1GPIO.html#a77aea82d66082df0bbcfcc1e5b6a15a2',1,'std::GPIO::rw_Backward()']]],
+  ['rw_5fforward_2',['rw_Forward',['../classCart.html#a740821510b4fd6976c42a0156925859f',1,'Cart::rw_Forward()'],['../classstd_1_1GPIO.html#a33b4eb4a066ca3437f46d7334f99835c',1,'std::GPIO::rw_Forward()']]]
 ];
