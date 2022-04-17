@@ -16,7 +16,6 @@
 * [Conceptualisation](#conceptualisation)
 * [Project Roadmap](#project-roadmap)
 * [Language and Technologies](#language-and-technologies)
-* [Changelog](#changelog)
 * [Directory Tree](#directory-tree)
 * [Social Media and Outreach](#social-media-and-outreach)
 * [Contribution Guidelines](#contribution-guidelines)
@@ -37,23 +36,6 @@ The roadmap for our project can be found [here](https://github.com/CAT-Technolog
 ## [Language and Technologies](#GrocerEase)
 
 <p align="left"> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="jsp" width="40" height="40"/> </a> <a href="https://www.latex-project.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="latex" width="40" height="40"/> </a> <a href="https://cmake.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" alt="cmake" width="40" height="40"/> </a> <a href="https://www.raspberrypi.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" alt="cmake" width="40" height="40"/> </a>
-	
-## [Changelog](#GrocerEase)
-
-| Added/Modified          | Author(s)    | Related PR  | Date        |
-| :---------------------: | :----------: | :---------: | :---------: |     
-| GPIO code               | Jia Wei Tan  |    #12      |   Feb 16    |
-| GPIO Flowchart          | Adwait Naik  |    #22      |   Feb 20    |
-| Main Program            | Jia Wei Tan  |    #39      |   Feb 26    |
-| Compute Angle           | Jia Wei Tan  |    #41      |   Feb 26    |
-| Motor Writer            | Jia Wei Tan  |    #40      |   Feb 26    |
-| Compute Angle Flowchart | Adwait Naik  |    #34      |   Feb 27    |
-| Motor Writer Flowchart  | Adwait Naik  |    #38      |   Feb 27    |
-| Main program Flowchart  | Adwait Naik  |    #43      |   Feb 28    |
-| Estimate Robot Angle    | Jia Wei Tan  |    #82      |   March 17  |
-| Motor Testing           | Jia Wei Tan  |    #79      |   March 17  |
-| Initial Template        | Adwait Naik  |    #56      |   March 20  |
-
 
 ## [Directory Tree](#GrocerEase)
 
