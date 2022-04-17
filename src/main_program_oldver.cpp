@@ -56,7 +56,6 @@ int main() {
     float angle_diff;
 	int followDistance = 1; 	    //the 'a' value the robot will try to maintain. Unit: metre.
 	int angleMove = 15; 		    //angle to accumulate before moving. Unit: degrees.
-    float a_distance;               //a converted into distance.
 	int motorForward = 200;	        // !!--EDITABLE--!! default analog value to write to motor when moving forward. Range: 140-255.
 	int motorLeft;			        //analog value to left motor.
 	int motorRight;		            //analog value to right motor.
@@ -109,6 +108,7 @@ int main() {
       	//b = receive_b();
       	//c = receive_c();
 	
+        float a_distance;               //a converted into distance.
 	    auto t_start = std::chrono::high_resolution_clock::now();     //start time of the current loop
         cart.compute_angle(a,b,c);
       	angle_new = flip_cart*cart.getAngle();                          //!!--FUNCTION--!! Refer to calculate_angle()
@@ -203,10 +203,6 @@ int main() {
                     angle_new = -angle_new;
                     flip_cart = -flip_cartS;
                 }
-                else{
-                    angle_new = angle_new;
-                }
-
             }
             else if (counterclockwise == 1){
             //Explanation: When user is heading in the counterclockwise direction, the angle should be decreasing in the 0 to 180 degrees segment.
@@ -266,7 +262,8 @@ int main() {
         }
 
         /******SECTION B: WHEN ROBOT IS OUTSIDE FOLLOW DISTANCE******/
-        else if (a_distance > followDistance) {
+        else if (1) {
+        //else if (a_distance > followDistance) {
             
             /*CONVERTS ANGLE DIFFERENCE BEFORE MOVING FORWARD TO TIME (REVERSE OF ANGLE CORRECTION IN SECTION A)*/
             if (angle_diff != 0){
