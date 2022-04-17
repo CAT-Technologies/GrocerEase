@@ -1,3 +1,0 @@
-/home/anmol/GitHub/GrocerEase/test/build/CMakeFiles/rebuild_cache.dir
-/home/anmol/GitHub/GrocerEase/test/build/CMakeFiles/edit_cache.dir
-/home/anmol/GitHub/GrocerEase/test/build/CMakeFiles/test.dir
