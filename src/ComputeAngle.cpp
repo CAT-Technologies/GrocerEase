@@ -33,7 +33,6 @@ using namespace std;
 /// \brief a class to compute the RSSI angle for trilateration  
 class ComputeAngle
 {
-
    public:
    /*! VARIABLES *
     * a: RSSI robot--phone
@@ -90,41 +89,25 @@ class ComputeAngle
 	  }
 	  
 	 /*! Function for computing distance using RSSI values
-	    to be improved using proper syntax/callbacks 
-       a,b,c double declaration again here in setRSSI and above unsigned int too
-       Moreover, test with real values and dummy case  */
+	    and then using it to calculate angle  */
 	  
-	 float computeDistance(float a, float b, float c)
+	 pair<float, float> computeAngleRSSI(float a, float b, float c)
 	 {
          
-         d_a = pow(10, ((offset_a - a)/(10*N)));  // 8/20 - 0.04 -- test values
-         d_b = pow(10, ((offset_b - b)/(10*N)));  // 18/20 - 0.09
-         d_c = pow(10, ((offset_c - c)/(10*N)));  // 38/20 - 0.19
+         d_a = pow(10, ((offset_a - a)/(10*N)));
+         d_b = pow(10, ((offset_b - b)/(10*N)));  
+         d_c = pow(10, ((offset_c - c)/(10*N)));  
 
-         
+         float followAngle = acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));
 
-         return acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));
-
+         return make_pair(followAngle, d_a);
     }
+     
+   /*! Getting distance between Phone and Cart */
          
-    /*! Function for getting angle using distances - (write formula too)
-	    to be improved using proper syntax/**callbacks - getters not allowed!** 
-	    This might be needed by other GrocerEase class 
-       is it actually a getter? */
-   /*      
-   float getAngle()
+   float get_a(float d_a)
    {
-   	return acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));
-   }
-   */      
-   /*! Getting distance between Phone and Cart
-	   Improve it using proper syntax/**callbacks - getters not allowed!** 
-	   This might be needed by other GrocerEase class
-      is it actually a getter?  */
-         
-   float get_a(int d_a)
-   {
-      	return d_a*(pow(10,40));
+      	return d_a;
    }
          
 };
@@ -134,21 +117,11 @@ int main()
 {
    ComputeAngle CompAng;
 
-   //float a = CompAng.computeDistance(-60,-70,-50);
-   cout << CompAng.offset_b - (-70) << endl;
-   cout << CompAng.offset_c - (-50) << endl;
-   cout << (pow(CompAng.d_a, 2) + pow(CompAng.d_b, 2) - pow(CompAng.d_c, 2))/(2 * CompAng.d_a * CompAng.d_b) << endl;
-   //cout << a << endl;   
-   cout << CompAng.d_a << " "<< CompAng.d_b <<" " << CompAng.d_c << endl;
-   /*! CompAng.getAngle not working as expected probably
-      test with proper values to get angle between a and b - check trilateration demo values*/
+   pair<float, float> details = CompAng.computeAngleRSSI(-55,-55,-50);
 
-#ifdef DEBUG
-   cout << "\n"<< "The distance a is : " << CompAng.get_a(CompAng.d_a) << endl;
-   cout << "The calculated angle is : "<< CompAng.computeDistance(-60,-70,-50) << endl;       
-#endif
+   cout << "The calculated angle is : "<< details.first << endl;
+   cout << "The calculated follow distance is : "<< details.second << endl;       
+     
 
-  /*! add possible unit test after all these changes */
-   
    return 0;
 }
