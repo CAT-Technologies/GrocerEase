@@ -86,30 +86,30 @@ public:
     double elapsed_time_ms;
 
 private:
-    int a, b, c;                                //a: RSSI robot--phone, b: RSSI beacon--robot, c:vRSSI beacon--phone.
-    float angle_old;		                //previous angle of the user.
-    float angle_new;		                //current angle of the user.
-    float angle_robot;                          //current angle of the robot.
-    float a_distance;                           //a converted into distance.
+    int a, b, c;                                /// \brief a: RSSI robot--phone, b: RSSI beacon--robot, c:vRSSI beacon--phone.
+    float angle_old;		                /// \brief previous angle of the user.
+    float angle_new;		                /// \brief current angle of the user.
+    float angle_robot;                          /// \brief current angle of the robot.
+    float a_distance;                           /// \brief a converted into distance.
     float angle_diff;
-    static const int followDistance = 1; 	//the 'a' value the robot will try to maintain. Unit: metre.
-    static const int angleMove = 15; 		//angle to accumulate before moving. Unit: degrees.
-    static const int motorForward = 255;	// !!--EDITABLE--!! default analog value to write to motor when moving forward. Range: 140-255.
-    static const int correction = 100;          // !!--EDITABLE--!! default motor speed correction. 
-    int motorLeft;			        //analog value to left motor.
-    int motorRight;		                //analog value to right motor.
-    int rotate = 0;		                //when rotate=1, robot rotates.
-    int flip_cart = 1;		                //when flip_cart=1, angle is between 0 to 180. When flip_cart=-1, angle is between 0 to -180.
-    int clockwise = 0;		                //when clockwise=1, user is assumed to be moving clockwise.
-    int counterclockwise = 0;	                //when counterclockwise=1, user is assumed to be moving clockwise.
-    int read_rotation = 1;		        //when read_rotation=1, reads user rotation: CW/CCW/Static
-    int leftAmend;			        //correction to left motor speed.
-    int rightAmend;		                //correction to right motor speed.
-    int ir_left;                                //Left IR sensor.
-    int ir_right;                               //Right IR sensor.
-    double timeRotate_right = 0;	        //accumulated time where robot has rotated to the right whilst in forward motion.
-    double timeRotate_left = 0;	                //accumulated time where robot has rotated to the left whilst in forward motion.
-    double timeUserStatic = 0;                  //accumulated time where user has not moved.
+    static const int followDistance = 1; 	/// \brief the 'a' value the robot will try to maintain. Unit: metre.
+    static const int angleMove = 15; 		/// \brief angle to accumulate before moving. Unit: degrees.
+    static const int motorForward = 255;	/// \brief  !!--EDITABLE--!! default analog value to write to motor when moving forward. Range: 140-255.
+    static const int correction = 100;          /// \brief  !!--EDITABLE--!! default motor speed correction. 
+    int motorLeft;			        /// \brief analog value to left motor.
+    int motorRight;		                /// \brief analog value to right motor.
+    int rotate = 0;		                /// \brief when rotate=1, robot rotates.
+    int flip_cart = 1;		                /// \brief when flip_cart=1, angle is between 0 to 180. When flip_cart=-1, angle is between 0 to -180.
+    int clockwise = 0;		                /// \brief when clockwise=1, user is assumed to be moving clockwise.
+    int counterclockwise = 0;	                /// \brief when counterclockwise=1, user is assumed to be moving clockwise.
+    int read_rotation = 1;		        /// \brief when read_rotation=1, reads user rotation: CW/CCW/Static
+    int leftAmend;			        /// \brief correction to left motor speed.
+    int rightAmend;		                /// \brief correction to right motor speed.
+    int ir_left;                                /// \brief Left IR sensor.
+    int ir_right;                               /// \brief Right IR sensor.
+    double timeRotate_right = 0;	        /// \brief accumulated time where robot has rotated to the right whilst in forward motion.
+    double timeRotate_left = 0;	                /// \brief accumulated time where robot has rotated to the left whilst in forward motion.
+    double timeUserStatic = 0;                  /// \brief accumulated time where user has not moved.
     
 };
 
