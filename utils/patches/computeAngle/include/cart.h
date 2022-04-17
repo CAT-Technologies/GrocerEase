@@ -148,9 +148,6 @@ private:
     static const int en2 = 6;
     static const int en3 = 23;
     static const int en4 = 24;
-    static const int offset_a = 52;
-    static const int offset_b = 52;
-    static const int offset_c = 52;
     
     CompAngleCallback *compAngleCallback = nullptr;
 
