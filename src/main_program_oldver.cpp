@@ -211,9 +211,6 @@ int main() {
                     angle_new = -angle_new;
                     flip_cart = -flip_cart;
                 }
-                else{
-                    angle_new = angle_new;                       
-                }
             }
         
             /*COMPUTE ANGLE DIFFERENCE*/
