@@ -1,11 +1,12 @@
 # Bluetooth RSSI signal strength scanner android app
 
-This is a basic Android app project built on top of exisiting reference blog [Punch Through](https://punchthrough.com)'s "Ultimate Guide to Android BLE Development" blog post for beginners, with examples of how to perform basic Android BLE operations like the following:
+This is a basic Android app project built on top of existing reference blog [Punch Through](https://punchthrough.com)'s "Ultimate Guide to Android BLE Development" blog post for beginners, with examples of how to perform basic Android BLE operations like the following:
+While the original app has a lot of functionalities, we modify the same for only basic functionalities like:
 
 - Scanning for nearby BLE/bluetooth devices
 - Connecting to bluetooth devices
-- Discovering services and characteristics
-- Reading and writing data on characteristics and descriptors
+- Discovering RSSI values of nearby devices
+
 
 ## Setup
 
@@ -16,8 +17,12 @@ git clone https://github.com/CAT-Technologies/GrocerEase/tree/mobile-app-with-bl
 ```
 
 2. Launch Android Studio and select "Open an existing Android Studio project".
+
 3. Navigate to the directory where you cloned the project to, and double click on it.
+
 4. Wait for Gradle sync to complete.
+
+5. You can now use Android USB debugging to test the app or else use AVD emulator
 
 ## Requirements
 
@@ -48,7 +53,3 @@ Some simpler violations can be automatically formatted by `ktlint` using the fol
 ```
 ./gradlew ktlintFormat
 ```
-
-## Licensing
-
-This project is licensed under the Apache 2.0. For more details, please see [LICENSE](https://github.com/PunchThrough/ble-starter-android/blob/master/LICENSE).
