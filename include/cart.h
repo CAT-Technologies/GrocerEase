@@ -1,4 +1,4 @@
-/*
+/*!
  * Copyright (C) 2022 Carry Assistant Trolley (C.A.T) Technologies
  *  
  * Jia Wei Tan, February 16, 2022.
@@ -18,10 +18,11 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.
  */
 
-/*General Purpose Input Output for Raspberry Pi */
+/// \brief General Purpose Input Output for Raspberry Pi
 
 #ifndef CART_H
 #define CART_H
+
 #include <iostream>
 
 class Cart
@@ -29,26 +30,32 @@ class Cart
 
 public:
 
-    void start();
-
-    void stop();
-
-    //Left forward wheel
+    Cart()
+    {
+    	void start();
+    }
+    
+    ~Cart()
+    {
+    	void stop();
+    }
+    
+    /// \brief Left forward wheel
     void lw_Forward();
 
-    //Right forward wheel
+    /// \brief Right forward wheel
     void rw_Forward();
 
-    //Left backward wheel
+    /// \brief Left backward wheel
     void lw_Backward();
 
-    //Right forward wheel
+    /// \brief Right forward wheel
     void rw_Backward();
 
     void writeMotor(int L, int R);
 
     void compute_angle(int a, int b, int c);
-
+    
     int get_leftIR();
 
     int get_rightIR();
@@ -58,6 +65,8 @@ public:
     float getDistance_a();
     
     float estimateRobotAngle(float angle_old_robot, int rotation_left, int rotation_right, float timeStep);
+    
+    float angleToTime(float angle_diff, int rotation_left, int rotation_right);
 
 private:
     static const int left_IR = 4;

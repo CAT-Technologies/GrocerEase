@@ -1,0 +1,83 @@
+\hypertarget{utils_2patches_2GPIO_8cpp_source}{}\doxysection{GPIO.\+cpp}
+\label{utils_2patches_2GPIO_8cpp_source}\index{utils/patches/GPIO.cpp@{utils/patches/GPIO.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00002}00002 \textcolor{comment}{ * Copyright (C) 2022 Carry Assistant Trolley (C.A.T) Technologies}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00003}00003 \textcolor{comment}{ *  }}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00004}00004 \textcolor{comment}{ * Jia Wei Tan, February 16, 2022.}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00005}00005 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00006}00006 \textcolor{comment}{ * This library is free software; you can redistribute it and/or}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00007}00007 \textcolor{comment}{ * modify it under the terms of the GNU Lesser General Public}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00008}00008 \textcolor{comment}{ * License as published by the Free Software Foundation; either}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00009}00009 \textcolor{comment}{ * version 2.1 of the License, or (at your option) any later version.}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00010}00010 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00011}00011 \textcolor{comment}{ * This program is distributed in the hope that it will be useful,}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00012}00012 \textcolor{comment}{ * but WITHOUT ANY WARRANTY; without even the implied warranty of}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00013}00013 \textcolor{comment}{ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00014}00014 \textcolor{comment}{ * GNU Lesser General Public License for more details.}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00015}00015 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00016}00016 \textcolor{comment}{ * You should have received a copy of the GNU Lesser General Public License}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00017}00017 \textcolor{comment}{ * along with this program; if not, write to the Free Software}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00018}00018 \textcolor{comment}{ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00019}00019 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00021}00021 \textcolor{comment}{/*General Purpose Input Output for Raspberry Pi */}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00023}00023 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00025}00025 \textcolor{preprocessor}{\#include <wiringPi.h>}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00027}00027 \textcolor{keyword}{using namespace }\mbox{\hyperlink{namespacestd}{std}};}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00029}00029 \textcolor{comment}{//Left forward wheel}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00030}00030 \textcolor{keywordtype}{void} lw\_Forward() \{}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00031}00031   digitalWrite(21, 1);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00032}00032   digitalWrite(22, 0);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00033}00033 \}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00035}00035 \textcolor{comment}{//Right forward wheel}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00036}00036 \textcolor{keywordtype}{void} rw\_Forward() \{}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00037}00037   digitalWrite(4, 1);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00038}00038   digitalWrite(5, 0);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00039}00039 \}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00041}00041 \textcolor{comment}{//Left backward wheel}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00042}00042 \textcolor{keywordtype}{void} lw\_Backward() \{}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00043}00043   digitalWrite(21, 0);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00044}00044   digitalWrite(22, 1);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00045}00045 \}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00047}00047 \textcolor{comment}{//Right forward wheel}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00048}00048 \textcolor{keywordtype}{void} rw\_Backward() \{}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00049}00049   digitalWrite(4, 0);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00050}00050   digitalWrite(5, 1);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00051}00051 \}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00053}00053 \textcolor{keywordtype}{int} main() \{}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00054}00054   \textcolor{keywordtype}{int} left\_IR = 7;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00055}00055   \textcolor{keywordtype}{int} right\_IR = 16;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00057}00057   wiringPiSetup();}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00059}00059   \textcolor{comment}{/*left motor */}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00060}00060   pinMode(21, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00061}00061   pinMode(22, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00062}00062   pinMode(23, PWM\_OUTPUT);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00064}00064   \textcolor{comment}{/*right motor */}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00065}00065   pinMode(4, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00066}00066   pinMode(5, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00067}00067   pinMode(26, PWM\_OUTPUT);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00069}00069   pinMode(7, INPUT);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00070}00070   pinMode(16, INPUT);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00072}00072   \textcolor{keywordflow}{while} (1) \{}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00073}00073     \textcolor{keywordtype}{int} out1 = digitalRead(right\_IR);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00074}00074     \textcolor{keywordtype}{int} out2 = digitalRead(left\_IR);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00075}00075     cout << out1 << out2 << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00076}00076   \}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2GPIO_8cpp_source_l00077}00077 \}}
+
+\end{DoxyCode}
