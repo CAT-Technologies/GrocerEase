@@ -53,3 +53,11 @@ Some simpler violations can be automatically formatted by `ktlint` using the fol
 ```
 ./gradlew ktlintFormat
 ```
+
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/20068478/163735615-2df27cb2-8ce3-441a-be95-ea515f4226ff.png)
+
+
+![image](https://user-images.githubusercontent.com/20068478/163735622-6d0b961a-90ea-4690-81c9-e492f07e1dbf.png)
+
