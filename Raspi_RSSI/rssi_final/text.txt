@@ -1,0 +1,22 @@
+-e connect FC:D4:36:09:88:92
+
+-e connect FC:D4:36:09:88:92
+
+RSSSI: -96
+
+-e connect FC:D4:36:09:88:92
+
+-e connect FC:D4:36:09:88:92
+
+RSSI: -83
+
+-e connect FC:D4:36:09:88:92
+
+RSSI: -72
+
+-e connect FC:D4:36:09:88:92
+
+RSSI: -75
+
+RSSI: -94
+
