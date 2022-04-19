@@ -42,9 +42,10 @@ include_directories(include)
 
 add_executable(GrocerEase
   src/GPIO.cpp
-  src/cart.cpp
   include/GPIO.h
-  include/cart.h)
+  src/cart.cpp
+  include/cart.h
+  )
 
 # Include WiringPi directories
 #find_package(WiringPi REQUIRED)
