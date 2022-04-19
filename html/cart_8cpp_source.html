@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: src/cart.cpp Source File</title>
+<title>GrocerEase: src/cart.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">GrocerEase
    </div>
   </td>
  </tr>
@@ -76,7 +76,7 @@ $(function() {
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">void</span> Cart::start()</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classCart.html#a7f3cca3064effa75315bd1cd08fda10b">   27</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCart.html#a7f3cca3064effa75315bd1cd08fda10b">Cart::start</a>()</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">if</span> (gpioInitialise()&lt;0) </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        exit(1);</div>
@@ -95,7 +95,7 @@ $(function() {
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    gpioSetMode(right_IR, PI_INPUT);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keywordtype">void</span> Cart::stop()</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classCart.html#a9500349670b16fdfae1be6ed456967b0">   46</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCart.html#a9500349670b16fdfae1be6ed456967b0">Cart::stop</a>()</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="classCart.html#a98eefe9a8b411e548c919cde2e6ba7ba">writeMotor</a>(0,0);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    gpioTerminate();</div>
@@ -197,8 +197,10 @@ $(function() {
 <div class="ttc" id="aclassCart_html_a3ae5766475e97d78fb1a9013cc1c80b9"><div class="ttname"><a href="classCart.html#a3ae5766475e97d78fb1a9013cc1c80b9">Cart::get_rightIR</a></div><div class="ttdeci">int get_rightIR()</div><div class="ttdoc">right IR sensor declaration</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00120">cart.cpp:120</a></div></div>
 <div class="ttc" id="aclassCart_html_a4c56b715229e0353c9fa6ba433f85138"><div class="ttname"><a href="classCart.html#a4c56b715229e0353c9fa6ba433f85138">Cart::get_leftIR</a></div><div class="ttdeci">int get_leftIR()</div><div class="ttdoc">left IR sensor declaration</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00115">cart.cpp:115</a></div></div>
 <div class="ttc" id="aclassCart_html_a740821510b4fd6976c42a0156925859f"><div class="ttname"><a href="classCart.html#a740821510b4fd6976c42a0156925859f">Cart::rw_Forward</a></div><div class="ttdeci">void rw_Forward()</div><div class="ttdoc">Right forward wheel declaration.</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00058">cart.cpp:58</a></div></div>
+<div class="ttc" id="aclassCart_html_a7f3cca3064effa75315bd1cd08fda10b"><div class="ttname"><a href="classCart.html#a7f3cca3064effa75315bd1cd08fda10b">Cart::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">a function to set-up communication the cart.</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00027">cart.cpp:27</a></div></div>
 <div class="ttc" id="aclassCart_html_a86560e8bd70d1bedb01c715896821e1c"><div class="ttname"><a href="classCart.html#a86560e8bd70d1bedb01c715896821e1c">Cart::compute_angle</a></div><div class="ttdeci">void compute_angle(int a, int b, int c)</div><div class="ttdoc">compute angle declaration</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00098">cart.cpp:98</a></div></div>
 <div class="ttc" id="aclassCart_html_a937d094639672a935177af282ea45a98"><div class="ttname"><a href="classCart.html#a937d094639672a935177af282ea45a98">Cart::rw_Backward</a></div><div class="ttdeci">void rw_Backward()</div><div class="ttdoc">Right forward wheel declaration.</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00070">cart.cpp:70</a></div></div>
+<div class="ttc" id="aclassCart_html_a9500349670b16fdfae1be6ed456967b0"><div class="ttname"><a href="classCart.html#a9500349670b16fdfae1be6ed456967b0">Cart::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">a function to cease communication with the cart.</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00046">cart.cpp:46</a></div></div>
 <div class="ttc" id="aclassCart_html_a98eefe9a8b411e548c919cde2e6ba7ba"><div class="ttname"><a href="classCart.html#a98eefe9a8b411e548c919cde2e6ba7ba">Cart::writeMotor</a></div><div class="ttdeci">void writeMotor(int L, int R)</div><div class="ttdoc">write motor declaration</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00076">cart.cpp:76</a></div></div>
 <div class="ttc" id="aclassCart_html_a9ece0a7138b3da7075ba186109b2e713"><div class="ttname"><a href="classCart.html#a9ece0a7138b3da7075ba186109b2e713">Cart::angleToTime</a></div><div class="ttdeci">float angleToTime(float angle_diff, int rotation_left, int rotation_right)</div><div class="ttdoc">angle-time estimation declaration</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00143">cart.cpp:143</a></div></div>
 <div class="ttc" id="aclassCart_html_aaa4f76abf4b9cd8d8267e31a8b864f1b"><div class="ttname"><a href="classCart.html#aaa4f76abf4b9cd8d8267e31a8b864f1b">Cart::lw_Backward</a></div><div class="ttdeci">void lw_Backward()</div><div class="ttdoc">Left backward wheel declaration.</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00064">cart.cpp:64</a></div></div>

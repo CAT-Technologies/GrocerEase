@@ -13,11 +13,37 @@ a class to compute the RSSI angle for trilateration ~\newline
 \begin{DoxyCompactList}\small\item\em brief description \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classComputeAngle_ae78b6f692437579da19761509683040d}{set\+RSSI}} (int a\+\_\+dB, int b\+\_\+dB, int c\+\_\+dB)
 \item 
-void \mbox{\hyperlink{classComputeAngle_ab0098935ecf2eb5f30a959c13252acc1}{compute\+Distance}} ()
+pair$<$ float, float $>$ \mbox{\hyperlink{classComputeAngle_a1b4b4ccb2538362290389e21b1c19bff}{compute\+Angle\+RSSI}} (float \mbox{\hyperlink{classComputeAngle_af93671d04ecc5c795ff694c7795fae11}{a}}, float b, float c)
 \item 
-float \mbox{\hyperlink{classComputeAngle_ac0f6a3e78cafdb8ca88ef0f2f365e440}{get\+Angle}} ()
+float \mbox{\hyperlink{classComputeAngle_a949b3a005510abdab021ef6fd45e37a9}{roundoff}} (float value, unsigned char prec)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
 \item 
-float \mbox{\hyperlink{classComputeAngle_a0098593dbbcc6c9bf165dc927d47f116}{get\+\_\+a}} ()
+int \mbox{\hyperlink{classComputeAngle_af93671d04ecc5c795ff694c7795fae11}{a}}
+\item 
+int \mbox{\hyperlink{classComputeAngle_a365ca3809984a057de0f7f6e9c453256}{b}}
+\item 
+int \mbox{\hyperlink{classComputeAngle_a416f1a5e75373b4a9824f4f671948685}{c}}
+\item 
+float \mbox{\hyperlink{classComputeAngle_aabd225b43c9d518074c0bf8d1cae0c20}{d\+\_\+a}}
+\item 
+float \mbox{\hyperlink{classComputeAngle_a6821e418e51a7497894b781a7120d770}{d\+\_\+b}}
+\item 
+float \mbox{\hyperlink{classComputeAngle_a086052e3d57ef312c7c610dada77ef63}{d\+\_\+c}}
+\item 
+float \mbox{\hyperlink{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}{angle}}
+\begin{DoxyCompactList}\small\item\em angle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{classComputeAngle_af45836f96ce28c09474a5645a6a79aaa}{offset\+\_\+a}} = -\/52
+\item 
+static const int \mbox{\hyperlink{classComputeAngle_aa19fb6009e75c517d3fb3cdb90dccc40}{offset\+\_\+b}} = -\/52
+\item 
+static const int \mbox{\hyperlink{classComputeAngle_a80302c0858aaf7c0c14878e489b30bb8}{offset\+\_\+c}} = -\/52
+\item 
+static const int \mbox{\hyperlink{classComputeAngle_a3cf798fc1b1a4d745475e40b84ca6b46}{N}} = 3
 \end{DoxyCompactItemize}
 
 
@@ -25,7 +51,7 @@ float \mbox{\hyperlink{classComputeAngle_a0098593dbbcc6c9bf165dc927d47f116}{get\
 a class to compute the RSSI angle for trilateration ~\newline
  
 
-Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
 
 
 
@@ -42,80 +68,67 @@ brief description
 
 
 
-Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00067}{67}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00066}{66}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00068       \{}
-\DoxyCodeLine{00069             a = 0;}
-\DoxyCodeLine{00070             b = 0;}
-\DoxyCodeLine{00071             c = 0;}
-\DoxyCodeLine{00072 }
-\DoxyCodeLine{00073             d\_a = 0.0;}
-\DoxyCodeLine{00074             d\_b = 0.0;}
-\DoxyCodeLine{00075             d\_c = 0.0;}
-\DoxyCodeLine{00076 }
-\DoxyCodeLine{00077             angle = 0.0;}
-\DoxyCodeLine{00078       \}}
+\DoxyCodeLine{00067       \{}
+\DoxyCodeLine{00068             \mbox{\hyperlink{classComputeAngle_af93671d04ecc5c795ff694c7795fae11}{a}} = 0;}
+\DoxyCodeLine{00069             b = 0;}
+\DoxyCodeLine{00070             c = 0;}
+\DoxyCodeLine{00071 }
+\DoxyCodeLine{00072             d\_a = 0.0;}
+\DoxyCodeLine{00073             d\_b = 0.0;}
+\DoxyCodeLine{00074             d\_c = 0.0;}
+\DoxyCodeLine{00075 }
+\DoxyCodeLine{00076             \mbox{\hyperlink{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}{angle}} = 0.0;}
+\DoxyCodeLine{00077       \}}
 
 \end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classComputeAngle_ab0098935ecf2eb5f30a959c13252acc1}\label{classComputeAngle_ab0098935ecf2eb5f30a959c13252acc1}} 
-\index{ComputeAngle@{ComputeAngle}!computeDistance@{computeDistance}}
-\index{computeDistance@{computeDistance}!ComputeAngle@{ComputeAngle}}
-\doxysubsubsection{\texorpdfstring{computeDistance()}{computeDistance()}}
-{\footnotesize\ttfamily void Compute\+Angle\+::compute\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{classComputeAngle_a1b4b4ccb2538362290389e21b1c19bff}\label{classComputeAngle_a1b4b4ccb2538362290389e21b1c19bff}} 
+\index{ComputeAngle@{ComputeAngle}!computeAngleRSSI@{computeAngleRSSI}}
+\index{computeAngleRSSI@{computeAngleRSSI}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{computeAngleRSSI()}{computeAngleRSSI()}}
+{\footnotesize\ttfamily pair$<$ float, float $>$ Compute\+Angle\+::compute\+Angle\+RSSI (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b,  }\item[{float}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Function for computing distance using RSSI values to be improved using proper syntax/callbacks a,b,c double declaration again here in set\+RSSI and above unsigned int too Moreover, test with real values and dummy case ~\newline
+Function for computing distance using RSSI values and then using it to calculate angle ~\newline
  
 
-Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00097}{97}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00094}{94}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00098      \{}
-\DoxyCodeLine{00099 }
-\DoxyCodeLine{00100          d\_a = pow(10, ((offset\_a -\/ a)/(10*N)));  \textcolor{comment}{// 8/20 -\/ 0.4 -\/-\/ test values}}
-\DoxyCodeLine{00101          d\_b = pow(10, ((offset\_b -\/ b)/(10*N)));  \textcolor{comment}{// 18/20 -\/ 0.9}}
-\DoxyCodeLine{00102          d\_c = pow(10, ((offset\_c -\/ c)/(10*N)));  \textcolor{comment}{// 38/20 -\/ 1.9}}
-\DoxyCodeLine{00103     \}}
+\DoxyCodeLine{00095      \{}
+\DoxyCodeLine{00096          }
+\DoxyCodeLine{00097          d\_a = pow(10, ((offset\_a -\/ \mbox{\hyperlink{classComputeAngle_af93671d04ecc5c795ff694c7795fae11}{a}})/(10*N)));}
+\DoxyCodeLine{00098          d\_b = pow(10, ((offset\_b -\/ b)/(10*N)));  }
+\DoxyCodeLine{00099          d\_c = pow(10, ((offset\_c -\/ c)/(10*N)));  }
+\DoxyCodeLine{00100 }
+\DoxyCodeLine{00101          \textcolor{keywordtype}{float} followAngle = acos((pow(d\_a, 2) + pow(d\_b, 2) -\/ pow(d\_c, 2))/(2 * d\_a * d\_b));}
+\DoxyCodeLine{00102 }
+\DoxyCodeLine{00103          \textcolor{keywordflow}{return} make\_pair(followAngle, d\_a);}
+\DoxyCodeLine{00104     \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classComputeAngle_a0098593dbbcc6c9bf165dc927d47f116}\label{classComputeAngle_a0098593dbbcc6c9bf165dc927d47f116}} 
-\index{ComputeAngle@{ComputeAngle}!get\_a@{get\_a}}
-\index{get\_a@{get\_a}!ComputeAngle@{ComputeAngle}}
-\doxysubsubsection{\texorpdfstring{get\_a()}{get\_a()}}
-{\footnotesize\ttfamily float Compute\+Angle\+::get\+\_\+a (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Getting distance between Phone and \mbox{\hyperlink{classCart}{Cart}} Improve it using proper syntax/$\ast$$\ast$callbacks -\/ getters not allowed!$\ast$$\ast$ This might be needed by other Grocer\+Ease class is it actually a getter? ~\newline
- 
-
-Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00120}{120}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
+\mbox{\Hypertarget{classComputeAngle_a949b3a005510abdab021ef6fd45e37a9}\label{classComputeAngle_a949b3a005510abdab021ef6fd45e37a9}} 
+\index{ComputeAngle@{ComputeAngle}!roundoff@{roundoff}}
+\index{roundoff@{roundoff}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{roundoff()}{roundoff()}}
+{\footnotesize\ttfamily float Compute\+Angle\+::roundoff (\begin{DoxyParamCaption}\item[{float}]{value,  }\item[{unsigned char}]{prec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00121    \{}
-\DoxyCodeLine{00122         \textcolor{keywordflow}{return} d\_a*(pow(10,40));}
-\DoxyCodeLine{00123    \}}
 
-\end{DoxyCode}
-\mbox{\Hypertarget{classComputeAngle_ac0f6a3e78cafdb8ca88ef0f2f365e440}\label{classComputeAngle_ac0f6a3e78cafdb8ca88ef0f2f365e440}} 
-\index{ComputeAngle@{ComputeAngle}!getAngle@{getAngle}}
-\index{getAngle@{getAngle}!ComputeAngle@{ComputeAngle}}
-\doxysubsubsection{\texorpdfstring{getAngle()}{getAngle()}}
-{\footnotesize\ttfamily float Compute\+Angle\+::get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Function for getting angle using distances -\/ (write formula too) to be improved using proper syntax/$\ast$$\ast$callbacks -\/ getters not allowed!$\ast$$\ast$ This might be needed by other Grocer\+Ease class is it actually a getter? 
-
-Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00110}{110}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00106}{106}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00111    \{}
-\DoxyCodeLine{00112     \textcolor{keywordflow}{return} acos((pow(d\_a, 2) + pow(d\_b, 2) -\/ pow(d\_c, 2))/(2 * d\_a * d\_b));}
-\DoxyCodeLine{00113    \}}
+\DoxyCodeLine{00107    \{}
+\DoxyCodeLine{00108       \textcolor{keywordtype}{float} pow\_10 = pow(10.0f, (\textcolor{keywordtype}{float})prec);}
+\DoxyCodeLine{00109       \textcolor{keywordflow}{return} round(value * pow\_10) / pow\_10;}
+\DoxyCodeLine{00110    \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComputeAngle_ae78b6f692437579da19761509683040d}\label{classComputeAngle_ae78b6f692437579da19761509683040d}} 
@@ -127,19 +140,136 @@ Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00110}{110}} of fi
 Setter Function for RSSI values -\/ to be improved using proper syntax/updates/callbacks ~\newline
  Use another class/interface to communicate/return these values ?? Is it a setter/getter ? Do we need a getter callback -\/ better?? 
 
-Definition at line \mbox{\hyperlink{ComputeAngle_8cpp_source_l00085}{85}} of file \mbox{\hyperlink{ComputeAngle_8cpp_source}{Compute\+Angle.\+cpp}}.
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00084}{84}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00086      \{}
-\DoxyCodeLine{00087               a = a\_dB;}
-\DoxyCodeLine{00088               b = b\_dB;}
-\DoxyCodeLine{00089               c = c\_dB;}
-\DoxyCodeLine{00090       \}}
+\DoxyCodeLine{00085      \{}
+\DoxyCodeLine{00086               \mbox{\hyperlink{classComputeAngle_af93671d04ecc5c795ff694c7795fae11}{a}} = a\_dB;}
+\DoxyCodeLine{00087               b = b\_dB;}
+\DoxyCodeLine{00088               c = c\_dB;}
+\DoxyCodeLine{00089       \}}
 
 \end{DoxyCode}
 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComputeAngle_af93671d04ecc5c795ff694c7795fae11}\label{classComputeAngle_af93671d04ecc5c795ff694c7795fae11}} 
+\index{ComputeAngle@{ComputeAngle}!a@{a}}
+\index{a@{a}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily int Compute\+Angle\+::a}
+
+VARIABLES $\ast$ a\+: RSSI robot--phone b\+: RSSI beacon--robot c\+: RSSI beacon--phone offset\+\_\+a\+: RSSI received of a at 1 metre (!!\+TO BE RECALIBRATED) offset\+\_\+b\+: RSSI received of b at 1 metre (!!\+TO BE RECALIBRATED) offset\+\_\+c\+: RSSI received of c at 1 metre (!!\+TO BE RECALIBRATED) d\+\_\+a\+: a converted into distance (unit\+: metre) d\+\_\+b\+: b converted into distance (unit\+: metre) d\+\_\+c\+: c converted into distance (unit\+: metre) N\+: broadcasting power value (Constant depends on the Environmental factor. Range 2–4) angle\+: beacon--robot--phone 
+
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
+
+\mbox{\Hypertarget{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}\label{classComputeAngle_af76c71d5803f7de1a1790b8e82c21eb4}} 
+\index{ComputeAngle@{ComputeAngle}!angle@{angle}}
+\index{angle@{angle}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily float Compute\+Angle\+::angle}
+
+
+
+angle. 
+
+
+
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
+
+\mbox{\Hypertarget{classComputeAngle_a365ca3809984a057de0f7f6e9c453256}\label{classComputeAngle_a365ca3809984a057de0f7f6e9c453256}} 
+\index{ComputeAngle@{ComputeAngle}!b@{b}}
+\index{b@{b}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily int Compute\+Angle\+::b}
+
+
+
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
+
+\mbox{\Hypertarget{classComputeAngle_a416f1a5e75373b4a9824f4f671948685}\label{classComputeAngle_a416f1a5e75373b4a9824f4f671948685}} 
+\index{ComputeAngle@{ComputeAngle}!c@{c}}
+\index{c@{c}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily int Compute\+Angle\+::c}
+
+
+
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
+
+\mbox{\Hypertarget{classComputeAngle_aabd225b43c9d518074c0bf8d1cae0c20}\label{classComputeAngle_aabd225b43c9d518074c0bf8d1cae0c20}} 
+\index{ComputeAngle@{ComputeAngle}!d\_a@{d\_a}}
+\index{d\_a@{d\_a}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{d\_a}{d\_a}}
+{\footnotesize\ttfamily float Compute\+Angle\+::d\+\_\+a}
+
+
+
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00053}{53}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
+
+\mbox{\Hypertarget{classComputeAngle_a6821e418e51a7497894b781a7120d770}\label{classComputeAngle_a6821e418e51a7497894b781a7120d770}} 
+\index{ComputeAngle@{ComputeAngle}!d\_b@{d\_b}}
+\index{d\_b@{d\_b}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{d\_b}{d\_b}}
+{\footnotesize\ttfamily float Compute\+Angle\+::d\+\_\+b}
+
+
+
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00053}{53}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
+
+\mbox{\Hypertarget{classComputeAngle_a086052e3d57ef312c7c610dada77ef63}\label{classComputeAngle_a086052e3d57ef312c7c610dada77ef63}} 
+\index{ComputeAngle@{ComputeAngle}!d\_c@{d\_c}}
+\index{d\_c@{d\_c}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{d\_c}{d\_c}}
+{\footnotesize\ttfamily float Compute\+Angle\+::d\+\_\+c}
+
+
+
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00053}{53}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
+
+\mbox{\Hypertarget{classComputeAngle_a3cf798fc1b1a4d745475e40b84ca6b46}\label{classComputeAngle_a3cf798fc1b1a4d745475e40b84ca6b46}} 
+\index{ComputeAngle@{ComputeAngle}!N@{N}}
+\index{N@{N}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily const int Compute\+Angle\+::N = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00058}{58}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
+
+\mbox{\Hypertarget{classComputeAngle_af45836f96ce28c09474a5645a6a79aaa}\label{classComputeAngle_af45836f96ce28c09474a5645a6a79aaa}} 
+\index{ComputeAngle@{ComputeAngle}!offset\_a@{offset\_a}}
+\index{offset\_a@{offset\_a}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{offset\_a}{offset\_a}}
+{\footnotesize\ttfamily const int Compute\+Angle\+::offset\+\_\+a = -\/52\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00055}{55}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
+
+\mbox{\Hypertarget{classComputeAngle_aa19fb6009e75c517d3fb3cdb90dccc40}\label{classComputeAngle_aa19fb6009e75c517d3fb3cdb90dccc40}} 
+\index{ComputeAngle@{ComputeAngle}!offset\_b@{offset\_b}}
+\index{offset\_b@{offset\_b}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{offset\_b}{offset\_b}}
+{\footnotesize\ttfamily const int Compute\+Angle\+::offset\+\_\+b = -\/52\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00056}{56}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
+
+\mbox{\Hypertarget{classComputeAngle_a80302c0858aaf7c0c14878e489b30bb8}\label{classComputeAngle_a80302c0858aaf7c0c14878e489b30bb8}} 
+\index{ComputeAngle@{ComputeAngle}!offset\_c@{offset\_c}}
+\index{offset\_c@{offset\_c}!ComputeAngle@{ComputeAngle}}
+\doxysubsubsection{\texorpdfstring{offset\_c}{offset\_c}}
+{\footnotesize\ttfamily const int Compute\+Angle\+::offset\+\_\+c = -\/52\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{ComputeAngle__testing_8cpp_source_l00057}{57}} of file \mbox{\hyperlink{ComputeAngle__testing_8cpp_source}{Compute\+Angle\+\_\+testing.\+cpp}}.
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/Compute\+Angle.\+cpp\end{DoxyCompactItemize}
+src/Compute\+Angle\+\_\+testing.\+cpp\end{DoxyCompactItemize}

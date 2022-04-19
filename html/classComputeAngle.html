@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: ComputeAngle Class Reference</title>
+<title>GrocerEase: ComputeAngle Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,8 +20,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo_1.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">GrocerEase
    </div>
   </td>
  </tr>
@@ -64,6 +65,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classComputeAngle-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ComputeAngle Class Reference</div></div>
 </div><!--header-->
@@ -80,18 +83,45 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afbd50f065d38f541878e394db2363782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae78b6f692437579da19761509683040d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#ae78b6f692437579da19761509683040d">setRSSI</a> (int a_dB, int b_dB, int c_dB)</td></tr>
 <tr class="separator:ae78b6f692437579da19761509683040d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0098935ecf2eb5f30a959c13252acc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#ab0098935ecf2eb5f30a959c13252acc1">computeDistance</a> ()</td></tr>
-<tr class="separator:ab0098935ecf2eb5f30a959c13252acc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0f6a3e78cafdb8ca88ef0f2f365e440"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#ac0f6a3e78cafdb8ca88ef0f2f365e440">getAngle</a> ()</td></tr>
-<tr class="separator:ac0f6a3e78cafdb8ca88ef0f2f365e440"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0098593dbbcc6c9bf165dc927d47f116"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#a0098593dbbcc6c9bf165dc927d47f116">get_a</a> ()</td></tr>
-<tr class="separator:a0098593dbbcc6c9bf165dc927d47f116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4b4ccb2538362290389e21b1c19bff"><td class="memItemLeft" align="right" valign="top">pair&lt; float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#a1b4b4ccb2538362290389e21b1c19bff">computeAngleRSSI</a> (float <a class="el" href="classComputeAngle.html#af93671d04ecc5c795ff694c7795fae11">a</a>, float b, float c)</td></tr>
+<tr class="separator:a1b4b4ccb2538362290389e21b1c19bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949b3a005510abdab021ef6fd45e37a9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#a949b3a005510abdab021ef6fd45e37a9">roundoff</a> (float value, unsigned char prec)</td></tr>
+<tr class="separator:a949b3a005510abdab021ef6fd45e37a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:af93671d04ecc5c795ff694c7795fae11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#af93671d04ecc5c795ff694c7795fae11">a</a></td></tr>
+<tr class="separator:af93671d04ecc5c795ff694c7795fae11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a365ca3809984a057de0f7f6e9c453256"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#a365ca3809984a057de0f7f6e9c453256">b</a></td></tr>
+<tr class="separator:a365ca3809984a057de0f7f6e9c453256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416f1a5e75373b4a9824f4f671948685"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#a416f1a5e75373b4a9824f4f671948685">c</a></td></tr>
+<tr class="separator:a416f1a5e75373b4a9824f4f671948685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabd225b43c9d518074c0bf8d1cae0c20"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#aabd225b43c9d518074c0bf8d1cae0c20">d_a</a></td></tr>
+<tr class="separator:aabd225b43c9d518074c0bf8d1cae0c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6821e418e51a7497894b781a7120d770"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#a6821e418e51a7497894b781a7120d770">d_b</a></td></tr>
+<tr class="separator:a6821e418e51a7497894b781a7120d770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086052e3d57ef312c7c610dada77ef63"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#a086052e3d57ef312c7c610dada77ef63">d_c</a></td></tr>
+<tr class="separator:a086052e3d57ef312c7c610dada77ef63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76c71d5803f7de1a1790b8e82c21eb4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#af76c71d5803f7de1a1790b8e82c21eb4">angle</a></td></tr>
+<tr class="memdesc:af76c71d5803f7de1a1790b8e82c21eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">angle.  <a href="classComputeAngle.html#af76c71d5803f7de1a1790b8e82c21eb4">More...</a><br /></td></tr>
+<tr class="separator:af76c71d5803f7de1a1790b8e82c21eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:af45836f96ce28c09474a5645a6a79aaa"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#af45836f96ce28c09474a5645a6a79aaa">offset_a</a> = -52</td></tr>
+<tr class="separator:af45836f96ce28c09474a5645a6a79aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa19fb6009e75c517d3fb3cdb90dccc40"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#aa19fb6009e75c517d3fb3cdb90dccc40">offset_b</a> = -52</td></tr>
+<tr class="separator:aa19fb6009e75c517d3fb3cdb90dccc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80302c0858aaf7c0c14878e489b30bb8"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#a80302c0858aaf7c0c14878e489b30bb8">offset_c</a> = -52</td></tr>
+<tr class="separator:a80302c0858aaf7c0c14878e489b30bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf798fc1b1a4d745475e40b84ca6b46"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComputeAngle.html#a3cf798fc1b1a4d745475e40b84ca6b46">N</a> = 3</td></tr>
+<tr class="separator:a3cf798fc1b1a4d745475e40b84ca6b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >a class to compute the RSSI angle for trilateration <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="ComputeAngle_8cpp_source.html#l00034">34</a> of file <a class="el" href="ComputeAngle_8cpp_source.html">ComputeAngle.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00034">34</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afbd50f065d38f541878e394db2363782" name="afbd50f065d38f541878e394db2363782"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbd50f065d38f541878e394db2363782">&#9670;&nbsp;</a></span>ComputeAngle()</h2>
@@ -118,24 +148,26 @@ Public Member Functions</h2></td></tr>
 
 <p>brief description </p>
 
-<p class="definition">Definition at line <a class="el" href="ComputeAngle_8cpp_source.html#l00067">67</a> of file <a class="el" href="ComputeAngle_8cpp_source.html">ComputeAngle.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>      {</div>
-<div class="line"><span class="lineno">   69</span>            a = 0;</div>
-<div class="line"><span class="lineno">   70</span>            b = 0;</div>
-<div class="line"><span class="lineno">   71</span>            c = 0;</div>
-<div class="line"><span class="lineno">   72</span> </div>
-<div class="line"><span class="lineno">   73</span>            d_a = 0.0;</div>
-<div class="line"><span class="lineno">   74</span>            d_b = 0.0;</div>
-<div class="line"><span class="lineno">   75</span>            d_c = 0.0;</div>
-<div class="line"><span class="lineno">   76</span> </div>
-<div class="line"><span class="lineno">   77</span>            angle = 0.0;</div>
-<div class="line"><span class="lineno">   78</span>      }</div>
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00066">66</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>      {</div>
+<div class="line"><span class="lineno">   68</span>            <a class="code hl_variable" href="classComputeAngle.html#af93671d04ecc5c795ff694c7795fae11">a</a> = 0;</div>
+<div class="line"><span class="lineno">   69</span>            b = 0;</div>
+<div class="line"><span class="lineno">   70</span>            c = 0;</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>            d_a = 0.0;</div>
+<div class="line"><span class="lineno">   73</span>            d_b = 0.0;</div>
+<div class="line"><span class="lineno">   74</span>            d_c = 0.0;</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>            <a class="code hl_variable" href="classComputeAngle.html#af76c71d5803f7de1a1790b8e82c21eb4">angle</a> = 0.0;</div>
+<div class="line"><span class="lineno">   77</span>      }</div>
+<div class="ttc" id="aclassComputeAngle_html_af76c71d5803f7de1a1790b8e82c21eb4"><div class="ttname"><a href="classComputeAngle.html#af76c71d5803f7de1a1790b8e82c21eb4">ComputeAngle::angle</a></div><div class="ttdeci">float angle</div><div class="ttdoc">angle.</div><div class="ttdef"><b>Definition:</b> <a href="ComputeAngle__testing_8cpp_source.html#l00061">ComputeAngle_testing.cpp:61</a></div></div>
+<div class="ttc" id="aclassComputeAngle_html_af93671d04ecc5c795ff694c7795fae11"><div class="ttname"><a href="classComputeAngle.html#af93671d04ecc5c795ff694c7795fae11">ComputeAngle::a</a></div><div class="ttdeci">int a</div><div class="ttdef"><b>Definition:</b> <a href="ComputeAngle__testing_8cpp_source.html#l00051">ComputeAngle_testing.cpp:51</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab0098935ecf2eb5f30a959c13252acc1" name="ab0098935ecf2eb5f30a959c13252acc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0098935ecf2eb5f30a959c13252acc1">&#9670;&nbsp;</a></span>computeDistance()</h2>
+<a id="a1b4b4ccb2538362290389e21b1c19bff" name="a1b4b4ccb2538362290389e21b1c19bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b4b4ccb2538362290389e21b1c19bff">&#9670;&nbsp;</a></span>computeAngleRSSI()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,10 +176,27 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ComputeAngle::computeDistance </td>
+          <td class="memname">pair&lt; float, float &gt; ComputeAngle::computeAngleRSSI </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -156,21 +205,25 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Function for computing distance using RSSI values to be improved using proper syntax/callbacks a,b,c double declaration again here in setRSSI and above unsigned int too Moreover, test with real values and dummy case <br  />
+<p >Function for computing distance using RSSI values and then using it to calculate angle <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="ComputeAngle_8cpp_source.html#l00097">97</a> of file <a class="el" href="ComputeAngle_8cpp_source.html">ComputeAngle.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   98</span>     {</div>
-<div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>         d_a = pow(10, ((offset_a - a)/(10*N)));  <span class="comment">// 8/20 - 0.4 -- test values</span></div>
-<div class="line"><span class="lineno">  101</span>         d_b = pow(10, ((offset_b - b)/(10*N)));  <span class="comment">// 18/20 - 0.9</span></div>
-<div class="line"><span class="lineno">  102</span>         d_c = pow(10, ((offset_c - c)/(10*N)));  <span class="comment">// 38/20 - 1.9</span></div>
-<div class="line"><span class="lineno">  103</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00094">94</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>     {</div>
+<div class="line"><span class="lineno">   96</span>         </div>
+<div class="line"><span class="lineno">   97</span>         d_a = pow(10, ((offset_a - <a class="code hl_variable" href="classComputeAngle.html#af93671d04ecc5c795ff694c7795fae11">a</a>)/(10*N)));</div>
+<div class="line"><span class="lineno">   98</span>         d_b = pow(10, ((offset_b - b)/(10*N)));  </div>
+<div class="line"><span class="lineno">   99</span>         d_c = pow(10, ((offset_c - c)/(10*N)));  </div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>         <span class="keywordtype">float</span> followAngle = acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>         <span class="keywordflow">return</span> make_pair(followAngle, d_a);</div>
+<div class="line"><span class="lineno">  104</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a0098593dbbcc6c9bf165dc927d47f116" name="a0098593dbbcc6c9bf165dc927d47f116"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0098593dbbcc6c9bf165dc927d47f116">&#9670;&nbsp;</a></span>get_a()</h2>
+<a id="a949b3a005510abdab021ef6fd45e37a9" name="a949b3a005510abdab021ef6fd45e37a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949b3a005510abdab021ef6fd45e37a9">&#9670;&nbsp;</a></span>roundoff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,42 +232,21 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float ComputeAngle::get_a </td>
+          <td class="memname">float ComputeAngle::roundoff </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Getting distance between Phone and <a class="el" href="classCart.html" title="General Purpose Input Output for Raspberry Pi.">Cart</a> Improve it using proper syntax/**callbacks - getters not allowed!** This might be needed by other GrocerEase class is it actually a getter? <br  />
- </p>
-
-<p class="definition">Definition at line <a class="el" href="ComputeAngle_8cpp_source.html#l00120">120</a> of file <a class="el" href="ComputeAngle_8cpp_source.html">ComputeAngle.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  121</span>   {</div>
-<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">return</span> d_a*(pow(10,40));</div>
-<div class="line"><span class="lineno">  123</span>   }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ac0f6a3e78cafdb8ca88ef0f2f365e440" name="ac0f6a3e78cafdb8ca88ef0f2f365e440"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0f6a3e78cafdb8ca88ef0f2f365e440">&#9670;&nbsp;</a></span>getAngle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">float ComputeAngle::getAngle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>prec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -223,12 +255,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Function for getting angle using distances - (write formula too) to be improved using proper syntax/**callbacks - getters not allowed!** This might be needed by other GrocerEase class is it actually a getter? </p>
 
-<p class="definition">Definition at line <a class="el" href="ComputeAngle_8cpp_source.html#l00110">110</a> of file <a class="el" href="ComputeAngle_8cpp_source.html">ComputeAngle.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  111</span>   {</div>
-<div class="line"><span class="lineno">  112</span>    <span class="keywordflow">return</span> acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));</div>
-<div class="line"><span class="lineno">  113</span>   }</div>
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00106">106</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  107</span>   {</div>
+<div class="line"><span class="lineno">  108</span>      <span class="keywordtype">float</span> pow_10 = pow(10.0f, (<span class="keywordtype">float</span>)prec);</div>
+<div class="line"><span class="lineno">  109</span>      <span class="keywordflow">return</span> round(value * pow_10) / pow_10;</div>
+<div class="line"><span class="lineno">  110</span>   }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -274,17 +306,229 @@ Public Member Functions</h2></td></tr>
 <p >Setter Function for RSSI values - to be improved using proper syntax/updates/callbacks <br  />
  Use another class/interface to communicate/return these values ?? Is it a setter/getter ? Do we need a getter callback - better?? </p>
 
-<p class="definition">Definition at line <a class="el" href="ComputeAngle_8cpp_source.html#l00085">85</a> of file <a class="el" href="ComputeAngle_8cpp_source.html">ComputeAngle.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   86</span>     {</div>
-<div class="line"><span class="lineno">   87</span>              a = a_dB;</div>
-<div class="line"><span class="lineno">   88</span>              b = b_dB;</div>
-<div class="line"><span class="lineno">   89</span>              c = c_dB;</div>
-<div class="line"><span class="lineno">   90</span>      }</div>
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00084">84</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>     {</div>
+<div class="line"><span class="lineno">   86</span>              <a class="code hl_variable" href="classComputeAngle.html#af93671d04ecc5c795ff694c7795fae11">a</a> = a_dB;</div>
+<div class="line"><span class="lineno">   87</span>              b = b_dB;</div>
+<div class="line"><span class="lineno">   88</span>              c = c_dB;</div>
+<div class="line"><span class="lineno">   89</span>      }</div>
 </div><!-- fragment -->
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af93671d04ecc5c795ff694c7795fae11" name="af93671d04ecc5c795ff694c7795fae11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af93671d04ecc5c795ff694c7795fae11">&#9670;&nbsp;</a></span>a</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ComputeAngle::a</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >VARIABLES * a: RSSI robot&ndash;phone b: RSSI beacon&ndash;robot c: RSSI beacon&ndash;phone offset_a: RSSI received of a at 1 metre (!!TO BE RECALIBRATED) offset_b: RSSI received of b at 1 metre (!!TO BE RECALIBRATED) offset_c: RSSI received of c at 1 metre (!!TO BE RECALIBRATED) d_a: a converted into distance (unit: metre) d_b: b converted into distance (unit: metre) d_c: c converted into distance (unit: metre) N: broadcasting power value (Constant depends on the Environmental factor. Range 2–4) angle: beacon&ndash;robot&ndash;phone </p>
+
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00051">51</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af76c71d5803f7de1a1790b8e82c21eb4" name="af76c71d5803f7de1a1790b8e82c21eb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af76c71d5803f7de1a1790b8e82c21eb4">&#9670;&nbsp;</a></span>angle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ComputeAngle::angle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>angle. </p>
+
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00061">61</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a365ca3809984a057de0f7f6e9c453256" name="a365ca3809984a057de0f7f6e9c453256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a365ca3809984a057de0f7f6e9c453256">&#9670;&nbsp;</a></span>b</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ComputeAngle::b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00051">51</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a416f1a5e75373b4a9824f4f671948685" name="a416f1a5e75373b4a9824f4f671948685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a416f1a5e75373b4a9824f4f671948685">&#9670;&nbsp;</a></span>c</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ComputeAngle::c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00051">51</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aabd225b43c9d518074c0bf8d1cae0c20" name="aabd225b43c9d518074c0bf8d1cae0c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabd225b43c9d518074c0bf8d1cae0c20">&#9670;&nbsp;</a></span>d_a</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ComputeAngle::d_a</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00053">53</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6821e418e51a7497894b781a7120d770" name="a6821e418e51a7497894b781a7120d770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6821e418e51a7497894b781a7120d770">&#9670;&nbsp;</a></span>d_b</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ComputeAngle::d_b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00053">53</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a086052e3d57ef312c7c610dada77ef63" name="a086052e3d57ef312c7c610dada77ef63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086052e3d57ef312c7c610dada77ef63">&#9670;&nbsp;</a></span>d_c</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ComputeAngle::d_c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00053">53</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3cf798fc1b1a4d745475e40b84ca6b46" name="a3cf798fc1b1a4d745475e40b84ca6b46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf798fc1b1a4d745475e40b84ca6b46">&#9670;&nbsp;</a></span>N</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ComputeAngle::N = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00058">58</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af45836f96ce28c09474a5645a6a79aaa" name="af45836f96ce28c09474a5645a6a79aaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af45836f96ce28c09474a5645a6a79aaa">&#9670;&nbsp;</a></span>offset_a</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ComputeAngle::offset_a = -52</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00055">55</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa19fb6009e75c517d3fb3cdb90dccc40" name="aa19fb6009e75c517d3fb3cdb90dccc40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa19fb6009e75c517d3fb3cdb90dccc40">&#9670;&nbsp;</a></span>offset_b</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ComputeAngle::offset_b = -52</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00056">56</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a80302c0858aaf7c0c14878e489b30bb8" name="a80302c0858aaf7c0c14878e489b30bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80302c0858aaf7c0c14878e489b30bb8">&#9670;&nbsp;</a></span>offset_c</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ComputeAngle::offset_c = -52</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ComputeAngle__testing_8cpp_source.html#l00057">57</a> of file <a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/<a class="el" href="ComputeAngle_8cpp_source.html">ComputeAngle.cpp</a></li>
+<li>src/<a class="el" href="ComputeAngle__testing_8cpp_source.html">ComputeAngle_testing.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -30,15 +30,17 @@ class Cart
 
 public:
 
-    Cart()
-    {
-    	void start();
-    }
-    
-    ~Cart()
-    {
-    	void stop();
-    }
+    /// \brief  constructor
+    Cart();
+
+    /// \brief  deconstructor
+    ~Cart();
+
+    /// \brief a function to set-up communication the cart.
+    void start();
+
+    /// \brief a function to cease communication with the cart.
+     void stop();
     
     /// \brief Left forward wheel declaration
     void lw_Forward();

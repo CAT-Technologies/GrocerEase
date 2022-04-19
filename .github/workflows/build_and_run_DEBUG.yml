@@ -9,6 +9,8 @@ jobs:
         run: sudo apt-get install libbluetooth-dev
       - name: wiringpi
         run: cd /${{github.workspace}}/external/wiringPi && ./build
+      - name: pigpio
+        run: cd /${{github.workspace}}/external/pigpio && make && sudo make install
       - name: enter into correct dir and create a dir debug
         run: cd /${{github.workspace}} && mkdir Debug
       - name: run cmake

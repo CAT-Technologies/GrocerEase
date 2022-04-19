@@ -42,7 +42,10 @@ include_directories(include)
 
 add_executable(GrocerEase
   src/GPIO.cpp
-  include/GPIO.h)
+  include/GPIO.h
+  src/cart.cpp
+  include/cart.h
+  )
 
 # Include WiringPi directories
 #find_package(WiringPi REQUIRED)
@@ -58,13 +61,12 @@ target_link_libraries(GrocerEase ${WIRINGPI_LIBRARIES})
 find_package(Threads)
 target_link_libraries(GrocerEase Threads::Threads)
 
-
 # Link against libraries
 Target_link_libraries(GrocerEase ${Boost_LIBRARIES} rt)
 
-
 target_link_libraries(GrocerEase crypt)
 
+target_link_libraries(GrocerEase pigpio rt)
 
 install(TARGETS ${EXECUTABLE_NAME}
         EXPORT ${LIBRARY_NAME}

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/social%20media/logos/logo.jpeg"/>
+  <img src="https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/social_media/logos/logo.jpeg"/>
 </p>
 
 ## GrocerEase 🛒
@@ -20,6 +20,7 @@
 * [Conceptualisation](#conceptualisation)
 * [Project Roadmap](#project-roadmap)
 * [Language and Technologies](#language-and-technologies)
+* [Installation](#installation)
 * [Directory Tree](#directory-tree)
 * [Social Media and Outreach](#social-media-and-outreach)
 * [Contribution Guidelines](#contribution-guidelines)
@@ -42,6 +43,12 @@ The roadmap for our project can be found [here](https://github.com/CAT-Technolog
 ## [Language and Technologies](#GrocerEase)
 
 <p align="left"> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="jsp" width="40" height="40"/> </a> <a href="https://www.latex-project.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="latex" width="40" height="40"/> </a> <a href="https://cmake.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" alt="cmake" width="40" height="40"/> </a> <a href="https://www.raspberrypi.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" alt="cmake" width="40" height="40"/> </a>
+	
+## [Installation](#GrocerEase)
+	
+To install and build the package, please follow the tutorial below
+	
+![compile](https://user-images.githubusercontent.com/29406906/164114839-24314b26-206b-4b90-afc7-caafa646c386.gif)
 
 ## [Directory Tree](#GrocerEase)
 
@@ -63,7 +70,7 @@ Follow us on social media platforms to keep up to date with our product updates 
 
 ## [Contribution Guidelines](#GrocerEase)
 
-Thank you for your interest in our project. We strongly encourage reading the contribution guidelines before you be begin. The contribution guidelines for the repository can be found [here](https://github.com/RTEP-Project-Team/GrocerEase/blob/devel/Contribution_Guidelines.md).
+Thank you for your interest in our project. We strongly encourage reading the contribution guidelines before you be begin. The contribution guidelines for the repository can be found [here](https://github.com/CAT-Technologies/GrocerEase/blob/devel/CONTRIBUTING.md).
 
 ## [Credits](#GrocerEase)
 
