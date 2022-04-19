@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['writemotor_0',['writeMotor',['../classCart.html#a98eefe9a8b411e548c919cde2e6ba7ba',1,'Cart']]]
+  ['setrssi_0',['setRSSI',['../classComputeAngle.html#ae78b6f692437579da19761509683040d',1,'ComputeAngle']]],
+  ['start_1',['start',['../classCart.html#a7f3cca3064effa75315bd1cd08fda10b',1,'Cart']]],
+  ['std_2',['std',['../namespacestd.html',1,'']]],
+  ['stop_3',['stop',['../classCart.html#a9500349670b16fdfae1be6ed456967b0',1,'Cart::stop()'],['../classGrocerease.html#a76163fe1108093dac3ceb3663764c4d8',1,'Grocerease::stop()']]]
 ];

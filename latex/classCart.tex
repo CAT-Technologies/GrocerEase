@@ -12,6 +12,16 @@ General Purpose Input Output for Raspberry Pi.
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classCart_a596ee7e7ced21478d39b6afe67828a2b}\label{classCart_a596ee7e7ced21478d39b6afe67828a2b}} 
+{\bfseries Cart} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCart_ae74cee9e32b8b784d8b0ab0b03d7dbe6}\label{classCart_ae74cee9e32b8b784d8b0ab0b03d7dbe6}} 
+{\bfseries $\sim$\+Cart} ()
+\begin{DoxyCompactList}\small\item\em deconstructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCart_a7f3cca3064effa75315bd1cd08fda10b}{start}} ()
+\begin{DoxyCompactList}\small\item\em a function to set-\/up communication the cart. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCart_a9500349670b16fdfae1be6ed456967b0}{stop}} ()
+\begin{DoxyCompactList}\small\item\em a function to cease communication with the cart. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCart_a1600bad83beb1b1ac3479528a334ef87}{lw\+\_\+\+Forward}} ()
 \begin{DoxyCompactList}\small\item\em Left forward wheel declaration. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCart_a740821510b4fd6976c42a0156925859f}{rw\+\_\+\+Forward}} ()
@@ -53,43 +63,6 @@ You should have received a copy of the GNU Lesser General Public License along w
 
 Definition at line \mbox{\hyperlink{cart_8h_source_l00028}{28}} of file \mbox{\hyperlink{cart_8h_source}{cart.\+h}}.
 
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classCart_a596ee7e7ced21478d39b6afe67828a2b}\label{classCart_a596ee7e7ced21478d39b6afe67828a2b}} 
-\index{Cart@{Cart}!Cart@{Cart}}
-\index{Cart@{Cart}!Cart@{Cart}}
-\doxysubsubsection{\texorpdfstring{Cart()}{Cart()}}
-{\footnotesize\ttfamily Cart\+::\+Cart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line \mbox{\hyperlink{cart_8h_source_l00033}{33}} of file \mbox{\hyperlink{cart_8h_source}{cart.\+h}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00034     \{}
-\DoxyCodeLine{00035         \textcolor{keywordtype}{void} start();}
-\DoxyCodeLine{00036     \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classCart_ae74cee9e32b8b784d8b0ab0b03d7dbe6}\label{classCart_ae74cee9e32b8b784d8b0ab0b03d7dbe6}} 
-\index{Cart@{Cart}!````~Cart@{$\sim$Cart}}
-\index{````~Cart@{$\sim$Cart}!Cart@{Cart}}
-\doxysubsubsection{\texorpdfstring{$\sim$Cart()}{~Cart()}}
-{\footnotesize\ttfamily Cart\+::$\sim$\+Cart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line \mbox{\hyperlink{cart_8h_source_l00038}{38}} of file \mbox{\hyperlink{cart_8h_source}{cart.\+h}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00039     \{}
-\DoxyCodeLine{00040         \textcolor{keywordtype}{void} stop();}
-\DoxyCodeLine{00041     \}}
-
-\end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
@@ -341,6 +314,71 @@ Definition at line \mbox{\hyperlink{cart_8cpp_source_l00058}{58}} of file \mbox{
 \DoxyCodeLine{00060     gpioWrite(en3, 1);}
 \DoxyCodeLine{00061     gpioWrite(en4, 0);}
 \DoxyCodeLine{00062 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCart_a7f3cca3064effa75315bd1cd08fda10b}\label{classCart_a7f3cca3064effa75315bd1cd08fda10b}} 
+\index{Cart@{Cart}!start@{start}}
+\index{start@{start}!Cart@{Cart}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Cart\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+a function to set-\/up communication the cart. 
+
+Copyright (C) 2022 Carry Assistant Trolley (C.\+A.\+T) Technologies
+
+Jia Wei Tan, April 11, 2022.
+
+This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02111, USA. 
+
+Definition at line \mbox{\hyperlink{cart_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{cart_8cpp_source}{cart.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028 \{}
+\DoxyCodeLine{00029     \textcolor{keywordflow}{if} (gpioInitialise()<0) }
+\DoxyCodeLine{00030         exit(1);}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032     \textcolor{comment}{// \(\backslash\)brief left motor}}
+\DoxyCodeLine{00033     gpioSetMode(en1, PI\_INPUT);}
+\DoxyCodeLine{00034     gpioSetMode(en2, PI\_INPUT);}
+\DoxyCodeLine{00035     gpioSetMode(motorL, PI\_ALT0);}
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037     \textcolor{comment}{// \(\backslash\)brief right motor}}
+\DoxyCodeLine{00038     gpioSetMode(en3, PI\_INPUT);}
+\DoxyCodeLine{00039     gpioSetMode(en4, PI\_INPUT);}
+\DoxyCodeLine{00040     gpioSetMode(motorR, PI\_ALT0);}
+\DoxyCodeLine{00041 }
+\DoxyCodeLine{00042     gpioSetMode(left\_IR, PI\_INPUT);}
+\DoxyCodeLine{00043     gpioSetMode(right\_IR, PI\_INPUT);}
+\DoxyCodeLine{00044 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCart_a9500349670b16fdfae1be6ed456967b0}\label{classCart_a9500349670b16fdfae1be6ed456967b0}} 
+\index{Cart@{Cart}!stop@{stop}}
+\index{stop@{stop}!Cart@{Cart}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Cart\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+a function to cease communication with the cart. 
+
+
+
+Definition at line \mbox{\hyperlink{cart_8cpp_source_l00046}{46}} of file \mbox{\hyperlink{cart_8cpp_source}{cart.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00047 \{}
+\DoxyCodeLine{00048     \mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{writeMotor}}(0,0);}
+\DoxyCodeLine{00049     gpioTerminate();}
+\DoxyCodeLine{00050 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}\label{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}} 

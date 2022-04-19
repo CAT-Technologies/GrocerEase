@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setrssi_0',['setRSSI',['../classComputeAngle.html#ae78b6f692437579da19761509683040d',1,'ComputeAngle']]]
+  ['obstacleavoidance_0',['ObstacleAvoidance',['../classGrocerease.html#ac19afedd6955c30bd32fc9b2387224a8',1,'Grocerease']]]
 ];
