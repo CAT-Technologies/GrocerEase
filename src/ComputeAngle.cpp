@@ -102,13 +102,6 @@ class ComputeAngle
 
          return make_pair(followAngle, d_a);
     }
-     
-   /*! Getting distance between Phone and Cart */
-         
-   float get_a(float d_a)
-   {
-      	return d_a;
-   }
          
 };
 
