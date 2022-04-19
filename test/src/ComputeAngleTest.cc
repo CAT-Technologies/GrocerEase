@@ -13,7 +13,7 @@ TEST(ComputeAngleTest, angle_output_test)
     
 }
 
-TEST(ComputeAngleTest, a_output_test_1)
+TEST(ComputeAngleTest, a_output_test)
 {
     ComputeAngle CompA;
 
