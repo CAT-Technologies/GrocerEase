@@ -1,0 +1,80 @@
+\hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source}{}\doxysection{cart.\+h}
+\label{utils_2patches_2computeAngle_2include_2cart_8h_source}\index{utils/patches/computeAngle/include/cart.h@{utils/patches/computeAngle/include/cart.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00021}00021 \textcolor{preprocessor}{\#ifndef CART\_H}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00022}00022 \textcolor{preprocessor}{\#define CART\_H}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00024}00024 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00025}00025 \textcolor{preprocessor}{\#include <tuple>}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00027}00027 \textcolor{preprocessor}{\#define ROC\_ANGLE 0.685557}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00028}00028 \textcolor{preprocessor}{\#define START\_TIME 10 }\textcolor{comment}{//ms}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00033}00033 \textcolor{keyword}{class }\mbox{\hyperlink{classCart}{Cart}}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00034}00034 \{}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00035}00035 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00041}\mbox{\hyperlink{classCart_1_1CompAngleCallback}{00041}}         \textcolor{keyword}{class }\mbox{\hyperlink{classCart_1_1CompAngleCallback}{CompAngleCallback}}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00042}00042         \{}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00043}00043         \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00048}\mbox{\hyperlink{classCart_1_1CompAngleCallback_a46859e60f9786d4924621770e7a33c79}{00048}}                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_1_1CompAngleCallback_a46859e60f9786d4924621770e7a33c79}{computeAngle}}(\mbox{\hyperlink{classCart}{Cart}} \&) = 0;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00049}00049         \};}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00051}00051 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00057}00057         \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a7f3cca3064effa75315bd1cd08fda10b}{start}}(\textcolor{keywordtype}{long} \_defaultStartTime=START\_TIME);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00062}\mbox{\hyperlink{classCart_a9500349670b16fdfae1be6ed456967b0}{00062}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a9500349670b16fdfae1be6ed456967b0}{stop}}();}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00067}\mbox{\hyperlink{classCart_ae74cee9e32b8b784d8b0ab0b03d7dbe6}{00067}}         \mbox{\hyperlink{classCart_ae74cee9e32b8b784d8b0ab0b03d7dbe6}{\string~Cart}}()}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00068}00068         \{}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00069}00069             \mbox{\hyperlink{classCart_a9500349670b16fdfae1be6ed456967b0}{stop}}();}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00070}00070         \}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00076}\mbox{\hyperlink{classCart_a3b7ffcf7263d2a808bc8691a3f404a06}{00076}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a3b7ffcf7263d2a808bc8691a3f404a06}{regCompAngleCallback}}(\mbox{\hyperlink{classCart_1_1CompAngleCallback}{CompAngleCallback}} *\_compAngleCallback)}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00077}00077         \{}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00078}00078             compAngleCallback = \_compAngleCallback;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00079}00079         \}}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00084}\mbox{\hyperlink{classCart_a1600bad83beb1b1ac3479528a334ef87}{00084}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a1600bad83beb1b1ac3479528a334ef87}{lw\_Forward}}();}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00089}\mbox{\hyperlink{classCart_a740821510b4fd6976c42a0156925859f}{00089}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a740821510b4fd6976c42a0156925859f}{rw\_Forward}}();}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00094}\mbox{\hyperlink{classCart_aaa4f76abf4b9cd8d8267e31a8b864f1b}{00094}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_aaa4f76abf4b9cd8d8267e31a8b864f1b}{lw\_Backward}}();}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00100}\mbox{\hyperlink{classCart_a937d094639672a935177af282ea45a98}{00100}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a937d094639672a935177af282ea45a98}{rw\_Backward}}();}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00108}\mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{00108}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classCart_a98eefe9a8b411e548c919cde2e6ba7ba}{writeMotor}}(\textcolor{keywordtype}{int} L, \textcolor{keywordtype}{int} R);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00114}00114         \textcolor{keywordtype}{int} \mbox{\hyperlink{classCart_a3b0a2f30ddb24b8fb4b57ee9cb1ac686}{readLeftIRSensor}}(\textcolor{keywordtype}{int} left\_IR);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00115}00115         }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00120}00120         \textcolor{keywordtype}{int} \mbox{\hyperlink{classCart_a7e9253869fbf4db09805c33f60e0a35a}{readRightIRSensor}}(\textcolor{keywordtype}{int} left\_IR);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00121}00121         }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00129}\mbox{\hyperlink{classCart_a2b7c7ccb0a092affd0123d3a62d0da44}{00129}}         \textcolor{keywordtype}{float} \mbox{\hyperlink{classCart_a2b7c7ccb0a092affd0123d3a62d0da44}{estimateRobotAngle}}(\textcolor{keywordtype}{float} angle\_old\_robot, \textcolor{keywordtype}{int} rotation\_left, }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00130}00130             \textcolor{keywordtype}{int} rotation\_right, \textcolor{keywordtype}{float} timeStep);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00131}00131         }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00139}\mbox{\hyperlink{classCart_a9ece0a7138b3da7075ba186109b2e713}{00139}}         \textcolor{keywordtype}{float} \mbox{\hyperlink{classCart_a9ece0a7138b3da7075ba186109b2e713}{angleToTime}}(\textcolor{keywordtype}{float} angle\_diff, \textcolor{keywordtype}{int} rotation\_left, }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00140}00140             \textcolor{keywordtype}{int} rotation\_right);}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00142}00142 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00143}00143     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} left\_IR = 4;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00144}00144     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} right\_IR = 15;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00145}00145     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} motorL = 13;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00146}00146     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} motorR = 12;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00147}00147     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} en1 = 5;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00148}00148     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} en2 = 6;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00149}00149     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} en3 = 23;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00150}00150     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} en4 = 24;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00151}00151     }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00152}00152     \mbox{\hyperlink{classCart_1_1CompAngleCallback}{CompAngleCallback}} *compAngleCallback = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00153}00153 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00154}00154     \textcolor{keywordtype}{float} d\_a;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00155}00155     \textcolor{keywordtype}{float} d\_b;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00156}00156     \textcolor{keywordtype}{float} d\_c;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00157}00157     \textcolor{keywordtype}{float} timeStep\_s;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00158}00158     \textcolor{keywordtype}{float} angle\_new\_robot;}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00159}00159 \};}
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00160}00160 }
+\DoxyCodeLine{\Hypertarget{utils_2patches_2computeAngle_2include_2cart_8h_source_l00161}00161 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//CART\_H}}
+
+\end{DoxyCode}

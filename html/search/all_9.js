@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['write_5fa_5fdistance_0',['write_a_distance',['../classGrocerease.html#a8ad4120414087daa51a184b7eac56852',1,'Grocerease']]],
-  ['write_5fnewangle_1',['write_newAngle',['../classGrocerease.html#ac61b4cd561acb844fc1a658e44c453b3',1,'Grocerease']]],
-  ['writemotor_2',['writeMotor',['../classCart.html#a98eefe9a8b411e548c919cde2e6ba7ba',1,'Cart']]]
+  ['setrssi_0',['setRSSI',['../classComputeAngle.html#ae78b6f692437579da19761509683040d',1,'ComputeAngle']]],
+  ['start_1',['start',['../classCart.html#a7f3cca3064effa75315bd1cd08fda10b',1,'Cart::start()'],['../classCart.html#a9f34cec84563c0a2ec8d57218db7e62c',1,'Cart::start(long _defaultStartTime=START_TIME)']]],
+  ['std_2',['std',['../namespacestd.html',1,'']]],
+  ['stop_3',['stop',['../classCart.html#a9500349670b16fdfae1be6ed456967b0',1,'Cart::stop()'],['../classGrocerease.html#a76163fe1108093dac3ceb3663764c4d8',1,'Grocerease::stop()'],['../classCart.html#a9500349670b16fdfae1be6ed456967b0',1,'Cart::stop()']]]
 ];

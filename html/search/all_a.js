@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['_7ecart_0',['~Cart',['../classCart.html#ae74cee9e32b8b784d8b0ab0b03d7dbe6',1,'Cart']]],
-  ['_7egpio_1',['~GPIO',['../classstd_1_1GPIO.html#a413d51154459d8736fd0ca0a1ab8132c',1,'std::GPIO']]]
+  ['write_5fa_5fdistance_0',['write_a_distance',['../classGrocerease.html#a8ad4120414087daa51a184b7eac56852',1,'Grocerease']]],
+  ['write_5fnewangle_1',['write_newAngle',['../classGrocerease.html#ac61b4cd561acb844fc1a658e44c453b3',1,'Grocerease']]],
+  ['writemotor_2',['writeMotor',['../classCart.html#a98eefe9a8b411e548c919cde2e6ba7ba',1,'Cart::writeMotor(int L, int R)'],['../classCart.html#a98eefe9a8b411e548c919cde2e6ba7ba',1,'Cart::writeMotor(int L, int R)']]]
 ];

@@ -6,5 +6,5 @@ var searchData=
   ['angle_3',['angle',['../classComputeAngle.html#af76c71d5803f7de1a1790b8e82c21eb4',1,'ComputeAngle']]],
   ['angledifference_4',['angleDifference',['../classGrocerease.html#a3acd5a9513088b4fb5910ca2dfb38c8c',1,'Grocerease']]],
   ['anglerecompute_5',['angleRecompute',['../classGrocerease.html#aba3c4a5635f3a401694967961f8170ac',1,'Grocerease']]],
-  ['angletotime_6',['angleToTime',['../classCart.html#a9ece0a7138b3da7075ba186109b2e713',1,'Cart']]]
+  ['angletotime_6',['angleToTime',['../classCart.html#a9ece0a7138b3da7075ba186109b2e713',1,'Cart::angleToTime(float angle_diff, int rotation_left, int rotation_right)'],['../classCart.html#a9ece0a7138b3da7075ba186109b2e713',1,'Cart::angleToTime(float angle_diff, int rotation_left, int rotation_right)']]]
 ];
