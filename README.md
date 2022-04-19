@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/social%20media/logos/logo.jpeg"/>
+  <img src="https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/social_media/logos/logo.jpeg"/>
 </p>
 
 ## GrocerEase 🛒
