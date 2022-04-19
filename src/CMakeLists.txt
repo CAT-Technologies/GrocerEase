@@ -3,7 +3,6 @@ set(LIBRARY_SOURCES "ComputeAngle.cpp")
 set(LIBRARY_SOURCES "cart.cpp")
 set(LIBRARY_SOURCES "GPIO.cpp")
 set(LIBRARY_HEADERS "${PROJECT_SOURCE_DIR}/include/GPIO.h")
-set(LIBRARY_HEADERS "${PROJECT_SOURCE_DIR}/include/cart.h")
 set(LIBRARY_INCLUDES "${PROJECT_SOURCE_DIR}/include/")
 
 # add libraries, targets, and compile them
