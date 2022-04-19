@@ -110,18 +110,3 @@ class ComputeAngle
    }
        
 };
-
-// 
-// int main()
-// {
-//    ComputeAngle CompAng;
-// 
-//    pair<float, float> details = CompAng.computeAngleRSSI(-55,-55,-50);
-// 
-//    cout << "The calculated angle is : "<< details.first << endl;
-//    cout << "The calculated follow distance is : "<< details.second << endl;       
-//      
-// 
-//    return 0;
-// }
-// 
