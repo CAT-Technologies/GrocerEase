@@ -1,7 +1,7 @@
-/*
+/*!
  * Copyright (C) 2022 Carry Assistant Trolley (C.A.T) Technologies
  *  
- * Jia Wei Tan, February 16, 2022.
+ * Jia Wei Tan, February 26, 2022.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -18,60 +18,62 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.
  */
 
-/*General Purpose Input Output for Raspberry Pi */
+#include <memory>
 
-#include <iostream>
+#include <GPIO.h>
 
-#include <wiringPi.h>
+extern "C" {
+  #include <wiringPi.h>
+}
 
 using namespace std;
 
-//Left forward wheel
-void lw_Forward() {
-  digitalWrite(21, 1);
-  digitalWrite(22, 0);
+void GPIO::lw_Forward()
+{
+   digitalWrite(21, 1);
+   digitalWrite(22, 0); 
 }
 
-//Right forward wheel
-void rw_Forward() {
-  digitalWrite(4, 1);
-  digitalWrite(5, 0);
+void GPIO::lw_Backward()
+{
+   digitalWrite(21, 0);
+   digitalWrite(22, 1); 
 }
 
-//Left backward wheel
-void lw_Backward() {
-  digitalWrite(21, 0);
-  digitalWrite(22, 1);
+void GPIO::rw_Forward()
+{
+   digitalWrite(4, 1);
+   digitalWrite(5, 0);   
 }
 
-//Right forward wheel
-void rw_Backward() {
-  digitalWrite(4, 0);
-  digitalWrite(5, 1);
+void GPIO::rw_Backward()
+{
+   digitalWrite(4, 0);
+   digitalWrite(5, 1);    
 }
 
-int main() {
-  int left_IR = 7;
-  int right_IR = 16;
+int main()
+{
+   int left_IR = 7;
+   int right_IR = 16;
+   
+   wiringPiSetup();
 
-  wiringPiSetup();
+   pinMode(21, OUTPUT);
+   pinMode(22, OUTPUT);
+   pinMode(23, PWM_OUTPUT);
 
-  /*left motor */
-  pinMode(21, OUTPUT);
-  pinMode(22, OUTPUT);
-  pinMode(23, PWM_OUTPUT);
+   pinMode(4, OUTPUT);
+   pinMode(5, OUTPUT);
+   pinMode(26, PWM_OUTPUT);
 
-  /*right motor */
-  pinMode(4, OUTPUT);
-  pinMode(5, OUTPUT);
-  pinMode(26, PWM_OUTPUT);
+   pinMode(7, INPUT);
+   pinMode(16, INPUT);
 
-  pinMode(7, INPUT);
-  pinMode(16, INPUT);
-
-  while (1) {
-    int out1 = digitalRead(right_IR);
-    int out2 = digitalRead(left_IR);
-    cout << out1 << out2 << "\n";
-  }
+   while (1) 
+   {
+      int out1 = digitalRead(right_IR);
+      int out2 = digitalRead(left_IR);
+      cout << out1 << out2 << "\n";
+   }
 }
