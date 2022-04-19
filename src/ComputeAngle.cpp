@@ -33,8 +33,7 @@ using namespace std;
 /// \brief a class to compute the RSSI angle for trilateration  
 class ComputeAngle
 {
-
-   private:
+   public:
    /*! VARIABLES *
     * a: RSSI robot--phone
     * b: RSSI beacon--robot
@@ -49,14 +48,14 @@ class ComputeAngle
     * angle: beacon--robot--phone
     */
    	   	
-   	unsigned int a, b, c;
+   	int a, b, c;
    	 	
    	float d_a, d_b, d_c;
    	
    	static const int offset_a = -52;      
    	static const int offset_b = -52;
    	static const int offset_c = -52;
-      	static const int N = 2;
+      	static const int N = 3;
   
    	/// \brief angle.
    	float angle;
@@ -90,56 +89,24 @@ class ComputeAngle
 	  }
 	  
 	 /*! Function for computing distance using RSSI values
-	    to be improved using proper syntax/callbacks 
-       a,b,c double declaration again here in setRSSI and above unsigned int too
-       Moreover, test with real values and dummy case  */
+	    and then using it to calculate angle  */
 	  
-	 void computeDistance()
+	 pair<float, float> computeAngleRSSI(float a, float b, float c)
 	 {
+         
+         d_a = pow(10, ((offset_a - a)/(10*N)));
+         d_b = pow(10, ((offset_b - b)/(10*N)));  
+         d_c = pow(10, ((offset_c - c)/(10*N)));  
 
-         d_a = pow(10, ((offset_a - a)/(10*N)));  // 8/20 - 0.4 -- test values
-         d_b = pow(10, ((offset_b - b)/(10*N)));  // 18/20 - 0.9
-         d_c = pow(10, ((offset_c - c)/(10*N)));  // 38/20 - 1.9
+         float followAngle = acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));
+
+         return make_pair(followAngle, d_a);
     }
-         
-    /*! Function for getting angle using distances - (write formula too)
-	    to be improved using proper syntax/**callbacks - getters not allowed!** 
-	    This might be needed by other GrocerEase class 
-       is it actually a getter? */
-         
-   float getAngle()
+
+    float roundoff(float value, unsigned char prec)
    {
-   	return acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));
+      float pow_10 = pow(10.0f, (float)prec);
+      return round(value * pow_10) / pow_10;
    }
-         
-   /*! Getting distance between Phone and Cart
-	   Improve it using proper syntax/**callbacks - getters not allowed!** 
-	   This might be needed by other GrocerEase class
-      is it actually a getter?  */
-         
-   float get_a()
-   {
-      	return d_a*(pow(10,40));
-   }
-         
+       
 };
-
-
-int main()
-{
-   ComputeAngle CompAng;
-
-   CompAng.setRSSI(-60, -70, -90);
-
-   /*! CompAng.getAngle not working as expected probably
-      test with proper values to get angle between a and b - check trilateration demo values*/
-
-#ifdef DEBUG
-   cout << "\n"<< "The distance a is : " << CompAng.get_a() << endl;
-   cout << "The calculated angle is : "<< CompAng.getAngle() << endl;       
-#endif
-
-  /*! add possible unit test after all these changes */
-   
-   return 0;
-}
