@@ -65,7 +65,7 @@ Target_link_libraries(GrocerEase ${Boost_LIBRARIES} rt)
 
 target_link_libraries(GrocerEase crypt)
 
-target_link_libraries(GrocerEase pgpio rt)
+target_link_libraries(GrocerEase pigpio rt)
 
 install(TARGETS ${EXECUTABLE_NAME}
         EXPORT ${LIBRARY_NAME}
