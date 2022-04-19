@@ -58,13 +58,12 @@ target_link_libraries(GrocerEase ${WIRINGPI_LIBRARIES})
 find_package(Threads)
 target_link_libraries(GrocerEase Threads::Threads)
 
-
 # Link against libraries
 Target_link_libraries(GrocerEase ${Boost_LIBRARIES} rt)
 
-
 target_link_libraries(GrocerEase crypt)
 
+target_link_libraries(GrocerEase pgpio rt)
 
 install(TARGETS ${EXECUTABLE_NAME}
         EXPORT ${LIBRARY_NAME}
