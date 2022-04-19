@@ -1,4 +1,4 @@
-#include "../../src/ComputeAngle.cpp"
+#include "../../src/ComputeAngle_testing.cpp"
 #include <gtest/gtest.h>
 
 TEST(ComputeAngleTest, angle_output_test)
