@@ -101,7 +101,14 @@ class ComputeAngle
          float followAngle = acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));
 
          return make_pair(followAngle, d_a);
-    }       
+    }
+
+    float roundoff(float value, unsigned char prec)
+   {
+      float pow_10 = pow(10.0f, (float)prec);
+      return round(value * pow_10) / pow_10;
+   }
+       
 };
 
 // 

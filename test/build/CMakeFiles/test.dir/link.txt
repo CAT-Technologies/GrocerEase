@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/test.dir/src/ComputeAngleTest.cc.o  -o test  -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

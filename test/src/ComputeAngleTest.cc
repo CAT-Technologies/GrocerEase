@@ -7,25 +7,22 @@ TEST(ComputeAngleTest, angle_output_test)
 
     pair<float,float> details = CompA.computeAngleRSSI(-55,-55,-50);
 
-    float ang = details.first;
-    float a = details.second;
-
-    ASSERT_EQ(0.0f, ang);
-    ASSERT_EQ(0.0f, a);
+    float ang = CompA.roundoff(details.first,2);
+    
+    ASSERT_EQ(ang,0.7f);
+    
 }
 
-// TEST(ComputeAngleTest, a_output_test_1)
-// {
-//     ComputeAngle CompA;
-// 
-//     CompA.setRSSI(-352,-352,-377);
-// 
-//     float ang = CompA.getAngle();
-//     float a = CompA.get_a();
-// 
-//     std::cout<< a;
-//     ASSERT_EQ(0, a);
-// }
+TEST(ComputeAngleTest, a_output_test_1)
+{
+    ComputeAngle CompA;
+
+    pair<float,float> details = CompA.computeAngleRSSI(-55,-55,-50);
+
+    float a = CompA.roundoff(details.second,2);
+
+    ASSERT_EQ(a, 1.26f);
+}
 
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
