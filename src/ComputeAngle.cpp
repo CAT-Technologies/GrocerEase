@@ -101,20 +101,20 @@ class ComputeAngle
          float followAngle = acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));
 
          return make_pair(followAngle, d_a);
-    }
-         
+    }       
 };
 
-
-int main()
-{
-   ComputeAngle CompAng;
-
-   pair<float, float> details = CompAng.computeAngleRSSI(-55,-55,-50);
-
-   cout << "The calculated angle is : "<< details.first << endl;
-   cout << "The calculated follow distance is : "<< details.second << endl;       
-     
-
-   return 0;
-}
+// 
+// int main()
+// {
+//    ComputeAngle CompAng;
+// 
+//    pair<float, float> details = CompAng.computeAngleRSSI(-55,-55,-50);
+// 
+//    cout << "The calculated angle is : "<< details.first << endl;
+//    cout << "The calculated follow distance is : "<< details.second << endl;       
+//      
+// 
+//    return 0;
+// }
+// 
