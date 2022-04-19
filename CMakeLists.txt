@@ -41,8 +41,8 @@ add_subdirectory(src)
 include_directories(include)
 
 add_executable(GrocerEase
-  src/GPIO.cpp
-  include/GPIO.h
+  src/grocerease.cpp
+  include/grocerease.h
   src/cart.cpp
   include/cart.h
   )
