@@ -72,7 +72,7 @@ int main()
     // grocerease.initialize_test(angle_feed, angle_robot_feed, dist_a_feed);
     // /********/
 
-    //grocerease.initialize();
+    grocerease.initialize();
 
     while(run)
     {
