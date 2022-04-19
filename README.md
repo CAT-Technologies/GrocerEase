@@ -63,7 +63,7 @@ Follow us on social media platforms to keep up to date with our product updates 
 
 ## [Contribution Guidelines](#GrocerEase)
 
-Thank you for your interest in our project. We strongly encourage reading the contribution guidelines before you be begin. The contribution guidelines for the repository can be found [here](https://github.com/RTEP-Project-Team/GrocerEase/blob/devel/Contribution_Guidelines.md).
+Thank you for your interest in our project. We strongly encourage reading the contribution guidelines before you be begin. The contribution guidelines for the repository can be found [here](https://github.com/CAT-Technologies/GrocerEase/blob/devel/CONTRIBUTING.md).
 
 ## [Credits](#GrocerEase)
 
