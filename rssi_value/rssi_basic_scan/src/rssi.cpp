@@ -15,9 +15,7 @@ int main(int argc, char **argv)
     int i;
     char addr[19] = { 0 };
     char name[248] = { 0 };
-    int  rssi_value = -65; 
-    
-    //Call a function that returns the rssi value (as a C++ vector)
+    int  rssi_value = -65;   //Call a function that returns the rssi value (as a C++ vector)
 
     dev_id = hci_get_route(NULL);
     sock = hci_open_dev( dev_id );
@@ -31,6 +29,8 @@ int main(int argc, char **argv)
     flags = IREQ_CACHE_FLUSH;
     ii = (inquiry_info*)malloc(max_rsp * sizeof(inquiry_info));
     
+    // run  the basic scan function in a loop
+
     num_rsp = hci_inquiry(dev_id, len, max_rsp, NULL, &ii, flags);
     if( num_rsp < 0 ) perror("hci_inquiry");
 
@@ -43,9 +43,9 @@ int main(int argc, char **argv)
         printf("%s %s %d\n", addr, name, rssi_value);
     }
 
-    // run it in a loop^
+    // good practice - using free
+    free( ii );  
 
-    free( ii );
     close( sock );
     return 0;
 }

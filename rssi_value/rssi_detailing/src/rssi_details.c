@@ -1,34 +1,3 @@
-
-/*
- * bluez_adapter_connect.c - Connect with device without StartDiscovery
- * 	- This example registers an agen with NoInputOutput capability for the purpose of
- *	  auto pairing
- * 	- Use ConnectDevice method to connect with device using provided MAC address
- *	- Usual signal subscription to get the details of the connected device
- *	- Introduced new signal handler to exit the program gracefully
- *
- *	Note: As "ConnectDevice" is new API and in experimental state (but mostly stable)
- *	one need to use "-E" option when starting "bluetoothd". Systems running systemd can
- *	edit /lib/systemd/system/bluetooth.service in ExecStart option
- *
- *	When this API is useful?
- *	- When you already have the MAC address of end bluetooth Device to connect with, then
- *	  you don't need to scan for the device (with or without filter) and connect it.
- *	- StartDiscovery + Pair + Connect => ConnectDevice
- *
- *	How you will have MAC address before scanning?
- *	- When you have other communication (wired or wireless) medium to exchange the MAC address
- *	- For example, NFC OOB can be used to exchange the MAC address
- *	- Testing Bluetooth with same device (MAC address known)
- *
- *	- Here Agent capability is registered as "NoInputOutput" for experimental purpose only, in
- *	  real world scenario, Pair + Connect involves real Agents.
- *	- Also note, bluez_agent_call_method and bluez_adapter_call_method are two different methods doing
- *	  the same work with difference in interface name and object path. This exist just to make the
- * 	  understanding more clear.
- *
- * gcc `pkg-config --cflags glib-2.0 gio-2.0` -Wall -Wextra -o ./bin/bluez_adapter_connect ./bluez_adapter_connect.c `pkg-config --libs glib-2.0 gio-2.0`
- */
 #include <glib.h>
 #include <gio/gio.h>
 #include <signal.h>
@@ -414,3 +383,35 @@ fail:
 	g_object_unref(con);
 	return 0;
 }
+
+
+/*
+ *    Connect with device without StartDiscovery
+ * 	- This example registers an agen with NoInputOutput capability for the purpose of
+ *	  auto pairing
+ * 	- Use ConnectDevice method to connect with device using provided MAC address
+ *	- Usual signal subscription to get the details of the connected device
+ *	- Introduced new signal handler to exit the program gracefully
+ *
+ *	Note: As "ConnectDevice" is new API and in experimental state (but mostly stable)
+ *	one need to use "-E" option when starting "bluetoothd". Systems running systemd can
+ *	edit /lib/systemd/system/bluetooth.service in ExecStart option
+ *
+ *	When this API is useful?
+ *	- When you already have the MAC address of end bluetooth Device to connect with, then
+ *	  you don't need to scan for the device (with or without filter) and connect it.
+ *	- StartDiscovery + Pair + Connect => ConnectDevice
+ *
+ *	How you will have MAC address before scanning?
+ *	- When you have other communication (wired or wireless) medium to exchange the MAC address
+ *	- For example, NFC OOB can be used to exchange the MAC address
+ *	- Testing Bluetooth with same device (MAC address known)
+ *
+ *	- Here Agent capability is registered as "NoInputOutput" for experimental purpose only, in
+ *	  real world scenario, Pair + Connect involves real Agents.
+ *	- Also note, bluez_agent_call_method and bluez_adapter_call_method are two different methods doing
+ *	  the same work with difference in interface name and object path. This exist just to make the
+ * 	  understanding more clear.
+ *
+ * gcc `pkg-config --cflags glib-2.0 gio-2.0` -Wall -Wextra -o ./bin/bluez_adapter_connect ./bluez_adapter_connect.c `pkg-config --libs glib-2.0 gio-2.0`
+ */
