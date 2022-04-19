@@ -18,62 +18,35 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.
  */
 
-#include <memory>
-
-#include <GPIO.h>
-
-extern "C" {
-  #include <wiringPi.h>
-}
+#include <iostream>
+#include <chrono>
+#include <cstdlib>
+#include "grocerease.h"
 
 using namespace std;
+Grocerease grocerease;
 
-void GPIO::lw_Forward()
+int run = 1;
+double elapsed_time_ms = 0;
+
+int main() 
 {
-   digitalWrite(21, 1);
-   digitalWrite(22, 0); 
-}
+    
+    grocerease.initialize();
 
-void GPIO::lw_Backward()
-{
-   digitalWrite(21, 0);
-   digitalWrite(22, 1); 
-}
-
-void GPIO::rw_Forward()
-{
-   digitalWrite(4, 1);
-   digitalWrite(5, 0);   
-}
-
-void GPIO::rw_Backward()
-{
-   digitalWrite(4, 0);
-   digitalWrite(5, 1);    
-}
-
-int main()
-{
-   int left_IR = 7;
-   int right_IR = 16;
-   
-   wiringPiSetup();
-
-   pinMode(21, OUTPUT);
-   pinMode(22, OUTPUT);
-   pinMode(23, PWM_OUTPUT);
-
-   pinMode(4, OUTPUT);
-   pinMode(5, OUTPUT);
-   pinMode(26, PWM_OUTPUT);
-
-   pinMode(7, INPUT);
-   pinMode(16, INPUT);
-
-   while (1) 
-   {
-      int out1 = digitalRead(right_IR);
-      int out2 = digitalRead(left_IR);
-      cout << out1 << out2 << "\n";
-   }
+    while(run)
+    {
+        auto t_start = std::chrono::high_resolution_clock::now();
+        
+        grocerease.run_program();
+    
+        auto t_end = std::chrono::high_resolution_clock::now();
+        
+        elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
+        grocerease.elapsed_time_ms = elapsed_time_ms;
+    
+    }
+    
+    cout << "Exited Program \n";
+    grocerease.stop();
 }
