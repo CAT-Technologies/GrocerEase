@@ -1,4 +1,3 @@
-## Reference: https://github.com/addy1997/al-Go-rithms/blob/main/CONTRIBUTION_GUIDELINES.md
 ## Contribution Guidelines
 
 We appreciate all the contributors and authors for their effors an time towards mainting this project. All the contributors are strongly encouraged to read this section prior to making any contribution. 
