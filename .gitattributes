@@ -1,3 +1,6 @@
 # excluding Doxygen from gitattributes
 *.html linguist-detectable=false
-
+*.js linguist-detectable=false
+*.kt linguist-detectable=false
+*.kts linguist-detectable=false
+*.ktm linguist-detectable=false
