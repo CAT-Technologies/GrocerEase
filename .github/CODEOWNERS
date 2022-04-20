@@ -5,3 +5,15 @@
 src/cart_callback.cpp       @addy1997
 src/cart_callback_TEST.cpp  @addy1997
 include/cart_callback.h     @addy1997
+external/CMakeLists.txt     @addy1997
+cmake/*                     @addy1997
+
+test/*                      @AzvenusK
+html/*                      @AzvenusK
+latex/*                     @AzvenusK
+
+src/*                       @jwtan5 
+include/*                   @jwtan5 
+
+mobile-app/*                @sarthakahuja11
+rssi_value/*                @sarthakahuja11
