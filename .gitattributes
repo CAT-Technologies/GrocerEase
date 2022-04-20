@@ -7,12 +7,12 @@
 *.css linguist-detectable=false
 
 #text diffs
-*.c     text diff=cpp
-*.cc    text diff=cpp
-*.cxx   text diff=cpp
-*.cpp   text diff=cpp
-*.c++   text diff=cpp
-*.hpp   text diff=cpp
-*.h     text diff=cpp
-*.h++   text diff=cpp
-*.hh    text diff=cpp
+*.c     linguist-language=cpp
+*.cc    linguist-language=cpp
+*.cxx   linguist-language=cpp
+*.cpp   linguist-language=cpp
+*.c++   linguist-language=cpp
+*.hpp   linguist-language=cpp
+*.h     linguist-language=cpp
+*.h++   linguist-language=cpp
+*.hh    linguist-language=cpp
