@@ -18,8 +18,6 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.
  */
 
-/*General Purpose Input Output for Raspberry Pi */
-
 #ifndef GROCEREASE_H
 #define GROCEREASE_H
 #include <iostream>

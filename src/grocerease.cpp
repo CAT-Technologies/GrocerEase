@@ -18,9 +18,6 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.
  */
 
-/*General Purpose Input Outsput for Raspberry Pi */
-
-
 #include "cart.h"
 #include "grocerease.h"
 #include <iostream>
