@@ -35,7 +35,7 @@ More details in our **concept video** : https://youtu.be/lRpyFtYRt68
 
 ## [Conceptualisation](#GrocerEase)
 
-![Temporary Block Diagram](https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/concept%20illustration/block_diagram.jpeg)
+![Temporary Block Diagram](https://github.com/CAT-Technologies/GrocerEase/blob/devel/utils/Concept%20Illustration/block_diagram.jpeg)
 
 ## [Project Roadmap](#GrocerEase)
 
