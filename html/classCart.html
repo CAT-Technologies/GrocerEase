@@ -71,10 +71,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>General Purpose Input Output for Raspberry Pi.  
- <a href="classCart.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="include_2cart_8h_source.html">cart.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="cart_8h_source.html">cart.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -161,15 +158,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9ece0a7138b3da7075ba186109b2e713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >General Purpose Input Output for Raspberry Pi. </p>
-<p >Copyright (C) 2022 Carry Assistant Trolley (C.A.T) Technologies</p>
+<div class="textblock"><p >Copyright (C) 2022 Carry Assistant Trolley (C.A.T) Technologies</p>
 <p >Jia Wei Tan, February 16, 2022.</p>
 <p >This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.</p>
 <p >This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p>
 <p >You should have received a copy of the GNU Lesser General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02111, USA.</p>
-<p ><a class="el" href="classCart.html" title="General Purpose Input Output for Raspberry Pi.">Cart</a> class to controls general movements of the robot cart </p>
+<p ><a class="el" href="classCart.html">Cart</a> class to controls general movements of the robot cart </p>
 
-<p class="definition">Definition at line <a class="el" href="include_2cart_8h_source.html#l00028">28</a> of file <a class="el" href="include_2cart_8h_source.html">cart.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8h_source.html#l00026">26</a> of file <a class="el" href="cart_8h_source.html">cart.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae74cee9e32b8b784d8b0ab0b03d7dbe6" name="ae74cee9e32b8b784d8b0ab0b03d7dbe6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae74cee9e32b8b784d8b0ab0b03d7dbe6">&#9670;&nbsp;</a></span>~Cart()</h2>
@@ -193,13 +189,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Destroys the <a class="el" href="classCart.html" title="General Purpose Input Output for Raspberry Pi.">Cart</a> object and ceases any communication. </p>
+<p >Destroys the <a class="el" href="classCart.html">Cart</a> object and ceases any communication. </p>
 
-<p class="definition">Definition at line <a class="el" href="utils_2patches_2computeAngle_2include_2cart_8h_source.html#l00067">67</a> of file <a class="el" href="utils_2patches_2computeAngle_2include_2cart_8h_source.html">cart.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart__callback_8h_source.html#l00067">67</a> of file <a class="el" href="cart__callback_8h_source.html">cart_callback.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   68</span>        {</div>
 <div class="line"><span class="lineno">   69</span>            <a class="code hl_function" href="classCart.html#a9500349670b16fdfae1be6ed456967b0">stop</a>();</div>
 <div class="line"><span class="lineno">   70</span>        }</div>
-<div class="ttc" id="aclassCart_html_a9500349670b16fdfae1be6ed456967b0"><div class="ttname"><a href="classCart.html#a9500349670b16fdfae1be6ed456967b0">Cart::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">a function to cease communication with the cart.</div><div class="ttdef"><b>Definition:</b> <a href="src_2cart_8cpp_source.html#l00046">cart.cpp:46</a></div></div>
+<div class="ttc" id="aclassCart_html_a9500349670b16fdfae1be6ed456967b0"><div class="ttname"><a href="classCart.html#a9500349670b16fdfae1be6ed456967b0">Cart::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">a function to cease communication with the cart.</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00046">cart.cpp:46</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -238,7 +234,7 @@ Public Member Functions</h2></td></tr>
 
 <p>angle-time estimation declaration </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00143">143</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00143">143</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  144</span>{</div>
 <div class="line"><span class="lineno">  145</span>    <span class="keywordflow">return</span> abs(angle_diff*510/rocAngle/360/(rotation_left - rotation_right)*pow(10,2));</div>
 <div class="line"><span class="lineno">  146</span>}</div>
@@ -321,7 +317,7 @@ Public Member Functions</h2></td></tr>
 
 <p>compute angle declaration </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00098">98</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00098">98</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   99</span>{</div>
 <div class="line"><span class="lineno">  100</span>    d_a = pow(20, (a + offset_a));</div>
 <div class="line"><span class="lineno">  101</span>    d_b = pow(20, (b + offset_b));</div>
@@ -370,7 +366,7 @@ Public Member Functions</h2></td></tr>
 
 <p>calculate angle declaration </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00125">125</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00125">125</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  126</span>{</div>
 <div class="line"><span class="lineno">  127</span> </div>
 <div class="line"><span class="lineno">  128</span>    timeStep_s = timeStep*pow(10,-2);</div>
@@ -456,7 +452,7 @@ Public Member Functions</h2></td></tr>
 
 <p>left IR sensor declaration </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00115">115</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00115">115</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  116</span>{</div>
 <div class="line"><span class="lineno">  117</span>    <span class="keywordflow">return</span> gpioRead(left_IR);</div>
 <div class="line"><span class="lineno">  118</span>}</div>
@@ -480,7 +476,7 @@ Public Member Functions</h2></td></tr>
 
 <p>right IR sensor declaration </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00120">120</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00120">120</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  121</span>{</div>
 <div class="line"><span class="lineno">  122</span>    <span class="keywordflow">return</span> gpioRead(right_IR);</div>
 <div class="line"><span class="lineno">  123</span>}</div>
@@ -504,7 +500,7 @@ Public Member Functions</h2></td></tr>
 
 <p>get calcualted angle declaration </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00105">105</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00105">105</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  106</span>{</div>
 <div class="line"><span class="lineno">  107</span>    <span class="keywordflow">return</span> acos((pow(d_a, 2) + pow(d_b, 2) - pow(d_c, 2))/(2 * d_a * d_b));</div>
 <div class="line"><span class="lineno">  108</span>}</div>
@@ -528,7 +524,7 @@ Public Member Functions</h2></td></tr>
 
 <p>get calculated distance declaration </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00110">110</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00110">110</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  111</span>{</div>
 <div class="line"><span class="lineno">  112</span>    <span class="keywordflow">return</span> d_a;</div>
 <div class="line"><span class="lineno">  113</span>}</div>
@@ -552,7 +548,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Left backward wheel declaration. </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00064">64</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00064">64</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   65</span>{</div>
 <div class="line"><span class="lineno">   66</span>    gpioWrite(en1, 0);</div>
 <div class="line"><span class="lineno">   67</span>    gpioWrite(en2, 1);</div>
@@ -595,7 +591,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Left forward wheel declaration. </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00052">52</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00052">52</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   53</span>{</div>
 <div class="line"><span class="lineno">   54</span>    gpioWrite(en1, 1);</div>
 <div class="line"><span class="lineno">   55</span>    gpioWrite(en2, 0);</div>
@@ -643,7 +639,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="utils_2patches_2computeAngle_2src_2cart_8cpp_source.html#l00104">104</a> of file <a class="el" href="utils_2patches_2computeAngle_2src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart__callback_8cpp_source.html#l00104">104</a> of file <a class="el" href="cart__callback_8cpp_source.html">cart_callback.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  105</span>{</div>
 <div class="line"><span class="lineno">  106</span>    <span class="keywordflow">return</span> gpioRead(left_IR);</div>
 <div class="line"><span class="lineno">  107</span>}</div>
@@ -672,7 +668,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="utils_2patches_2computeAngle_2src_2cart_8cpp_source.html#l00109">109</a> of file <a class="el" href="utils_2patches_2computeAngle_2src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart__callback_8cpp_source.html#l00109">109</a> of file <a class="el" href="cart__callback_8cpp_source.html">cart_callback.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  110</span>{</div>
 <div class="line"><span class="lineno">  111</span>    <span class="keywordflow">return</span> gpioRead(right_IR);</div>
 <div class="line"><span class="lineno">  112</span>}</div>
@@ -709,7 +705,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="utils_2patches_2computeAngle_2include_2cart_8h_source.html#l00076">76</a> of file <a class="el" href="utils_2patches_2computeAngle_2include_2cart_8h_source.html">cart.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart__callback_8h_source.html#l00076">76</a> of file <a class="el" href="cart__callback_8h_source.html">cart_callback.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   77</span>        {</div>
 <div class="line"><span class="lineno">   78</span>            compAngleCallback = _compAngleCallback;</div>
 <div class="line"><span class="lineno">   79</span>        }</div>
@@ -733,7 +729,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Right forward wheel declaration. </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00070">70</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00070">70</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   71</span>{</div>
 <div class="line"><span class="lineno">   72</span>    gpioWrite(en3, 0);</div>
 <div class="line"><span class="lineno">   73</span>    gpioWrite(en4, 1);</div>
@@ -776,7 +772,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Right forward wheel declaration. </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00058">58</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00058">58</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   59</span>{</div>
 <div class="line"><span class="lineno">   60</span>    gpioWrite(en3, 1);</div>
 <div class="line"><span class="lineno">   61</span>    gpioWrite(en4, 0);</div>
@@ -824,7 +820,7 @@ Public Member Functions</h2></td></tr>
 <p >This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p>
 <p >You should have received a copy of the GNU Lesser General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02111, USA. </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00027">27</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00027">27</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
 <div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (gpioInitialise()&lt;0) </div>
 <div class="line"><span class="lineno">   30</span>        exit(1);</div>
@@ -868,11 +864,12 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Copyright (C) 2022 Carry Assistant Trolley (C.A.T) Technologies</p>
+<p >Adwait Naik 16.04.22</p>
 <p >This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.</p>
 <p >This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p>
 <p >You should have received a copy of the GNU Lesser General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02111, USA. </p>
 
-<p class="definition">Definition at line <a class="el" href="utils_2patches_2computeAngle_2src_2cart_8cpp_source.html#l00027">27</a> of file <a class="el" href="utils_2patches_2computeAngle_2src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart__callback_8cpp_source.html#l00027">27</a> of file <a class="el" href="cart__callback_8cpp_source.html">cart_callback.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
 <div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (_defaultStartTime == START_TIME)</div>
 <div class="line"><span class="lineno">   30</span>    {</div>
@@ -921,12 +918,12 @@ Public Member Functions</h2></td></tr>
 
 <p>a function to cease communication with the cart. </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00046">46</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00046">46</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   47</span>{</div>
 <div class="line"><span class="lineno">   48</span>    <a class="code hl_function" href="classCart.html#a98eefe9a8b411e548c919cde2e6ba7ba">writeMotor</a>(0,0);</div>
 <div class="line"><span class="lineno">   49</span>    gpioTerminate();</div>
 <div class="line"><span class="lineno">   50</span>}</div>
-<div class="ttc" id="aclassCart_html_a98eefe9a8b411e548c919cde2e6ba7ba"><div class="ttname"><a href="classCart.html#a98eefe9a8b411e548c919cde2e6ba7ba">Cart::writeMotor</a></div><div class="ttdeci">void writeMotor(int L, int R)</div><div class="ttdoc">write motor declaration</div><div class="ttdef"><b>Definition:</b> <a href="src_2cart_8cpp_source.html#l00076">cart.cpp:76</a></div></div>
+<div class="ttc" id="aclassCart_html_a98eefe9a8b411e548c919cde2e6ba7ba"><div class="ttname"><a href="classCart.html#a98eefe9a8b411e548c919cde2e6ba7ba">Cart::writeMotor</a></div><div class="ttdeci">void writeMotor(int L, int R)</div><div class="ttdoc">write motor declaration</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00076">cart.cpp:76</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -977,7 +974,7 @@ Public Member Functions</h2></td></tr>
 <p>write motor declaration </p>
 <p >L: Left Motor analog output R: Right Motor analog output range: -255 to 255</p>
 
-<p class="definition">Definition at line <a class="el" href="src_2cart_8cpp_source.html#l00076">76</a> of file <a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cart_8cpp_source.html#l00076">76</a> of file <a class="el" href="cart_8cpp_source.html">cart.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   77</span>{</div>
 <div class="line"><span class="lineno">   83</span>    <span class="keywordflow">if</span> (L &gt;= 0) {</div>
 <div class="line"><span class="lineno">   84</span>        <a class="code hl_function" href="classCart.html#a1600bad83beb1b1ac3479528a334ef87">lw_Forward</a>();</div>
@@ -993,10 +990,10 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   94</span>    gpioPWM(motorL, abs(L));</div>
 <div class="line"><span class="lineno">   95</span>    gpioPWM(motorR, abs(R));</div>
 <div class="line"><span class="lineno">   96</span>}</div>
-<div class="ttc" id="aclassCart_html_a1600bad83beb1b1ac3479528a334ef87"><div class="ttname"><a href="classCart.html#a1600bad83beb1b1ac3479528a334ef87">Cart::lw_Forward</a></div><div class="ttdeci">void lw_Forward()</div><div class="ttdoc">Left forward wheel declaration.</div><div class="ttdef"><b>Definition:</b> <a href="src_2cart_8cpp_source.html#l00052">cart.cpp:52</a></div></div>
-<div class="ttc" id="aclassCart_html_a740821510b4fd6976c42a0156925859f"><div class="ttname"><a href="classCart.html#a740821510b4fd6976c42a0156925859f">Cart::rw_Forward</a></div><div class="ttdeci">void rw_Forward()</div><div class="ttdoc">Right forward wheel declaration.</div><div class="ttdef"><b>Definition:</b> <a href="src_2cart_8cpp_source.html#l00058">cart.cpp:58</a></div></div>
-<div class="ttc" id="aclassCart_html_a937d094639672a935177af282ea45a98"><div class="ttname"><a href="classCart.html#a937d094639672a935177af282ea45a98">Cart::rw_Backward</a></div><div class="ttdeci">void rw_Backward()</div><div class="ttdoc">Right forward wheel declaration.</div><div class="ttdef"><b>Definition:</b> <a href="src_2cart_8cpp_source.html#l00070">cart.cpp:70</a></div></div>
-<div class="ttc" id="aclassCart_html_aaa4f76abf4b9cd8d8267e31a8b864f1b"><div class="ttname"><a href="classCart.html#aaa4f76abf4b9cd8d8267e31a8b864f1b">Cart::lw_Backward</a></div><div class="ttdeci">void lw_Backward()</div><div class="ttdoc">Left backward wheel declaration.</div><div class="ttdef"><b>Definition:</b> <a href="src_2cart_8cpp_source.html#l00064">cart.cpp:64</a></div></div>
+<div class="ttc" id="aclassCart_html_a1600bad83beb1b1ac3479528a334ef87"><div class="ttname"><a href="classCart.html#a1600bad83beb1b1ac3479528a334ef87">Cart::lw_Forward</a></div><div class="ttdeci">void lw_Forward()</div><div class="ttdoc">Left forward wheel declaration.</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00052">cart.cpp:52</a></div></div>
+<div class="ttc" id="aclassCart_html_a740821510b4fd6976c42a0156925859f"><div class="ttname"><a href="classCart.html#a740821510b4fd6976c42a0156925859f">Cart::rw_Forward</a></div><div class="ttdeci">void rw_Forward()</div><div class="ttdoc">Right forward wheel declaration.</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00058">cart.cpp:58</a></div></div>
+<div class="ttc" id="aclassCart_html_a937d094639672a935177af282ea45a98"><div class="ttname"><a href="classCart.html#a937d094639672a935177af282ea45a98">Cart::rw_Backward</a></div><div class="ttdeci">void rw_Backward()</div><div class="ttdoc">Right forward wheel declaration.</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00070">cart.cpp:70</a></div></div>
+<div class="ttc" id="aclassCart_html_aaa4f76abf4b9cd8d8267e31a8b864f1b"><div class="ttname"><a href="classCart.html#aaa4f76abf4b9cd8d8267e31a8b864f1b">Cart::lw_Backward</a></div><div class="ttdeci">void lw_Backward()</div><div class="ttdoc">Left backward wheel declaration.</div><div class="ttdef"><b>Definition:</b> <a href="cart_8cpp_source.html#l00064">cart.cpp:64</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1036,10 +1033,10 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/<a class="el" href="include_2cart_8h_source.html">cart.h</a></li>
-<li>utils/patches/computeAngle/include/<a class="el" href="utils_2patches_2computeAngle_2include_2cart_8h_source.html">cart.h</a></li>
-<li>src/<a class="el" href="src_2cart_8cpp_source.html">cart.cpp</a></li>
-<li>utils/patches/computeAngle/src/<a class="el" href="utils_2patches_2computeAngle_2src_2cart_8cpp_source.html">cart.cpp</a></li>
+<li>include/<a class="el" href="cart_8h_source.html">cart.h</a></li>
+<li>include/<a class="el" href="cart__callback_8h_source.html">cart_callback.h</a></li>
+<li>src/<a class="el" href="cart_8cpp_source.html">cart.cpp</a></li>
+<li>src/<a class="el" href="cart__callback_8cpp_source.html">cart_callback.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
