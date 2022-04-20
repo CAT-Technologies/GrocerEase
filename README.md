@@ -32,6 +32,8 @@ Our approach is based on developing an intelligent, fully autonomous trolley bas
 
 More details in our **concept video** on youtube: https://youtu.be/lRpyFtYRt68 
 
+Our wiki can be found [here](https://github.com/CAT-Technologies/GrocerEase/wiki)
+
 
 ## [Conceptualisation](#GrocerEase)
 
