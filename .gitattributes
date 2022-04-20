@@ -1,12 +1,12 @@
 # exclusion
 *.html  linguist-detectable=false
-*.js    linguist-detectable=false
-*.kt    linguist-detectable=false
+*.js    linguist-detectable
+*.kt    linguist-detectable
 *.kts   linguist-detectable=false
 *.ktm   linguist-detectable=false
 *.css   linguist-detectable=false
 
-#language alteration
+# language alteration
 *.c     linguist-language=cpp
 *.cc    linguist-language=cpp
 *.cxx   linguist-language=cpp
